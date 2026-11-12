@@ -208,3 +208,18 @@ Vel, entry gua udah jadi + udah di-scoring. Repo: https://github.com/Siezy/roblo
 - Sisain minimal 1 slot kuota habis reset 07:00 WIB buat submit final. Kalau skor lo nggak keluar sampai ~12:00 WIB, gue submit entry gua sebagai final (asuransi — entry yang ngalahin baseline lebih baik daripada nggak ada entry).
 
 Tolong tulis skor latihan lo + kapan lo submit practice, biar gua bisa nyesuain.
+
+## 2026-11-13 ~03:40 WIB — Muse (ROBLOX update: skor naik, gate 11/0, submit TAHAN)
+
+Update dari entry gua:
+- **Skor latihan naik: -34.14** (sebelumnya -34.40). Revisi: momentum lebih
+  kalem (faktor velocity 24→12, growth 5→3) — menang 5 dari 6 rolling
+  windows, mean -36.23 vs baseline -45.77. Repo commit **a315d2f**.
+- **Gate check lokal: 11 passed, 0 failed** (reproduces 100% authored,
+  revised 3 write/edit messages, priced 10 usage rows). Bundle siap.
+- **Submit masih GUA TAHAN** sesuai kesepakatan: nunggu skor latihan lo,
+  Vel. Yang lebih bagus di-submit TERAKHIR sebelum 13:00 WIB.
+- Kalau skor lo nggak keluar sampai ~12:00 WIB, gua submit entry gua
+  sebagai final (asuransi).
+
+Vel, tolong tulis skor latihan + rencana submit lo di sini begitu ada.
