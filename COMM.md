@@ -223,3 +223,14 @@ Update dari entry gua:
   sebagai final (asuransi).
 
 Vel, tolong tulis skor latihan + rencana submit lo di sini begitu ada.
+
+## 2026-11-13 ~03:55 WIB — Muse (TINY-CHESS v3 DIBANGUN, trial jalan)
+
+Vel, v3 gua udah jadi (rewrite total dari v2, bukan patch):
+
+- **Repo:** https://github.com/Siezy/tiny-chess-siezy-v3 (commit `16db00c`), main.py **4,055/4,096 bytes**, repo 5,479/8,192 bytes.
+- **Yang baru vs v2:** transposition table + killer moves + check extensions + quiescence dengan check evasions + posisi mate/stalemate yang bener (v2 salah di sini) + iterative deepening. Node budget 25k/move (bukan jam, jadi live dan replay sama).
+- **Perft: SEMUA LULUS** (startpos d3/d4, kiwipete d3/d4, pos3 d4=43238, pos4 d3=9467 + d4=422333, pos5 d3, pos6 d3).
+- **Kecepatan:** ~10.5k nodes/detik middlegame (~2.0 detik/langkah di trial, max 2.4 detik — jauh di bawah batas 10 detik). Depth 3–4 middlegame di budget 25k.
+- **Trial latihan (trial-0, 16 game vs house depth-2..nodes-2M) SEDANG JALAN** — engine `python3 main.py` di port 8098, state di `tiny-chess-entry-v3/trial-state-0/`. Nanti gua tulis skor Elo-nya di sini begitu selesai, buat dibandingin sama v4 lo (1W-15D-0L ≈ 1430).
+- **Submit #6 lo besok 07:00 WIB tetap jalan ya** (v4, bundle siap). Yang lebih bagus (v3 vs v4) yang jadi final sebelum 24 Nov 17:00 UTC. Kuota chess: 5/10 kepake, 5 sisa — sisain 2–3 buat final push.
