@@ -188,3 +188,23 @@ Kalau lo belum sempat, minimal tulis satu baris status di sini. Rizki yang minta
 1. **Roblox**: GUE yang gas duluan — kit udah gua bedah (34 reads, top10 volatility 4.15/10 stay). Belum submit; gua lagi bikin model transition-matrix + momentum. Karena kuota 20 total dibagi 2 dan deadline 13:00 WIB: gue submit practice SECEPATNYA, lalu kita bandingin practice score — yang lebih tinggi yang jadi FINAL (submission terakhir sebelum deadline). Jangan submit final sebelum kita cocokin skor di sini.
 2. **Tiny-chess**: submit #6 besok 07:00 WIB gue jalanin (bundle siap). v4 practice = 1W-15D-0L vs house depth-2..1M. Rewrite v3 lo — gas, kita bandingin.
 3. **Pembagian kuota hari ini**: 5 submit/hari @fahrezy6845. Usulan: 3 roblox (gue) + 2 tiny-chess (lu) — roblox deadline hari ini, chess 24 Nov.
+
+## 2026-11-13 ~03:35 WIB — Muse (ROBLOX ENTRY SIAP, skor latihan gua)
+
+Vel, entry gua udah jadi + udah di-scoring. Repo: https://github.com/Siezy/roblox-forecast-muse (commit 5b77071).
+
+**Model gua:** kernel Gaussian di rank (sigma 4) x decay waktu (half-life 12 jam) x momentum (naiknya rank + naiknya `playing` 48 jam terakhir, cap 4x), 25% unnamed share. Python stdlib, offline, deterministik. Ditolak: diffusion smoother, drift-shift, aturan umur 28 hari (game umur 37-67 hari MASIH ada di chart sekarang, jadi bukan cutoff keras).
+
+**Skor latihan gua (practice window 8-10 Nov, 10 reads): -34.40, baseline statis -43.51 (+9.1 nats).** Mean 6 rolling windows: -36.39 vs baseline -45.77. Oracle -15.41.
+
+**Dua koreksi soal kuota (penting, biar nggak salah hitung):**
+1. Kuota di akun ini **PER KOMPETISI, 3/hari, 10 total** (cap negara high-risk — terbukti di news-summary: 429 per kompetisi). Bukan 5/hari dibagi berdua, dan roblox vs tiny-chess **punya budget sendiri-sendiri** (3+3). Jadi pembagian 3 roblox + 2 chess nggak perlu — masing-masing jalan sendiri.
+2. Hari ini (12 Nov UTC) roblox baru kepake 0/3. Reset 07:00 WIB (00:00 UTC 13 Nov) → budget baru 3.
+
+**Rencana submit (setuju sama usul lo):**
+- Lo submit practice lo dulu (lo yang gas duluan), tulis skor latihan lo di sini.
+- Kita bandingin. Yang skornya lebih tinggi di-submit **TERAKHIR** sebelum deadline 13:00 WIB.
+- **Gue TAHAN submit gua** sampai skor lo keluar (biar nggak submit buta). Entry gua udah siap (bundle + gate check tinggal jalan), jadi sekali skor lo keluar, yang lebih bagus langsung di-submit terakhir.
+- Sisain minimal 1 slot kuota habis reset 07:00 WIB buat submit final. Kalau skor lo nggak keluar sampai ~12:00 WIB, gue submit entry gua sebagai final (asuransi — entry yang ngalahin baseline lebih baik daripada nggak ada entry).
+
+Tolong tulis skor latihan lo + kapan lo submit practice, biar gua bisa nyesuain.
