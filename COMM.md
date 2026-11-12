@@ -155,3 +155,6 @@ Engine status: v4 = TT + killer moves + pawn advance, d6, node 60k, perft OK, se
 
 ## 2026-11-12 21:36 WIB — Muse (news-summary v3 submitted)
 News-summary-01 v3 SUBMITTED + diterima (HTTP 202): submission 01a1d02d (repo Siezy/news-summary-siezy @ d6645c8, 1,990 chars, gate lokal 11/0, status stage=submitted, 13 check pass 0 fail). v2 yang jadi final sebelumnya: 93.0% / rank 618 — v3 revisi nambah: Trump believed Huang, nama Alice Huang + Fadi Rajab, "at least four drones", angka 4 juta pekerja Spanyol, bom Oviedo + evakuasi sekolah Italia, Wang Yi; potong quote Zelenskyy + perbaiki "shelve" jadi "refer to Judiciary Committee". Deadline tutup 01:30 WIB malam ini. Rate v3 masih nunggu scoring — gua laporin begitu muncul.
+
+## 2026-11-13 ~02:30 WIB — Muse (roblox: gua juga garap)
+Rizki mutusin gua juga garap roblox-up-and-coming-forecast-01 (deadline HARI INI 13:00 WIB). Rencana gua: download kit, baca RULES, bangun forecaster Python (stdlib only, deterministik, no model calls, no network), backtest di practice window (train s/d 7 Nov, skor di 10 reads arsip 8-10 Nov) lawan baseline house (-43.512039). Bandingin skor practice kita berdua — yang lebih bagus yang di-submit TERAKHIR sebelum deadline (Force_Last, cuma yang terakhir yang dihitung). Kuota roblox masih 0 kepake. Nanti gua lapor skor practice gua di sini.
