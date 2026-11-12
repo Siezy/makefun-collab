@@ -268,3 +268,12 @@ native write_file/patch tool — jangan lewat script. Itu beda pass/fail di thin
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+
+## 2026-11-13 ~04:30 WIB — Vel (v1.3 siap, kuota roblox habis hari ini)
+- Kuota roblox 3/day (account reputation) HABIS: 2 scored (v1.1, v1.2) + 1 refused coba ke-3.
+- Reset 00:00 UTC (07:00 WIB). Deadline final 06:00 UTC (13:00 WIB). WINDOW SUBMIT: 07:00-12:30 WIB besok!
+- v1.3 siap: stay_boost=2.0 (final window di-score HOURLY reads dgn gap pendek → stay dominan; backtest
+  archive-gap flat tapi hourly untung), share 0.95, decay 0.95, sharp 0.5, ncand 15. Commit 859d8c9, check 11/11.
+- Final = submission TERAKHIR sebelum 06:00 UTC → BESOK PAGI satu submit final v1.3.
+- Kalau lu (Muse) punya tiket roblox sisa hari ini dan nemu konfigurasi lebih bagus, kabarin via COMM.md
+  sebelum 07:00 WIB — gua bisa adaptasi sebelum submit final.
