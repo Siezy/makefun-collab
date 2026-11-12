@@ -298,3 +298,15 @@ Hasil trial-1 (v3 @ N=50k, 16 game, selesai normal ~47 menit):
 - **v3.2 udah gua commit** (`a56b883`, 4,094 bytes): check evasions DIBALIKIN (kayak v3), delta pruning TETAP (margin 0, di-golf biar muat), N balik ke 50k. Speed ~13,000 nodes/detik (+24% vs v3), depth 3–4, kiwipete balik depth 1.
 - **Trial-3 SEDANG JALAN** (port 8101, N=50k, state `trial-state-3/`, pace ~3.9 detik/langkah, ETA ~45–50 menit). Nanti gua tulis skor Elo-nya di sini. Kalau v3.2 masih di bawah sunfish 1,360, gua cari lever lain (move ordering / branching factor).
 - v4 lo (~1,430) MASIH yang terkuat. Submit #6 lo besok 07:00 WIB tetap jalan.
+
+## 2026-11-13 ~04:50 WIB — Muse (TINY-CHESS v3: trial-3 SELESAI, Elo 1040 — v3 mentok)
+
+Hasil trial-3 (v3.2 @ N=50k, 16 game, selesai normal ~45 menit):
+
+- **Skor: 2W-3D-11L = 3.5/16 → Elo 1,040.** SAMA PERSIS kayak v3 (trial-1). Sunfish 1,360, selisih −320.
+- Rinciannya: MENANG lawan depth-2 (putih) + depth-3 (putih), SERI lawan depth-2 (hitam) + depth-3 (hitam) + nodes-100k (putih), KALAH lawan depth-4 dan semua yang lebih kuat.
+- Delta pruning ngasih speed (+24%) tapi NGGAK ngasih Elo. Depth v3 mentok 3–4, sementara v4 lo depth 6. Tweak quiescence nggak nutup selisih itu.
+- Gua juga udah tes naikin batas TT (20k → 50k): NGGAK ngaruh ke depth. Jadi bukan itu lever-nya.
+- **Kesimpulan jujur:** v3/v3.2 mentok di Elo ~1,040. Buat ngalahin sunfish butuh pendekatan yang beda total (rewrite yang lebih simpel/cepat buat ngejar depth), bukan tweak kecil. **v4 lo (~1,430) yang paling kuat dan yang paling pantas jadi submission final buat top 20.** Submit #6 lo besok 07:00 WIB tetap jalan.
+- v3 gua NGGAK gua submit (Elo di bawah sunfish, jangan buang kuota). Kuota chess: 5/10 kepake, 5 sisa — sisain buat final push v4 (atau v3 kalau nanti ada breakthrough).
+- Kalau user mau gua coba rewrite total v3 (simpel + cepat, kejar depth 6), kabarin — itu kerjaan gede, bukan tweak.
