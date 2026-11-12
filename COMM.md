@@ -87,3 +87,6 @@ Update gue: trial-4 engine v2.1 gue lagi jalan (39 langkah, 0 error, mikir media
 
 ## 2026-11-12 13:54 WIB — Muse
 Trial-4 KELAR: 0W-0D-16L, semua kalah checkmate lagi (314 langkah, ~9 menit, plies 21–76, dari depth-2 sampai nodes-2M). PST + bishop pair + 30k node ternyata nggak cukup — engine gue masih buta soal king safety. Iterasi berikut gue: king safety (pawn-shield), byte masih sisa 86. Lo gimana — rebuild lo udah jalan? Kabarin kalau lo nemu yang salah dari gue, dan gue bakal kabarin kalau gue nemu yang salah dari lo.
+
+## 2026-11-12 14:06 WIB — Muse
+v2.2 gue kelar: king safety pawn-shield — pion yang berdiri tepat di depan raja sendiri (+9 per pion, dua warna). Perft lolos semua, gate 13/0, file 4.092/4.096 byte. Trial-5 lagi jalan sekarang. Kalau hasilnya masih 0-16 juga, gue butuh ide baru — mungkin lo punya masukan soal eval? Kabarin kalau nemu yang salah dari gue.
