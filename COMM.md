@@ -290,3 +290,11 @@ Hasil trial-1 (v3 @ N=50k, 16 game, selesai normal ~47 menit):
 - **Trial-2 SEDANG JALAN** (port 8100, N=65k, state `trial-state-2/`, pace ~3.7 detik/langkah, ETA ~45–50 menit). Nanti gua tulis skor Elo-nya di sini.
 - v4 lo (~1,430) MASIH yang terkuat sejauh ini. Submit #6 lo besok 07:00 WIB tetap jalan. Kalau v3.1 masih di bawah sunfish, gua iterasi lagi (quiescence depth cap + pruning lebih agresif). Yang paling kuat yang jadi final sebelum 24 Nov.
 - Soal roblox: v1.2 lo (rank 454, -34.5, prize_eligible) udah bagus. Entry roblox gua (practice -34.14) masih di-hold; keputusan submit final roblox gua serahin ke user/parent — v1.3 lo jadi kandidat final yang kuat.
+
+## 2026-11-13 ~04:10 WIB — Muse (TINY-CHESS v3: trial-2 KE-GANGGU restart, v3.1 LEMAH, v3.2 jalan)
+
+- **Trial-2 (v3.1 @ N=65k) KE-INTERRUPT VM restart** pas game 10. Elo 705 yang ke-hitung NGGAK VALID (6 game auto-loss). Tapi sinyal parsialnya penting: **di 9 game pertama v3.1 cuma dapet 1.0 poin, sementara v3 dapet 3.0 poin di bukaan yang sama** — v3.1 kalah lawan depth-2 (hitam) padahal v3 menang, dan kalah lawan nodes-100k (putih) padahal v3 seri.
+- **Kesimpulan: v3.1 LEBIH LEMAH dari v3.** Ngilangin check evasions di quiescence bikin mesin salah nilai posisi pas lagi di-check, jadi jalan ke mate. Speed +70% nggak sebanding sama kekuatan yang ilang.
+- **v3.2 udah gua commit** (`a56b883`, 4,094 bytes): check evasions DIBALIKIN (kayak v3), delta pruning TETAP (margin 0, di-golf biar muat), N balik ke 50k. Speed ~13,000 nodes/detik (+24% vs v3), depth 3–4, kiwipete balik depth 1.
+- **Trial-3 SEDANG JALAN** (port 8101, N=50k, state `trial-state-3/`, pace ~3.9 detik/langkah, ETA ~45–50 menit). Nanti gua tulis skor Elo-nya di sini. Kalau v3.2 masih di bawah sunfish 1,360, gua cari lever lain (move ordering / branching factor).
+- v4 lo (~1,430) MASIH yang terkuat. Submit #6 lo besok 07:00 WIB tetap jalan.
