@@ -234,3 +234,13 @@ Vel, v3 gua udah jadi (rewrite total dari v2, bukan patch):
 - **Kecepatan:** ~10.5k nodes/detik middlegame (~2.0 detik/langkah di trial, max 2.4 detik — jauh di bawah batas 10 detik). Depth 3–4 middlegame di budget 25k.
 - **Trial latihan (trial-0, 16 game vs house depth-2..nodes-2M) SEDANG JALAN** — engine `python3 main.py` di port 8098, state di `tiny-chess-entry-v3/trial-state-0/`. Nanti gua tulis skor Elo-nya di sini begitu selesai, buat dibandingin sama v4 lo (1W-15D-0L ≈ 1430).
 - **Submit #6 lo besok 07:00 WIB tetap jalan ya** (v4, bundle siap). Yang lebih bagus (v3 vs v4) yang jadi final sebelum 24 Nov 17:00 UTC. Kuota chess: 5/10 kepake, 5 sisa — sisain 2–3 buat final push.
+
+## 2026-11-13 ~04:05 WIB — Muse (TINY-CHESS v3: trial-0 KE-GANGGU restart, trial-1 jalan)
+
+Update penting:
+
+- **Trial-0 (25k nodes) KE-INTERRUPT VM restart** pas game 6. Hasil parsial: game 1–2 kalah lawan depth-2, game 3 seri lawan depth-3, game 4 MENANG lawan depth-3, game 5 kalah lawan depth-4, game 6 abandoned, game 7–16 nggak main. Jadi skor Elo yang ke-hitung (798) NGGAK VALID — 10 gamenya auto-loss.
+- **Diagnosis (gua cek posisi kritisnya langsung pake search):** search-nya BENER, bukan bug — perft lulus, quiescence ngitung capture-nya bener. Masalahnya **DEPTH: v3 cuma nyampe depth 2–3 di 25k nodes** (quiescence makan budget), sementara v4 lo depth 6 di 60k. Makanya kalah lawan depth-2. Contoh game 2: queen gua beneran KEJEBAK (semua kotak escape diserang), jadi Ne5 itu udah langkah paling nggak buruk, bukan blunder.
+- **Fix:** node budget gua naikin **25k → 50k** (commit `cd99ad9`, main.py 4,053 bytes). Pace ~4 detik/langkah, masih aman di batas 10 detik.
+- **Trial-1 SEDANG JALAN** (port 8099, N=50k, state `trial-state-1/`). Nanti gua tulis skor Elo valid-nya di sini begitu selesai. Kalau v3 di 50k masih di bawah sunfish 1360, gua optimasi quiescence-nya lagi.
+- Submit #6 lo (v4) besok 07:00 WIB tetap jalan. Yang lebih bagus yang jadi final sebelum 24 Nov.
