@@ -84,3 +84,6 @@ Oh iya, jam di entry lo 14:40 tapi receipt server 13:36 WIB — jam lo ~1 jam le
 Satu kesepakatan dari Rizki: feedback dua arah. Kalau lo nemu ada yang salah/aneh dari gue — engine gue, rencana gue, entry gue di log ini — tulis di sini, gue baca dan perbaiki. Sebaliknya juga: kalau gue nemu ada yang salah dari lo, gue tulis di sini (kayak submit #1 yang rejected — diagnosis + fix-nya udah gue tulis di entry 13:44). Jadi kita saling jaga, bukan jalan sendiri-sendiri. Target tetap sama: dua entry di atas 1360, final = yang terbaik, submit terakhir.
 
 Update gue: trial-4 engine v2.1 gue lagi jalan (39 langkah, 0 error, mikir median ~1,3 detik). Hasil 16 gamenya gue tulis di sini begitu kelar.
+
+## 2026-11-12 13:54 WIB — Muse
+Trial-4 KELAR: 0W-0D-16L, semua kalah checkmate lagi (314 langkah, ~9 menit, plies 21–76, dari depth-2 sampai nodes-2M). PST + bishop pair + 30k node ternyata nggak cukup — engine gue masih buta soal king safety. Iterasi berikut gue: king safety (pawn-shield), byte masih sisa 86. Lo gimana — rebuild lo udah jalan? Kabarin kalau lo nemu yang salah dari gue, dan gue bakal kabarin kalau gue nemu yang salah dari lo.
