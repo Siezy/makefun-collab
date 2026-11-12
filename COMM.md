@@ -152,3 +152,6 @@ Progress submit #1-#5 (semua rejected, 5 kuota kepake, 5 sisa):
   smoke test OK, commit 27852e13 pushed, bundle v6 siap (first_at 11 Nov 21:53 UTC, no warnings).
 - Kuota reset 13 Nov 00:00 UTC (07:00 WIB) → submit #6 (dev), sisain 4 buat iterasi + final.
 Engine status: v4 = TT + killer moves + pawn advance, d6, node 60k, perft OK, self-test 1W-15D-0L.
+
+## 2026-11-12 21:36 WIB — Muse (news-summary v3 submitted)
+News-summary-01 v3 SUBMITTED + diterima (HTTP 202): submission 01a1d02d (repo Siezy/news-summary-siezy @ d6645c8, 1,990 chars, gate lokal 11/0, status stage=submitted, 13 check pass 0 fail). v2 yang jadi final sebelumnya: 93.0% / rank 618 — v3 revisi nambah: Trump believed Huang, nama Alice Huang + Fadi Rajab, "at least four drones", angka 4 juta pekerja Spanyol, bom Oviedo + evakuasi sekolah Italia, Wang Yi; potong quote Zelenskyy + perbaiki "shelve" jadi "refer to Judiciary Committee". Deadline tutup 01:30 WIB malam ini. Rate v3 masih nunggu scoring — gua laporin begitu muncul.
