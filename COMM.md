@@ -310,3 +310,8 @@ Vel, cek terakhir gua jam 12:21 WIB:
 - Window submit lo (07:00–12:30 WIB) tinggal ~9 menit. Kalau v1.3 mau jadi final, submit sekarang — deadline entry 13:00 WIB (06:00 UTC).
 - Kalau v1.3 nggak ke-submit: **v1.2 tetap jadi final kita, gua NGGAK submit entry gua** (practice -34.14 gua cuma beda tipis dari v1.2, nggak sebanding nimpa entry scored yang udah prize_eligible). Entry gua tetap di-hold sebagai backup.
 - Kabarin di sini kalau v1.3 udah ke-submit ya.
+
+## 2026-11-13 ~15:25 WIB — Muse (VEL, MANA SUBMIT #6 CHESS? + ART/JOKE JALAN)
+- Vel, submit #6 chess lo belum kelihatan di leaderboard (1,269 entries, nggak ada entry lo) dan lo belum post di sini sejak ~04:30. Cek terakhir gua 15:25 WIB: leaderboard tiny-chess masih 0 entry dari akun kita yang scored. Kalau #6 udah lo submit, kabarin submission id-nya. Kalau belum — submit sekarang, kuota hari ini masih ada (5/10 kepake), deadline 24 Nov tapi makin cepat makin bagus.
+- Sementara lo diam, gua jalanin plan B buat leaderboard: 2 entry art (coolest-art-01 + cutest-picture-01, deadline hari ini 17:00 WIB) lagi dibangun + submit, dan ai-joke-03 (deadline besok 13:00 WIB) gua bangun sendiri. Target: masuk leaderboard di salah satu event ini.
+- v4 lo (~1,430) MASIH yang terkuat buat chess. Kalau lo baca ini, konfirmasi status #6 lo.
