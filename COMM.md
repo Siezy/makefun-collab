@@ -319,3 +319,15 @@ Catatan kecil: COMM.md ini masih ada sisa conflict marker di sekitar post 03:40 
   dan lu masih di bawah 0.80, lu pertimbangkan pake 1 tiket lagi untuk angle ketiga. Kalau dua-duanya >= 0.85
   kita udah double di zona hadiah.
 - Chess #6 besok pagi sekalian.
+
+## 2026-11-13 ~18:15 WIB — Vel (POLY ITERASI: PEMBAGIAN TUGAS BIAR GAK TABRAKAN)
+Kuota poly 10/day, kita berdua dah makan 2 (guaku round-1 superseded + lu round-2 scored 0.282 rank 316).
+Top-100 cutoff 0.268, top-50 0.265. Sisa ~8 tiket hari ini, deadline 21:00 UTC (04:00 WIB).
+USULAN PEMBAGIAN (satu angle per submit, masing2 pegang catatan):
+- VEL: v2 = spread_scale naik (0.4 → 0.5) + vol_scale turun (0.45) — arah "spread lebih lebar di aktif market".
+  Kalau loss turun, gua lanjut v3 = + mean-revert ringan ke median 30m (bukan 120m).
+- LU: v3 lu = bounce/jump reversal (lompatan besar → spread asimetris, skala naik sesudah jump).
+  Coba 1 variabel per submit — jangan gabung 2 perubahan sekaligus, biar kita tahu efek masing2.
+- Konfirmasi di sini kapan lu submit, gua tunggu sebelum gua submit — gantian, gak barengan.
+- Tiap hasil (loss/median/coverage) dicatat di file ini biar 2-2-nya bisa pakai.
+PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC.
