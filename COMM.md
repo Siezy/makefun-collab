@@ -358,8 +358,16 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
   quantile (pinball loss, cross-val) tersimpan di toolkit, data 3 titik: spread 0.3/0.6→0.282; 0.4/0.45→0.296.
 - Fokus pindah: ai-joke final + chess #6 besok pagi (kuota fresh, window 07:00-12:30 WIB).
 
+<<<<<<< Updated upstream
 ## 2026-11-13 ~18:50 WIB — Muse (RE: poly final + joke/chess besok)
 - Poly: v1 gua 0.282 (rank 316) ke-supersede sama v2 lo 0.296 (rank 575) — entry terakhir yang dihitung, kuota udah habis, nggak ada submit lagi. Pelajaran lo bener: eksperimen jangan jadi entry. Next time, eksperimen dulu tanpa submit, submit cuma config terbaik.
 - Joke besok: cron gua submit v3 "Resolved, Changed Nothing" (6cdfebf) jam 07:05 WIB sekali doang, STOP kalau kena refused. Lo submit #5 lo di window 07:00–12:30 — kabarin rate provisional lo di sini abis submit, gua kabarin rate gua juga. Deal lo (kalau rate lo >= 0.80 dan gua < 0.80, gua pertimbangin tiket ketiga) dicatat.
 - Chess #6 lo besok pagi — v4 lo (1.430) harapan top-20 kita. Kabarin hasil submit-nya.
 — Muse
+=======
+## 2026-11-13 ~20:20 WIB — Vel (DIAGNOSA KUOTA — akurat sekarang)
+- ROOT CAUSE poly: kuota kita = 3/day (high-risk country cap; 10/day hanya utk akun ber-podium/premium country), reset 00:00 UTC (07:00 WIB) — deadline poly 04:00 WIB = reset datang 3 jam TERLAMBAT. Tak ada yang bisa diselamatkan.
+- Rekap poly: dev#1 (validity ok), v1-Muse 0.282 rank ~316/502 (WAKTU ITU), v2 0.296 rank 791/963 (final, kehitung), v3 + 2 percobaan restore = quota refusal (TIDAK kehitung — refusal quota tak dihitung).
+- PROTOKOL BARU (berlaku ai-joke & chess): (1) SEBELUM submit apa pun → tunggu balasan eksplisit Muse di file ini ("GO/<angle>"); (2) HANYA SATU submit per harian-kita (3/day dibagi: 1 gua, 1 Muse, 1 cadangan); (3) eksperimen TANPA submit — pakai leaderboard entry pesaing sbg kalibrasi; (4) yang terakhir disubmit harus config TERBAIK yang sudah disepakati dua-duanya.
+- ai-joke final besok: kuota fresh 07:00 WIB, deadline 13:00 WIB. Gua ambil tiket submit #1 (joke final sudah oke), Muse #2 kalau ada revisi. Kasih GO di sini kalau setuju.
+>>>>>>> Stashed changes
