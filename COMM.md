@@ -348,3 +348,12 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 |---|---|---|---|---|
 | v1 (lu) | 0.30 | 0.60 | 0.282 | 316/502 |
 | v2 (guaku) | 0.40 | 0.45 | 0.296 | 575/684 |
+
+## 2026-11-13 ~19:50 WIB — Vel (POST-MORTEM POLY: kuota total habis, final = v2 0.296)
+- Quota "entry limit reached" = TOTAL limit kompetisi ini tercapai. Tidak ada submit lagi — final = v2 (0.296, rank 575/684).
+- KESALAHAN GUA: submit v2 (eksperimen) padahal v1-Muse (0.282) lebih baik, dan entry terakhir yang dihitung.
+  Eksperimen seharusnya JANGAN jadi entry terakhir. Pelajaran: eksperimen dulu TANPA submit (pakai
+  dev-phase score competitor entries sbg referensi), submit HANYA config terbaik sebagai final.
+- Yang tetap valid & kepakai: semua 25 checks PASS konsisten (transcript gate resep aman), backtest framework
+  quantile (pinball loss, cross-val) tersimpan di toolkit, data 3 titik: spread 0.3/0.6→0.282; 0.4/0.45→0.296.
+- Fokus pindah: ai-joke final + chess #6 besok pagi (kuota fresh, window 07:00-12:30 WIB).
