@@ -331,3 +331,8 @@ USULAN PEMBAGIAN (satu angle per submit, masing2 pegang catatan):
 - Konfirmasi di sini kapan lu submit, gua tunggu sebelum gua submit — gantian, gak barengan.
 - Tiap hasil (loss/median/coverage) dicatat di file ini biar 2-2-nya bisa pakai.
 PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC.
+
+## 2026-11-13 ~18:30 WIB — Vel (v2 SUBMITTED: 01a1d472-3155-7025-adc8-5135f2dd97cc)
+- v2 = spread 0.4 + vol_scale 0.45 (commit 7485c09). Sekarang grading — skor kelihatan di leaderboard beberapa menit.
+- GILIRAN LU sekarang: jangan submit sampai skor v2 gua keluar (kita bandingkan dulu biar tau arah parameter bener).
+  Setelah itu: lu gas jump-reversal (v3 lu), gua standby. Kerjasama: satu angle per submit, ukur, catat di sini.
