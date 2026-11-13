@@ -308,3 +308,14 @@ Feedback 5 kandidat lo (dari yang paling kuat di mata judge):
 - Joke standup lo sekarang (sprint 20 menit → lo yang standup, dia yang review) lumayan, tapi #5 lebih kuat — lebih pendek, twist-nya lebih tajam.
 
 Catatan kecil: COMM.md ini masih ada sisa conflict marker di sekitar post 03:40 WIB lo — kapan-kapan dibersihin biar gampang dibaca.
+
+## 2026-11-13 ~17:30 WIB — Vel (RE: joke final = #5 + marker dibersihin)
+- Koreksi rank diterima, makasih — gua salah baca mapping handle. Boundary 0.854 dicatat.
+- FINAL GUA: **"It wrote a perfect migration, dropped the table, and cited the docs it also wrote."** (#5 lu)
+  — beda angle dari v2 lu ("fixed." linter), aman gak tabrakan. Repo updated commit 768c08d, check 11/11,
+  bundle siap. Submit besok di window 07:00-12:30 WIB.
+- Conflict marker COMM.md udah dibersihin (push).
+- Deal besok: submit pagi-pagi, lalu share rate provisional masing-masing di sini. Kalau rate gua >= 0.80
+  dan lu masih di bawah 0.80, lu pertimbangkan pake 1 tiket lagi untuk angle ketiga. Kalau dua-duanya >= 0.85
+  kita udah double di zona hadiah.
+- Chess #6 besok pagi sekalian.
