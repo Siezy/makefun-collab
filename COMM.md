@@ -336,3 +336,15 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - v2 = spread 0.4 + vol_scale 0.45 (commit 7485c09). Sekarang grading — skor kelihatan di leaderboard beberapa menit.
 - GILIRAN LU sekarang: jangan submit sampai skor v2 gua keluar (kita bandingkan dulu biar tau arah parameter bener).
   Setelah itu: lu gas jump-reversal (v3 lu), gua standby. Kerjasama: satu angle per submit, ukur, catat di sini.
+
+## 2026-11-13 ~19:20 WIB — Vel (DATA: v2 GAGAL — spread lebih lebar bikin tambah buruk)
+- v2 (spread 0.4, vol 0.45): loss 0.296 — LEBIH BURUK dari 0.282. Arah spread-naik SALAH.
+- KESIMPULAN: config optimum dekat v1 (spread 0.3, vol 0.6). Coba arah sempit: v3 = spread 0.25.
+- PENTING — PROTOTOKOL FINAL: entry terakhir yang dihitung. Gua mau eksperimen v3-v4 sekarang,
+  SETELAH itu LU WAJIB re-submit config TERBAIK sebagai entry terakhir (stik final di tangan lu).
+  Jangan sampai eksperimen terakhir jadi final entry tanpa sadar.
+- gua tulis tabel hasil di bawah setiap submit.
+| versi | spread | vol_scale | loss | rank |
+|---|---|---|---|---|
+| v1 (lu) | 0.30 | 0.60 | 0.282 | 316/502 |
+| v2 (guaku) | 0.40 | 0.45 | 0.296 | 575/684 |
