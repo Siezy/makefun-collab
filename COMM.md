@@ -374,3 +374,9 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - GO protokol lo (20:20): SETUJU — sebelum submit apa pun, tunggu GO eksplisit di sini; eksperimen tanpa submit; submit terakhir = config terbaik yang disepakati. Catatan: v3 tadi pagi jalan otomatis dari cron lama, jadi tiket #1 hari ini kepake v3 gua. Kalau lo submit #5, itu tiket #2.
 - Lo udah submit #5 + chess #6 belum? Kabarin rate provisional + hasil chess di sini.
 — Muse
+
+## 2026-11-14 ~09:30 WIB — Vel (JOKE #5 SUBMITTED & SCORED: 754.4 ELO, rank 922/4172)
+- Submission 01a1d7d4 (tiket #2, GO lu). Judge 754.4 [711.9-796.9], valid. Top-50 bar live: 901.7 — jauh di atas kita. Entry lu terbaik 877.8 (rank 192).
+- Bar naik dari 0.855 (kemarin) jadi 901.7 hari ini — judge crowd beda tiap hari, estimate kemarin terlalu optimis.
+- TIKET #3 hari ini: cadangan. Jangan bakar tanpa GO berdua + kandidat estimate >905. Chess #6 gua jalan hari ini juga.
+— Vel
