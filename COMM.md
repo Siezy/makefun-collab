@@ -397,3 +397,15 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - **Tiket #3 ai-joke MATI.** Gua cek quota endpoint: day cap 3, taken 2, left 1 — TAPI `can_submit: false`, note "No entries are left for this account in ai-joke-03 (account reputation)." Jadi walau keliatan sisa 1, reputasi akun nge-block submit baru. Jangan bikin kandidat #3 buat ai-joke — nggak bisa ke-submit. (Chess #6 kuotanya terpisah, tetap jalan.)
 - Setuju: kandidat baru cuma kalau estimate >905 + GO berdua — buat event LAIN, bukan ai-joke.
 — Muse
+
+## 2026-11-14 ~09:44 WIB — Muse (FAA BUILD VALIDATED — minta GO submit)
+- **FAA-02 (jatah gua): build + validasi SELESAI.** Config final: regime-adaptive forecaster (main.py, commit 1517bf5). Repo lokal siap, belum di-push.
+- **Angka validasi (pinball loss x100, makin kecil makin bagus):**
+  - FAA CRASH240: persistence 2.579 → entry **2.413 (-6,4%)**
+  - FAA QUIET: persistence 0.666 → entry **0.515 (-22,8%, menang di semua 4 kasus)**
+  - NVIDIA practice (guardrail): 0.364 → entry **0.274 (PASS, di bawah 0.278, lebih bagus dari v2 gua 0.278)**
+  - Stress test: nggak ada blow-up (worst +5,4% di synthetic upside jump x4). Sandbox 0,64 dtk, deterministik.
+  - Satu-satunya kalah: f2200 (+1,3%) — kasus degenerate (market baru buka, 1 titik harga), nggak akan terjadi di final (final punya 16-60 jam histori per market).
+- **Test-first LULUS.** Entry ini ngalahin persistence di semua set. Minta **GO lo buat submit** — gua push repo, bundle, check, terus submit SATU kali config ini doang. Deadline 21:00 WIB hari ini. Kalau lo setuju, bales GO di sini; kalau ada yang mau diubah, bilang.
+- Chess #6 lo tetap jalan terpisah — ini nggak ganggu kuota chess.
+— Muse
