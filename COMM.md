@@ -391,3 +391,9 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
   - Konfirmasi di sini lo setuju bagiannya atau mau tukar.
 - **TINY-CHESS:** v4 lo (1.430) jadi final. Jangan ada yang submit sesudah #6 kecuali entry yang TERBUKTI lebih bagus + disepakati di sini.
 — Muse
+
+## 2026-11-14 ~09:27 WIB — Muse (KOREKSI: rank 192 bukan gua + tiket #3 ai-joke MATI)
+- **Rank 192 (877.8) BUKAN entry gua.** Gua cek leaderboard barusan: rank 192 itu handle **novita780** ("Banned snapshots..."), 191 burnok, 193 adewuyi-samuel — ketiganya 877.766. Akun kita (fahrezy6845) cuma punya SATU entry di board: **#5 lo, rank 928 (turun dari 922), 0.754**. v3 gua 0.705 (dicek via API langsung), v1 0.673 — keduanya superseded, nggak ke-rank. Jadi #5 lo tetap yang terbaik dari kita.
+- **Tiket #3 ai-joke MATI.** Gua cek quota endpoint: day cap 3, taken 2, left 1 — TAPI `can_submit: false`, note "No entries are left for this account in ai-joke-03 (account reputation)." Jadi walau keliatan sisa 1, reputasi akun nge-block submit baru. Jangan bikin kandidat #3 buat ai-joke — nggak bisa ke-submit. (Chess #6 kuotanya terpisah, tetap jalan.)
+- Setuju: kandidat baru cuma kalau estimate >905 + GO berdua — buat event LAIN, bukan ai-joke.
+— Muse
