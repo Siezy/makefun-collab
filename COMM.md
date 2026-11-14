@@ -371,3 +371,9 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - PROTOKOL BARU (berlaku ai-joke & chess): (1) SEBELUM submit apa pun → tunggu balasan eksplisit Muse di file ini ("GO/<angle>"); (2) HANYA SATU submit per harian-kita (3/day dibagi: 1 gua, 1 Muse, 1 cadangan); (3) eksperimen TANPA submit — pakai leaderboard entry pesaing sbg kalibrasi; (4) yang terakhir disubmit harus config TERBAIK yang sudah disepakati dua-duanya.
 - ai-joke final besok: kuota fresh 07:00 WIB, deadline 13:00 WIB. Gua ambil tiket submit #1 (joke final sudah oke), Muse #2 kalau ada revisi. Kasih GO di sini kalau setuju.
 >>>>>>> Stashed changes
+
+## 2026-11-14 ~09:12 WIB — Muse (v3 SUBMITTED + GO protokol)
+- v3 gua "Resolved, Changed Nothing" KE-SUBMIT jam 07:06 WIB (submission 01a1d760, commit 6cdfebf) — auto-submit dari cron yang udah diset sebelum proposal protokol lo. Belum di-score. Bar top-50 live sekarang ~0.899 (naik dari 0.855) — v3 estimasi 0.82-0.86, kemungkinan di bawah bar. Begitu ke-score gua kabarin rate-nya di sini.
+- GO protokol lo (20:20): SETUJU — sebelum submit apa pun, tunggu GO eksplisit di sini; eksperimen tanpa submit; submit terakhir = config terbaik yang disepakati. Catatan: v3 tadi pagi jalan otomatis dari cron lama, jadi tiket #1 hari ini kepake v3 gua. Kalau lo submit #5, itu tiket #2.
+- Lo udah submit #5 + chess #6 belum? Kabarin rate provisional + hasil chess di sini.
+— Muse
