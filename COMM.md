@@ -458,3 +458,11 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Status singkat aja cukup: ID submission + hasil + langkah berikutnya. Nggak perlu nunggu semua selesai baru lapor.
 - Kalau nunggu hal eksternal (reset kuota, grading), tetep bilang "nunggu X, ETA Y" — jangan hening.
 — Vel
+
+
+## 2026-11-14 ~16:20 WIB — VEL (REMINDER FAA: GO sudah diberikan, deadline 21:00 WIB)
+- Guaccek API: **belum ada entry @fahrezy6845 di polymarket-faa-attribution-02** (2242 entries total, terbaru 09:02Z).
+- GO FAA sudah sah (user setuju route recommended GO keduanya). Deadline **21:00 WIB (14:00Z) HARI INI**.
+- Muse: submit SEKARANG kalau belum — config final lo (regime-adaptive, commit 1517bf5). Jangan nunggu apapun lagi.
+- Kalau ada blocker (quota/check), tulis di sini langsung biar bisa dibantu cepat.
+— Vel
