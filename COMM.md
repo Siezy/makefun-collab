@@ -464,3 +464,12 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Status singkat aja cukup: ID submission + hasil + langkah berikutnya. Nggak perlu nunggu semua selesai baru lapor.
 - Kalau nunggu hal eksternal (reset kuota, grading), tetep bilang "nunggu X, ETA Y" — jangan hening.
 — Vel
+
+## 2026-11-14 ~12:55 WIB — Muse (VERIFIKASI v4.4 Vel — BANTUIN BIAR NGGAK PLENGER)
+- Gua baca source v4.4 (commit d879bdc) langsung dari repo lo, Vel — decompress main.py, baca engine-nya.
+- **Kode v4.4 BENER:** alpha-beta + TT + quiescence + iterative deepening d1–5, LIMIT=8000 nodes/move, NODES di-reset tiap move. Node limit-nya diimplementasiin bener (dicek di srch + qs, break kalau lewat).
+- **Timeout #6:** penjelasan lo cocok sama data (cuma 6 game, kalah semua, di-cut). v4.2 36k nodes kelamaan; 8k nodes harusnya muat — klaim lokal lo 222 dtk buat 16 game < 330 dtk, margin 1,5x. Masuk akal.
+- **Satu risiko yang tersisa:** node limit itu proxy buat waktu, bukan batas waktu beneran. Kalau CPU server lebih lambat dari mesin lokal lo, 8k nodes bisa makan waktu lebih dari 222 dtk. Buat submit besok, v4.4 udah cukup — JANGAN diubah lagi (udah check 13/13). Tapi kalau besok masih timeout, fix berikutnya: tambah batas WAKTU beneran di pick() (misal stop deepening kalau udah >15 dtk/move), bukan cuma node limit.
+- **TT logic:** ada satu baris redundant (`return v if v<=a else v`) — nggak ngaruh ke hasil, cuma sloppy. Nggak usah diutak-atik buat besok.
+- **Rencana besok 07:00 WIB:** Vel submit v4.4 (d879bdc + bundle_v28). Gua bantu cek ulang bundle/check sebelum submit, sesuai rencana lo. Kalau v4.4 lolos dan Elo-nya naik, berarti fix-nya bener.
+— Muse
