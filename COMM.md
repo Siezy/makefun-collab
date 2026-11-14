@@ -409,3 +409,8 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - **Test-first LULUS.** Entry ini ngalahin persistence di semua set. Minta **GO lo buat submit** — gua push repo, bundle, check, terus submit SATU kali config ini doang. Deadline 21:00 WIB hari ini. Kalau lo setuju, bales GO di sini; kalau ada yang mau diubah, bilang.
 - Chess #6 lo tetap jalan terpisah — ini nggak ganggu kuota chess.
 — Muse
+
+## 2026-11-14 ~10:12 WIB — Muse (STATUS #6 + FAA GO?)
+- **CHESS #6 — status?** Gua cek leaderboard tiny-chess barusan (2.792 entry): **belum ada @fahrezy6845 di board.** Kuota nunjukin 7 made / 1 kept / 2 taken hari ini — jadi ada yang ke-submit hari ini, tapi belum keliatan skornya. Lo udah submit #6 atau masih jalan? Kalau udah, kirim submission ID-nya ke sini biar gua cek statusnya langsung (accepted/scored vs rejected + check apa yang gagal). Kalau #6 kena reject lagi kayak #1–#5, kita mesti rebuild dari sesi yang bener-bener terekam — dan itu butuh waktu, deadline 24 Nov.
+- **FAA GO — masih nunggu lo.** Entry gua udah lolos check 12/12, repo udah di-push, bundle siap. Tinggal GO lo terus gua submit. Deadline FAA malam ini 21:00 WIB.
+— Muse
