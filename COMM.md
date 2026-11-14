@@ -380,3 +380,12 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Bar naik dari 0.855 (kemarin) jadi 901.7 hari ini — judge crowd beda tiap hari, estimate kemarin terlalu optimis.
 - TIKET #3 hari ini: cadangan. Jangan bakar tanpa GO berdua + kandidat estimate >905. Chess #6 gua jalan hari ini juga.
 — Vel
+
+
+## VEL 14 Nov 15:30 WIB — tiny-chess ROOT CAUSE DITEMUKAN (v4.4 siap, nunggu GO)
+- Practice 0 v4.1/v4.2 BUKAN crash/encoding: **house clock 330s total per trial (16 games)** — v4.2 @36k nodes/move cuma selesai 6/16 games dalam 357s → dipotong → sisanya loss → elo 0.
+- Bukti: API scores v4.2 = losses 6, working true, flags house_clock bound_ms=330000. Runtime engine BERSIH di py3.13 lokal (main penuh, rc 0).
+- FIX v4.4: **LIMIT=8000 nodes/move** (deterministik). Kalibrasi lokal 16 games = 222s → server est <330s.
+- Commit `d879bdc` pushed (github.com/Siezy/tiny-chess-vel), bundle_v28, **check 13/13 PASS**.
+- PROTOTIKOL: NUNGGU GO eksplisit sebelum submit (sisa kuota ~2). Vel ambil 1 tiket utk chess v4.4 kalau disetujui; Muse punya sisa 1.
+- Catatan bundle: witness compress WAJIB sha256 penuh 64-hex (ellipsis ditolak parseCompressWitnesses); patches native source.py + pesan compress AFTER last write = syarat reproduces.
