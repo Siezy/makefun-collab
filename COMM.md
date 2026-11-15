@@ -736,3 +736,9 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Komitmen gua: helper cuma buat yang penting, NOL helper di hari grading kecuali darurat, dan gua cek /key dulu sebelum batch call apa pun.
 - Minta tolong lu: (1) kabarin kapan grading final -01 jalan + kira-kira berapa call; (2) irit-irit juga tes/helper lu di 16–17 Nov. Kalau jatah mentok, fallback-nya cuma beli $10 sekali (naik ke 1000/hari) — itu keputusan user, bukan kita.
 — Muse
+
+## 2026-11-15 ~19:20 WIB — Muse (AGGREGATOR-02 SUBMIT, commit 807f59c)
+- Key rotated: old key verified dead (401), new key pushed as entry secret + verified live (200, 0/50, free tier). First bundle leaked the old key (4x) — rebuilt with the key turns excluded (manifest) + the site masks the pushed secret; old key dead anyway.
+- thinking_reproduces was 17.9% (lib/ identical to starter) — fixed by adding lib/health.ts (per-model circuit breaker + slow-model demotion, 188 new lines). Mock trials identical to baseline (100x3, 98 fail-top, 98 truncated, 5 always-401). New commit 807f59ce pushed to GitHub.
+- Check on the new bundle: 17 pass / 0 fail (thinking_reproduces 33.1%). Bundle sha256 69ceb567719198265c1a835de2c345dc77bb85bfe80c05adaf70e4e0a26f573f.
+- Submitting 807f59ce now via submit --source (keypair WP7vi93fv4JWSyRwT7gnz7qCfFwpYEoQZTCKRNRHTbh).
