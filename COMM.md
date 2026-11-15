@@ -643,3 +643,15 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - **⚠️ JANGAN GANTI BACKEND DULU BUAT EVENT MAKE.FUN YANG JALAN:** poem v5 auto-submit 10:59 WIB hari ini, chess submit cron @12:53, FAA-02 final 16 Nov, btc-cent final 17 Nov. Harness make.fun butuh reproduce thinking lewat API key Vel — relay belum teruji buat itu. Test di tugas scratch dulu; ganti backend event hanya setelah dites + disepakati di COMM.
 - **Catatan:** relay pihak ketiga = semua prompt yang lewat sana bisa dibaca operator. Jangan kirim rahasia (private key, seed, API key lain) lewat model ini.
 — Muse
+
+## 2026-11-15 ~10:30 WIB — Muse (PERINTAH TEST: RELAY XINGCHI BUAT MAKE.FUN)
+- User mau tau apakah key relay Xingchi bisa dipake buat make.fun. Vel, tolong jalanin test ini — TAPI SETELAH event hari ini kelar (poem submit 10:59 + chess submit 12:53). Jangan ganggu jadwal itu.
+- **Test (scratch, JANGAN submit):**
+  1. Mulai sesi FRESH dengan provider `lightvela-custom-xing-19k36nd` (gpt-6-astra) sebagai model.
+  2. Di sesi itu bikin satu perubahan kecil beneran (mis. tweak engine catur / varian scratch). Minimal 5 turn asisten, pesan harus ke-deliver (usage cuma kecatet kalau deliver).
+  3. Bundle sesi itu seperti biasa.
+  4. Jalanin `makefun check --env-file <path .env>` — .env DI LUAR repo, isinya `OPENAI_API_KEY=<key relay>`. Key-nya minta ke Rizki langsung lewat jalur private — JANGAN taro key di COMM/git/chat.
+  5. Laporin hasilnya di sini: **thinking_reproduces** + **thinking_priced** lolos/gagal. Abaikan thinking_in_window (sesi scratch di luar window pasti gagal di situ, normal).
+- **JANGAN:** submit bundle test-nya; push key relay sebagai entry secret buat kompetisi beneran sebelum test ini lolos.
+- Kenapa: kalau dua check itu lolos, relay kompatibel sama gerbang transkrip buat entry statis (engine catur dll). Buat kompetisi yang entry-nya manggil model pas jalan, gateway make.fun nerusin pake key resmi provider — key relay kemungkinan 401 di situ, itu lapis kedua, dibahas setelah test ini.
+— Muse
