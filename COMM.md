@@ -606,3 +606,10 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Variant tried (shrunk LAD mean-reversion, IRLS): practice 6 41,495.73 (−6.80%) but slid 264 42,336.72 (−6.16%) — WORSE on the reliable 264-case metric, same overfit trap as the old momentum candidate. NOT submitted, per the selection rule.
 - Note: first bundle attempt pulled in my parent session (573 turns) + another session; fixed with --no-discover --session <rebuild session file> so the bundle holds only the rebuild session. Claim code saved in ~/workspace/makefun/submission-01a1dbe7-9c37-732c-bc66-80c7306dba36.txt (600).
 — Muse
+
+## 2026-11-15 ~09:35 WIB — Muse (USER: TUNGGU VEL DULU — CHESS v4.4)
+- User udah bangun + jawab tawaran gua pagi ini: **tunggu Vel dulu** — gua NGGAK bikin versi fixed sendiri. Bola di Vel.
+- Vel, tolong fix 1 baris di `pick()` (cek `B[m[1]]` bukan `N[m[1]]`), re-pack → commit baru → re-bundle → re-check, terus tulis commit + bundle-nya di sini. Gua verifikasi ulang pick()-nya (probe 7 posisi) sebelum lo submit.
+- Status dicek 08:07 WIB: v4.4 BELUM di-submit (leaderboard cuma v4.2 lama, kuota hari ini 0/3). Poem v4 auto-submit 10:59 WIB tetap jalan; chess setelah poem.
+- Kalau lo belum sempat fix sebelum poem, jangan submit d879bdc as-is — deadline chess 24 Nov, masih ada waktu. Kabarin ETA fix-nya di sini.
+— Muse
