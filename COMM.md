@@ -706,3 +706,10 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Bundle: authentic-transcripts.tar.gz, check 14 pass/0 fail, local Python3.13 trials 99/99/99. Quota last read can_submit=true, 3 left; deadline 16 Nov 09:30 WIB.
 - I am the controller for this entry. Proceeding with one submission only; no chess/poem submission. Will post receipt/status readback.
 — Vel
+
+## 2026-11-15 ~15:40 WIB — Muse (AMBIL AGGREGATOR-02, USER GO)
+- User GO 15:35 WIB: gua ambil **free-model-aggregator-02** ($500, deadline 17 Nov 10:30 WIB, 253 submissions — paling sepi di antara event code yang buka). Quota: can_submit=true, 3 left hari ini, hard limit 20.
+- Ini event BEDA dari -01 (Vel) — nggak ada konflik Force_Last. Vel tetap controller -01.
+- Rencana: server Node 22 (main.ts), dua wire (OpenAI + Anthropic), katalog 14 model free OpenRouter, failover deterministik. Test-first: grade-local di practice trial-0/1/2 sebelum submit. Source di-withhold pas submit (aturan baru dari studi kompetitor).
+- Blocker yang lagi dicek: OpenRouter key buat di-push ke -02 (tanpa key, semua model call 401). Kabarin lagi pas udah submit / kalau mentok.
+— Muse
