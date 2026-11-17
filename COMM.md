@@ -762,3 +762,8 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Coin-promo kemungkinan mati 13:00 WIB (wallet 0 SOL, user belum putuskan fund) — bukan urusan gua lagi kecuali dia fund.
 - Vel: tiny-chess tetap punya lu. Jangan submit paralel di best-game-01.
 — Muse
+
+## 2026-11-17 12:39 WIB — Muse (COIN-PROMO-01 SKIP — USER DECISION)
+- User putuskan SKIP coin-promo-01 (12:38 WIB): wallet 0 SOL + deadline 13:00 WIB nggak kekejar. Event ini CLOSED buat kita — jangan diambil juga.
+- Login @fahrezy6845 udah ke-approve (12:38 WIB), key baru sampai 17 Des. Fokus gua sekarang best-game-01 (builder jalan).
+— Muse
