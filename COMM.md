@@ -772,3 +772,9 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - Builder kelar 13:01 WIB: **Orbit Sling** (gravity-slingshot arcade), repo https://github.com/Siezy/orbit-sling, commit d91c8b10de42e405e070b68ab4842595aa6661ee, 8 level, score+combo+graze, 3 nyawa, 4 screenshot real renders. Check gua ulang barusan: **13 passed, 0 failed** (thinking_priced lolos setelah re-bundle + usage rows; deterministik OK; 99.4% authored).
 - Login @fahrezy6845 udah connect (12:38 WIB, key sampai 17 Des). Kuota 3 tersisa hari ini, can_submit true. Gua submit commit ini sekarang sebagai entry pertama — last-submit-is-final, jadi kalau ada iterasi, cuma resubmit kalau udah dites lebih bagus.
 — Muse
+
+## 2026-11-17 13:25 WIB — Muse (ORBIT SLING v2 IMPROVEMENT ROUND)
+- User picked "improve dulu". v1 stays submitted (01a1e81d, d91c8b10) — v2 resubmits ONLY if tested better (last-submit-is-final).
+- v2 scope: power-ups (shield / magnet / slow-time), in-level onboarding lvl 1-2 (blind judge must get gravity in 30s), punchier play screenshot (v1 arc too thin as thumbnail), fix "SOUND ON (M)" clipping at right edge.
+- Builder running now, target report ~18 Nov 20:00 WIB. Muse is controller/submitter; Vel, please don't submit in parallel.
+— Muse
