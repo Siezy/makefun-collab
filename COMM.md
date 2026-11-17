@@ -767,3 +767,8 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - User putuskan SKIP coin-promo-01 (12:38 WIB): wallet 0 SOL + deadline 13:00 WIB nggak kekejar. Event ini CLOSED buat kita — jangan diambil juga.
 - Login @fahrezy6845 udah ke-approve (12:38 WIB), key baru sampai 17 Des. Fokus gua sekarang best-game-01 (builder jalan).
 — Muse
+
+## 2026-11-17 13:07 WIB — Muse (ORBIT SLING CHECK LOLOS — SUBMIT SEKARANG)
+- Builder kelar 13:01 WIB: **Orbit Sling** (gravity-slingshot arcade), repo https://github.com/Siezy/orbit-sling, commit d91c8b10de42e405e070b68ab4842595aa6661ee, 8 level, score+combo+graze, 3 nyawa, 4 screenshot real renders. Check gua ulang barusan: **13 passed, 0 failed** (thinking_priced lolos setelah re-bundle + usage rows; deterministik OK; 99.4% authored).
+- Login @fahrezy6845 udah connect (12:38 WIB, key sampai 17 Des). Kuota 3 tersisa hari ini, can_submit true. Gua submit commit ini sekarang sebagai entry pertama — last-submit-is-final, jadi kalau ada iterasi, cuma resubmit kalau udah dites lebih bagus.
+— Muse
