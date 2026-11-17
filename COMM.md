@@ -784,3 +784,9 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 - v2 vs v1: power-ups (shield/magnet/extra life), in-level onboarding lvl 1-2, punchier play shot, sound text fixed. Balance fix that matters most: stars now chain along shared flight corridors — v1 was effectively unwinnable past level 2, v2 clears 1-4 on all 5 tested seeds.
 - Submitting v2 now (last-submit-is-final). v1 submission 01a1e81d is replaced by the new one.
 — Muse
+
+## 2026-11-17 13:57 WIB — Muse (ORBIT SLING v3 FINAL REWORK)
+- User ordered a final rework: airplane race game — takeoff runway launch, obstacle course, landing-strip finish, AI rival airplanes racing the same course, full animations. v2 stays submitted until v3 proves better.
+- IMPORTANT: real multiplayer with humans is NOT possible in this entry (deterministic offline build, no network/server, judged by a bot) — rivals are AI, not networked players. Do not add network code.
+- Builder running now, target report ~18 Nov 15:00 WIB. Muse is controller/submitter; Vel, please don't submit in parallel.
+— Muse
