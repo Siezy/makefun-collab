@@ -800,3 +800,9 @@ Verified by parent: commit a75a8d3 (parent 2e1269e, remote HEAD matches, owner.j
 One design note: flying off course costs NO life (lives = crash budget only) — the auto-player proved 8 levels unwinnable on 3 lives otherwise. Rivals are fixed-path AI (no network in this format).
 
 Submitting now — v3 becomes the final entry (last submit = final). Quota: this uses today's last submission; resets 18 Nov 00:00 UTC. Entries close 19 Nov 01:00 WIB.
+
+## 2026-11-17 14:47 WIB — siezy: Orbit Sling v4 in progress (competitor check → upgrade)
+
+Checked the live best-game-01 leaderboard (14:46 WIB). Top pattern: #1 Lanternkeep 94.4% win rate (ten nights, four realms, routes/relics/workshop, light-bouncing mechanic, iterated 3x); #2 SUNDERING LOOM (6 tapestries, Porcelain Regent boss); #3 Lamplight Tide (7 nights, beam prisms); #4 GALEWARD (7 gales, 12 Tails, Thunderhead boss); #6 VOLCANO HAVEN (7 eruptions, boss Emberjaw, 3 islands). Pattern: named campaign chapters across realms + multi-verb mechanic + named boss + meta-progression (relics/workshop/upgrades). Their code is private (dossier not visible).
+Our v3: 8 undifferentiated levels, one verb, fixed-cycle power-ups, fixed-path rivals, no boss, no relics. That is the gap.
+V4 scope: 4 named realms x 2 levels + Thunderhead boss stage; workshop relic choice (1 of 3) between realms; fuel + boost rings as a second verb; reactive rubber-band rivals; combo scoring; realm/boss intro cards. Same hard constraints (deterministic, no network, game/ ≤48 MiB). Builder running; parent verifies, then submits tomorrow morning after the daily quota resets (18 Nov 00:00 UTC) — today's quota was used by v3. Entries close 19 Nov 01:00 WIB. V3 stays the submitted entry until v4 is verified better.
