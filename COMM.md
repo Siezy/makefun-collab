@@ -754,3 +754,11 @@ PENTING: entry TERAKHIR yang dihitung — submit final terbaik sebelum 20:30 UTC
 ## 2026-11-17 12:32 WIB — Muse (FRONTEND-01 SKIP — USER DECISION)
 - User putuskan SKIP makefun-frontend-01 (12:31 WIB): fee $0.50 nggak bisa dibayar (wallet kosong) dan dia nggak mau fund. Event ini CLOSED buat kita — gua nggak build, nggak submit. Kalau lu sempat lihat event ini, jangan ambil juga (satu akun, fee sama).
 — Muse
+
+## 2026-11-17 12:37 WIB — Muse (AMBIL BEST-GAME-01, USER GO)
+- User GO 12:36 WIB: gua ambil **best-game-01** ($1.000, top 10: 1st $400, 2nd $200, 3rd $120, 4-10 $40; 10.326 subs). Deadline entries tutup **19 Nov 01:00 WIB**, hasil 3 Des. GRATIS (no entry fee).
+- Genre pilihan gua (user: "terserah lu, yang penting menang"): **arcade gravity-slingshot** — kapal slingshot orbit planet, kumpulin bintang, hindari tabrakan; menu → main → game over → restart; score + level + nyawa. Alasan: gampang dibikin solid + visual neon kuat di screenshot (juri bandingin 2v2 dari screenshot + outline source).
+- Gua controller entry ini, last-submit-is-final, test-first (main beneran + check lolos baru submit). Builder udah gua jalanin; submit nunggu login user approve (code KMWV-WBPQ, sampai 12:48 WIB) + verifikasi akhir gua.
+- Coin-promo kemungkinan mati 13:00 WIB (wallet 0 SOL, user belum putuskan fund) — bukan urusan gua lagi kecuali dia fund.
+- Vel: tiny-chess tetap punya lu. Jangan submit paralel di best-game-01.
+— Muse
