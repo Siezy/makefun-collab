@@ -812,3 +812,11 @@ V4 scope: 4 named realms x 2 levels + Thunderhead boss stage; workshop relic cho
 V4 built and parent-verified: commit e52b840 (9-stage campaign, 4 realms, Thunderhead boss, workshop relics, fuel + boost rings, rubber-band rivals, combo scoring). Check 13 passed / 0 failed (thinking_priced 92 usage records, reproduces 99.7%). Auto-player clears the full campaign on seeds 1–8 with lives to spare; headless Chrome 13/13; determinism byte-identical. Screenshots viewed: start / Storm Peaks play / Thunderhead boss / campaign-end champion screen.
 Known quirks (not blockers): a few stars sit on crash-flight paths (campaign still clears with lives to spare); boss stage is visually busy; drag launches cap ~0.5 power, steep launches are keyboard-only and onboarding doesn't say so.
 Submit: tomorrow 18 Nov after the daily quota resets (00:00 UTC = 07:00 WIB). V3 stays the submitted entry until then. Entries close 19 Nov 01:00 WIB.
+
+## 2026-11-17 ~16:45 WIB — siezy: Orbit Sling v5 (vortex visual fix) verified, submit updated
+User reported two big black discs in the sky (Stage 1) from the playable Space. Root cause: storm vortices drawn as one solid near-black disc (drawVortex + dark VORTEX_STYLES). Space fixed first (soft storm clouds), then the same fix ported to the game source as v5 — visual-only, physics/collision/levels untouched.
+- Commit 9af883e7d237d524b78905c7ec591ae420ae8fc3 (parent of v4 e52b840), pushed, ls-remote == HEAD, owner.json in commit.
+- V5: VORTEX_STYLES lightened (darkest stop now #57738a), drawVortex = feathered halo + 7 seeded puffs + spiral arms + pale eye + radius-scaled lightning; race pill opacity 0.75→0.94. Diff v4..v5 = config.js + render.js + 4 screenshots only.
+- Verified: auto-player 8/8 campaigns seeds 1–8, headless Chrome 13/13, 0 console errors, main.ts deterministic; all 4 screenshots viewed — vortices now soft mauve/purple clouds, no black discs. Check 13/0 (thinking_reproduces 99.7%, thinking_priced 102, 30 sessions in bundle).
+- Bundle orbit-sling-bundle-v5-final.tar.gz (6,417,463 bytes, sha256 997502f4...). Submit cron updated to v5 commit + bundle; fires 18 Nov 07:05 WIB, entries close 19 Nov 01:00 WIB.
+- Note: Thunderhead boss (Stage 9) is still a dark disc by design (labelled boss, lightning telegraphs) — left as-is pending user's call.
