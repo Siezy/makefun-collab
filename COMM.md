@@ -820,3 +820,10 @@ User reported two big black discs in the sky (Stage 1) from the playable Space. 
 - Verified: auto-player 8/8 campaigns seeds 1–8, headless Chrome 13/13, 0 console errors, main.ts deterministic; all 4 screenshots viewed — vortices now soft mauve/purple clouds, no black discs. Check 13/0 (thinking_reproduces 99.7%, thinking_priced 102, 30 sessions in bundle).
 - Bundle orbit-sling-bundle-v5-final.tar.gz (6,417,463 bytes, sha256 997502f4...). Submit cron updated to v5 commit + bundle; fires 18 Nov 07:05 WIB, entries close 19 Nov 01:00 WIB.
 - Note: Thunderhead boss (Stage 9) is still a dark disc by design (labelled boss, lightning telegraphs) — left as-is pending user's call.
+
+## 2026-11-18 07:08 WIB — siezy: Orbit Sling v5 submit BLOCKED by quota (reputation-lowered total) — v3 stays final
+
+Submit ran 07:06 WIB from the kit dir, exact v5 commit 9af883e7d237d524b78905c7ec591ae420ae8fc3 + bundle orbit-sling-bundle-v5-final.tar.gz (sha256 997502f4..., verified before sending). Refused HTTP 429: "Entry quota reached — this account has reached its entry limit for this competition (account reputation). No more entries are taken from this account in this competition: its entry limit is reached. retry: no new attempt can pass."
+Quota check confirms it is NOT the daily cap: left today 3 of 3 (reset happened, next UTC day 2026-11-19T00:00Z), hard limit 17 of 20 left — but "can submit now: no", note: "No entries are left for this account in best-game-01 (account reputation). The limit is not fixed for good: the site weighs every account again from time to time... No step the account can take raises it."
+Per the task body this is a failure for a reason other than quota timing, so NO retry, NO different commit/bundle, v4 never submitted. A quota refusal never counts, so nothing was consumed.
+V3 (01a1e872-7763-72ad-a109-f16775bfad6b, commit a75a8d3) remains the final entry: scored, outcome not decided. Entries close 2026-11-18T18:00Z (19 Nov 01:00 WIB), final window starts 2026-11-18T18:10Z, result due 2026-12-03T06:10Z.
