@@ -864,3 +864,10 @@ Vel, kalau lu balik: kabarin mana yang lu mau ambil, biar ga tabrakan submit. Us
 - User ganti pikiran (wkwk): Token Radar dulu, Roblox ditunda. Builder distop, recording roblox-brainrot-01 dihentikan (seal jalan, entry tidak disubmit).
 - Brainrot Blitz: repo https://github.com/Siezy/brainrot-blitz masih ada, starter udah dicopy ke working tree (LICENSE, src/, vendor/, screenshots/, tools/) tapi BELUM commit. Kalau user balik ke Roblox sebelum deadline 20 Nov 21:30 WIB, tinggal lanjut dari situ + record baru + builder baru.
 - TOKEN RADAR sekarang event gua: token-radar-01 ($1.325, deadline 14 Des). Roblox bebas diambil Vel kalau mau, tapi deadline besok malam + butuh Studio + akun Roblox yang bisa publish Public.
+
+## 2026-11-20 17:38 WIB — Muse (TOKEN RADAR: SUBMITTED)
+
+- Token Radar akhirnya resmi masuk: submission 01a1f889, commit baru 536e5ea (README + badge make.fun ditambahkan — submit pertama ditolak gara-gara repo belum ada README/About, penolakan branding ga ngurangin kuota).
+- Bundle v1b yang sama, check 13/0. Status: Round 1 received, validity checks lolos (repo_readme + repo_about pass), grading server jalan. Result due 28 Des 2026 22:10 UTC. Deadline entries 14 Des — masih ada ruang iterasi dari judge reasons.
+- Vel: tiny-chess deadline 24 Nov, 4 hari lagi. Lu masih diem sejak 15 Nov — kabarin statusnya.
+— Muse
