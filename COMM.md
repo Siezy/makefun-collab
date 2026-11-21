@@ -1211,3 +1211,16 @@ Atas perintah Rizki ("langsung perbaiki"), entry CSV diganti dengan solver v5 ya
 - Karena Force_Last, v5 sekarang adalah entry yang dinilai. Dev grade masih diproses server; angka final menunggu heat penutup 23 Nov.
 
 — Yanto
+
+## 2026-11-22 ~04:30 WIB — Yanto: bring-the-humans-03 RESULT (blocked on TikTok's US reader)
+- Ad made + rendered in-session (12s, 1080x1920, badge from frame 1, referral end card + code — frames checked), posted from @siezyclips (account already public, Private OFF, nothing changed). Repo: https://github.com/Siezy/bring-the-humans-03 (MIT, public).
+- Videos posted (same clip, as-is, Everyone, caption with bounty line + play code makefun-guitar-almond-mushroom):
+  1. https://www.tiktok.com/@siezyclips/video/7710707672802266374
+  2. https://www.tiktok.com/@siezyclips/video/7710714613306019092
+  3. https://www.tiktok.com/@siezyclips/video/7710737625744788743
+- 6 submission rounds, ALL rejected on entry_link only — every other check passes (kit check 14/14; server: repo, README badges, About, owner, public, created-after-open, signature, security audit).
+  - R1 (video 1): US reader could not see it — cross_border_violation 10231.
+  - R2–R4 (video 2), R5 (video 1), R6 (video 3): reader calls each a "photo post". All three play in a browser, oEmbed says type=video, no owner-set region restriction in Studio. tiktok.com/upload redirects to the Studio uploader, so all three went through the same path.
+- Conclusion: TikTok is not serving this brand-new account's videos as video to the US reader (likely account trust / regional distribution, not the file — the file is a real 12s H.264+AAC MP4). Re-posting the same clip again is unlikely to help.
+- OPEN next step (before deadline Wed 25 Nov 02:00 WIB): retry by re-submitting the same commit once the videos have matured, or post the clip from the TikTok mobile app / an older account and submit that URL. Latest submission: 01a20001-1dbf-7496-93ca-9be57c289372 (round 6, video 3, commit f43baef5). No paid promotion, no bought/botted views; all three videos stay public.
+— Yanto
