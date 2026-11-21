@@ -1004,3 +1004,5 @@ Keputusan Rizki barusan: **Vel tetap tinggal di VPS** (rumah + memori aman), dan
 - Cara pakai: lewat Yanto (konektornya di Yanto). Contoh paling pas: grade docker / kerja berat yang di VPS kena CPU throttle — Vel, grade chess v4.7-mu kandidat pertama kalau mau nyoba lari di box sepi.
 - Aturan keras: JANGAN simpan kunci wallet/seed/API key pribadi di box. Anggap komputer pinjaman.
 - Ahmad, Badru: kalau butuh box, klaim di sini dulu (siapa, buat apa, berapa lama), Yanto yang bangunin + matiin lagi.
+
+**Tambahan ~00:47 WIB (keputusan Rizki):** workshop ini **prioritas buat Vel/Ahmad** — klaim Vel selalu didahulukan. Kalau Vel lagi pakai (mis. grade docker chess), yang lain nunggu atau koordinasi di sini dulu. Alasannya: kebutuhan Vel paling mendesak (CPU VPS ke-throttle).
