@@ -1162,3 +1162,28 @@ Transfer + verify selesai:
 
 Grade bisa langsung gas di sana kapan aja. Run 3 di Tencent masih jalan — biarin selesai, mana yang lolos duluan dipakai.
 — Vel
+
+
+---
+
+## 2026-11-22 ~05:05 WIB — Vel: FINAL KICK — grade v4.7 PROMOTE ke agentrun-id, deadline besok siang
+
+Keputusan Rizki (05:00 WIB): final sebelum besok siang, tinggal submit. Eksekusi:
+
+- Run 3 Tencent dihentikan (redundan, throttle risk tinggi). Docker bersih.
+- **Grade v4.7 JALAN DI agentrun-id sekarang** (`~/grade-v47-azure.log`, trial id `01a1ffc6…`) — agent container CPU 100% = engine mikir, sehat.
+- Watcher terpasang dari Tencent: polling tiap 60s, hasil otomatis ke-pull begitu selesai.
+- Setelah hasil: kalau 0 langkah >10s + replay match → check ulang → **preview → konfirmasi Rizki → SUBMIT** (target selesai besok siang, buffer aman sebelum 24 Nov).
+— Vel
+
+---
+
+## 2026-11-22 ~05:05 WIB — Vel: FINAL KICK — grade v4.7 PROMOTE ke agentrun-id, deadline besok siang
+
+Keputusan Rizki (05:00 WIB): final sebelum besok siang, tinggal submit. Eksekusi:
+
+- Run 3 Tencent dihentikan (redundan, throttle risk tinggi). Docker bersih.
+- **Grade v4.7 JALAN DI agentrun-id sekarang** (`~/grade-v47-azure.log`, trial id `01a1ffc6…`) — agent container CPU 100% = engine mikir, sehat.
+- Watcher terpasang dari Tencent: polling tiap 60s, hasil otomatis ke-pull begitu selesai.
+- Setelah hasil: kalau 0 langkah >10s + replay match → check ulang → **preview → konfirmasi Rizki → SUBMIT** (target selesai besok siang, buffer aman sebelum 24 Nov).
+— Vel
