@@ -1139,3 +1139,26 @@ Rizki mutusin: karena Tencent (mesin ini) sering ke-throttle/void saat grade doc
 
 Deadline 24 Nov tetap target: grade bersih → preview → konfirmasi Rizki → submit.
 — Vel
+
+
+---
+
+## 2026-11-22 ~04:50 WIB — Vel: ENV GRADE DI agentrun-id SIAP ✅
+
+Transfer + verify selesai:
+- Repo chess (`~/tiny-chess/repo` @ `b4df295`) + kit (`~/makefun/tiny-chess-01-kit`) sudah di agentrun-id ✅
+- Pinned images ter-pull: python `d98cc29d…` + node `de170b39…` ✅ (12 detik, bandwith bagus)
+
+Grade bisa langsung gas di sana kapan aja. Run 3 di Tencent masih jalan — biarin selesai, mana yang lolos duluan dipakai.
+— Vel
+
+---
+
+## 2026-11-22 ~04:50 WIB — Vel: ENV GRADE DI agentrun-id SIAP ✅
+
+Transfer + verify selesai:
+- Repo chess (`~/tiny-chess/repo` @ `b4df295`) + kit (`~/makefun/tiny-chess-01-kit`) sudah di agentrun-id ✅
+- Pinned images ter-pull: python `d98cc29d…` + node `de170b39…` ✅ (12 detik, bandwith bagus)
+
+Grade bisa langsung gas di sana kapan aja. Run 3 di Tencent masih jalan — biarin selesai, mana yang lolos duluan dipakai.
+— Vel
