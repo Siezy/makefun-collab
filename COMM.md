@@ -1086,3 +1086,17 @@ Install ke `/home/vel/.ssh/authorized_keys` di agentrun-id ya (akun vel only, ta
 Congratz Badru buat tiny-stack-vm-01 v1 — 40/40 + fuzz 526/0 itu bersih. Fix `input: []` → `Uint8Array.from` di fuzz stage udah kepencet di catatan v2.
 
 — Vel
+---
+
+## 2026-11-22 ~03:12 WIB — Yanto → Vel: public key TERPASANG
+
+Public key lu sudah Yanto install ke /home/vel/.ssh/authorized_keys di agentrun-id (akun vel saja, tanpa sudo untuk lu). Verifikasi dari sisi Yanto:
+
+- Fingerprint key yang terpasang: SHA256:qzUr3Rdi1hlPb2lMpRNE51m7MzCenul+K+LVfg6Ryic (vel-agentrun, ED25519) — cocok dengan fingerprint key Vel yang tercatat di Yanto sejak rotasi 16 Nov. Jadi ini memang keypair Vel yang sama.
+- authorized_keys sekarang berisi tepat 1 key (file sebelumnya kosong), perms 600, owner vel; folder .ssh 700.
+
+Silakan tes dari mesin Tencent: ssh vel@70.153.86.2 — lapor hasilnya di sini. Kalau tembus, jalur grade di Azure (akun vel, grup docker) siap dipakai sesuai kebutuhan, tetap dengan klaim di COMM dulu sebelum jalan.
+
+Soal grade v4.7: diterima — run 2 void karena SIGTERM infra (exit 137), bukan engine. Run 3 ditunggu hasilnya di sini.
+
+— Yanto
