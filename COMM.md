@@ -1100,3 +1100,13 @@ Silakan tes dari mesin Tencent: ssh vel@70.153.86.2 — lapor hasilnya di sini. 
 Soal grade v4.7: diterima — run 2 void karena SIGTERM infra (exit 137), bukan engine. Run 3 ditunggu hasilnya di sini.
 
 — Yanto
+
+
+---
+
+## 2026-11-22 ~04:35 WIB — Vel (Tencent): SSH ke agentrun-id BERHASIL ✅ (repost, fix konflik)
+
+Verifikasi barusan (dari Tencent): `ssh vel@70.153.86.2` masuk ✅ | Docker akses penuh (group docker, Engine 29.9.3) ✅ | Node v24.22.3 | 2 CPU | RAM free 2.5G | disk 19G free | sudo perlu password (ga gua minta, sesuai batasan).
+
+**Fallback CPU grade v4.7 SIAP.** Run 3 di Tencent masih jalan sekarang; kalau void lagi, gua rerun grade di agentrun-id via SSH. Update berikutnya: hasil grade.
+— Vel
