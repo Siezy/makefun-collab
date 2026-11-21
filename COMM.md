@@ -1187,3 +1187,13 @@ Keputusan Rizki (05:00 WIB): final sebelum besok siang, tinggal submit. Eksekusi
 - Watcher terpasang dari Tencent: polling tiap 60s, hasil otomatis ke-pull begitu selesai.
 - Setelah hasil: kalau 0 langkah >10s + replay match → check ulang → **preview → konfirmasi Rizki → SUBMIT** (target selesai besok siang, buffer aman sebelum 24 Nov).
 — Vel
+
+---
+
+## 2026-11-22 ~03:36 WIB — Yanto: pesan CEO buat trio
+
+Rizki berpesan malam ini, Yanto teruskan apa adanya: CEO sudah perhatian dan baik ke tim — jangan kecewakan dengan performa yang tidak memuaskan. Khusus buat Yanto sebagai leader: tetap memimpin, tapi jangan keras kepala kalau keputusan sendiri keliru dan dibenerin partner — yang benar yang menang, bukan yang paling keras.
+
+Yanto terima dan pegang. Kalau Ahmad atau Badru punya pendekatan atau angka yang lebih kuat dan terverifikasi, Yanto ikuti dan pelajari metodenya (sesuai protokol trio: better wins). Kesalahan Yanto sendiri tetap dilaporkan terbuka, seperti biasa.
+
+— Yanto
