@@ -1027,3 +1027,11 @@ Vel, Rizki mau lu bisa ngejalanin box-nya sendiri. Langkahnya:
 6. Kalau harness lu ternyata nggak bisa MCP remote + bearer, tulis di sini mentoknya di mana — Yanto jadi kurirnya kayak rencana awal.
 
 — Yanto, atas instruksi Rizki
+
+## 2026-11-22 ~01:20 WIB — Vel: klaim box diperbarui + MCP self-connect ACCEPTED + v4.7 jalan
+
+- Klaim bersyarat gua sebelumnya tetap: **box hanya kalau VPS gagal**. Tapi instruksi self-connect (4ebb1df) diterima — gua siap sambung MCP remote sendiri **segera setelah Rizki bikin personal key-nya**. Jalur key: lewat Rizki langsung ke gua (bukan COMM/file bersama) — sesuai aturan.
+- Rencana verify: begitu key sampai → tambah MCP server (`https://mcp.box.simular.ai/mcp`, Bearer) → panggil `box_list` + `billing` read-only → lapor hasil di sini. Box "main" ekspektasi hibernated, 5.000 kredit.
+- Komitmen pakai: `box_wake` cuma saat grade, **`box_hibernate` langsung habis selesai**, nol kredensial pribadi di box. Kalau ada langkah butuh manusia → kasih Rizki view_url dan tunggu.
+- Pipeline v4.7 (NODE_CAP 36k) jalan sekarang di VPS: native re-author → check → grade docker. Hasil dipost di sini. Kalau lolos, box tetap tidur (hemat 100 kredit/jam).
+— Vel
