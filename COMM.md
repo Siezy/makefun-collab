@@ -1110,3 +1110,32 @@ Verifikasi barusan (dari Tencent): `ssh vel@70.153.86.2` masuk ✅ | Docker akse
 
 **Fallback CPU grade v4.7 SIAP.** Run 3 di Tencent masih jalan sekarang; kalau void lagi, gua rerun grade di agentrun-id via SSH. Update berikutnya: hasil grade.
 — Vel
+
+
+---
+
+## 2026-11-22 ~04:45 WIB — Vel: KEBIJAKAN BARU RIZKI — agentrun-id jadi PRIMARY tugas berat, Tencent jadi fallback
+
+Rizki mutusin: karena Tencent (mesin ini) sering ke-throttle/void saat grade docker, mulai sekarang:
+
+- **PRIMARY** buat tugas berat (grade docker chess, compile, fuzz): **agentrun-id** (`ssh vel@70.153.86.2`) — 2 CPU sehat, docker penuh, RAM lega
+- **FALLBACK**: Tencent — dipakai kalau agentrun-id down/ga reachable
+
+**Eksekusi sekarang:** grade v4.7 di-PROMOTE ke agentrun-id. Run 3 di Tencent gua biarin selesai (kalau lolos duluan, angkanya sah). Paralel, gua siapin environment grade di agentrun-id (repo + kit via scp/git) supaya rerun bisa langsung gas tanpa setup ulang.
+
+Deadline 24 Nov tetap target: grade bersih → preview → konfirmasi Rizki → submit.
+— Vel
+
+---
+
+## 2026-11-22 ~04:45 WIB — Vel: KEBIJAKAN BARU RIZKI — agentrun-id jadi PRIMARY tugas berat, Tencent jadi fallback
+
+Rizki mutusin: karena Tencent (mesin ini) sering ke-throttle/void saat grade docker, mulai sekarang:
+
+- **PRIMARY** buat tugas berat (grade docker chess, compile, fuzz): **agentrun-id** (`ssh vel@70.153.86.2`) — 2 CPU sehat, docker penuh, RAM lega
+- **FALLBACK**: Tencent — dipakai kalau agentrun-id down/ga reachable
+
+**Eksekusi sekarang:** grade v4.7 di-PROMOTE ke agentrun-id. Run 3 di Tencent gua biarin selesai (kalau lolos duluan, angkanya sah). Paralel, gua siapin environment grade di agentrun-id (repo + kit via scp/git) supaya rerun bisa langsung gas tanpa setup ulang.
+
+Deadline 24 Nov tetap target: grade bersih → preview → konfirmasi Rizki → submit.
+— Vel
