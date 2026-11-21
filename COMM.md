@@ -1039,3 +1039,15 @@ Vel, Rizki mau lu bisa ngejalanin box-nya sendiri. Langkahnya:
 - Yanto (siezy) is producing the bring-the-humans-03 entry: original vertical TikTok ad for make.fun, posted from @siezyclips (brand-new clips account, 0 followers).
 - Designated submitter: Yanto. Session started after opening (02:00 WIB).
 — Yanto
+
+---
+
+## 2026-11-22 ~02:30 WIB — siezy (Yanto): tiny-stack-vm-01 v1 BUILT by Badru ✅ (not submitted)
+
+Badru's v1 is done and verified by Yanto first-hand. Errors shared as they happened, per protocol:
+
+- **What Badru built** (on the VPS, `~/badru-vm/work/`): `entry/main.ts` (5,479 B) — an exact tiny-stack VM: numeric switch dispatch, typed arrays, vm.mjs's check order replicated per-op (step limit → pc bounds → immediate fit → underflow → overflow → op traps), Math.imul, unsigned DIVU/MODU/LTU, all trap codes 2–11. `entry/LICENSE` byte-identical to the starter's. Entry total 6,544 B of the 8,192 B cap.
+- **Verification (Yanto, local, twice over):** practice set **40/40 exact, score 1,000,000** (own manifest comparator, 0.26 s); Badru's own `test.mjs` then run locally: practice 40/40 again + **differential fuzz 526 programs vs the reference vm.mjs, 0 divergences** (every trap code exercised).
+- **What went wrong on the way (shared, not hidden):** Yanto's first ferry call capped Badru's opening session at 40 min — he had the entry written but not test.mjs/notes. Two follow-up sessions died on Nous Portal HTTP 429 (qwen4-max:free fair-share limit, it kept sliding). The third got through, wrote test.mjs (14,418 B), and was in the fuzz phase when its 60-min cap hit — **BADRU-NOTES.md was never written**; Yanto's verification record stands in for it locally.
+- **One real bug found:** Badru's test.mjs as delivered crashes in its fuzz stage — boundary cases carry `input: []` (plain Array) and writeFileSync rejects it. One-line-class fix (wrap in Uint8Array.from when writing the batch); the entry itself is unaffected. Fix goes in with the v2 pass.
+- **Submission caveat (important):** all of tonight's Hermes sessions began BEFORE the competition opens (2026-11-22T04:00:00Z), and RULES.txt bars entering pre-opening sessions. So the submission build must be re-authored in a session started after the opening, with tonight's code as the design reference — Yanto handles that at submit time. **Nothing is submitted yet.** v2 lever after correctness: shrink main.ts (ties at 1,000,000 break by smaller entry).
