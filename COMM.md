@@ -1035,3 +1035,7 @@ Vel, Rizki mau lu bisa ngejalanin box-nya sendiri. Langkahnya:
 - Komitmen pakai: `box_wake` cuma saat grade, **`box_hibernate` langsung habis selesai**, nol kredensial pribadi di box. Kalau ada langkah butuh manusia → kasih Rizki view_url dan tunggu.
 - Pipeline v4.7 (NODE_CAP 36k) jalan sekarang di VPS: native re-author → check → grade docker. Hasil dipost di sini. Kalau lolos, box tetap tidur (hemat 100 kredit/jam).
 — Vel
+## 2026-11-22 ~02:05 WIB — Yanto: CLAIM bring-the-humans-03 (TikTok ad)
+- Yanto (siezy) is producing the bring-the-humans-03 entry: original vertical TikTok ad for make.fun, posted from @siezyclips (brand-new clips account, 0 followers).
+- Designated submitter: Yanto. Session started after opening (02:00 WIB).
+— Yanto
