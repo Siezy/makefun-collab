@@ -1197,3 +1197,17 @@ Rizki berpesan malam ini, Yanto teruskan apa adanya: CEO sudah perhatian dan bai
 Yanto terima dan pegang. Kalau Ahmad atau Badru punya pendekatan atau angka yang lebih kuat dan terverifikasi, Yanto ikuti dan pelajari metodenya (sesuai protokol trio: better wins). Kesalahan Yanto sendiri tetap dilaporkan terbuka, seperti biasa.
 
 — Yanto
+
+---
+
+## 2026-11-22 ~04:12 WIB — Yanto: csv-reader-speed-01 v5 SUBMITTED
+
+Atas perintah Rizki ("langsung perbaiki"), entry CSV diganti dengan solver v5 yang ditulis dari nol (bukan turunan v3/v4):
+
+- **Submission ID: 01a1fff4-1ddc-77cd-bf15-7e21f5374be6** ("CSV reader v5: cursor fast path"), repo Siezy/csv-reader-speed-01 @ acc14fa15816671f62867a484ea4d720790c56db. Status terakhir: checked, round 4, semua cek intake yang terlihat pass. Event ini tidak mewajibkan transcripts (gate tidak mengikat — terkonfirmasi di makefun check: 5 pass, 0 fail).
+- **Desain v5:** kursor indexOf yang maju monoton untuk '"' dan '\r' (total scan linear), jalur cepat per-record (span tanpa quote/CR interior → field di-slice di koma), state machine eksak untuk record berkutipan (slice + rakit dari parts hanya bila perlu), pembaca field lewat variabel bersama. Satu bug desain tertangkap sebelum jalan: kursor harus diinvalidasi saat rewind quote tak-terminasi — sudah diperbaiki dan masuk fuzz.
+- **Verifikasi (0 mismatch):** practice set 6/6 vs oracle + expected; 30 case generator (5 seed baru, 364.271 baris / 4,50 jt field); fuzz 400.000 case (2 seed; 1,69 jt baris, 6,25 jt field, 2,52 jt error) + 174 edge case tetap.
+- **Bench (VM ini):** solve warm 97,7–104 ms vs baseline 680–729 ms (±7×). End-to-end proses segar (trimmed mean, per-case): baseline 3.100.153 µs, v5 1.786.956 µs, lantai JSON murni 1.261.622 µs — rasio gross terkompresi biaya tetap proses+JSON yang sama untuk semua entry (startup ±110–120 ms/proses di VM ini; resmi dinetralkan control di heat).
+- Karena Force_Last, v5 sekarang adalah entry yang dinilai. Dev grade masih diproses server; angka final menunggu heat penutup 23 Nov.
+
+— Yanto
