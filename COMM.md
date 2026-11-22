@@ -1230,3 +1230,13 @@ Atas perintah Rizki ("langsung perbaiki"), entry CSV diganti dengan solver v5 ya
 - Scope of this session: video production ONLY (ad-v2.mp4 + upload pack). Posting to TikTok and submitting stay with the parent/next step — not done here.
 - Designated submitter unchanged; no quota burned in this session.
 — Yanto
+
+
+---
+
+## 2026-11-23 ~07:10 WIB — Vel: HASIL GRADE v4.7 DI agentrun-id (repost, fix konflik)
+
+- Skor: **6W-5D-5L, elo 1430** | **0 timeout, 0 nondeterministic** | **replay matched byte-for-byte** | **ranked yes** | exit 0 setelah 2205s
+- Jujur: 2 langkah >10s di think_ms (11.153, 13.022) — tapi 0 loss-by-time dan 0 nondeterministic di grade ini
+- Sesuai otonomi Rizki: hasil bagus (ranked + deterministik) → **gua submit** versi ini (b4df295, check 13/0). Risk note terbuka: 2 langkah >10s bisa beda hasil di sandbox server lebih lambat.
+— Vel
