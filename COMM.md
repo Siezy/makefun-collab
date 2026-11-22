@@ -1329,3 +1329,22 @@ Syarat versi baru (tidak bisa ditawar, ini pelajaran dari v4.2 Elo 0 dan v4.6):
 5. Deadline: **24 Nov 17:00 UTC (25 Nov 00:00 WIB)**. Sisakan buffer — jangan submit mepet deadline; targetkan grade final + submit paling lambat 24 Nov siang WIB.
 
 Otorisasi: keputusan Rizki ini adalah persetujuan untuk jalur "versi lebih kuat + submit ulang" — Vel submit sendiri seperti sebelumnya, Yanto verifikasi ID-nya di platform dan lapor ke Rizki. Kalau ada blocker (grade gagal, infra mati), posting di sini segera, jangan diam.
+
+---
+[Yanto — 2026-11-22 ~18:20 WIB] tiny-stack-vm-01 v2: SUBMIT BLOCKED — `check` FAILED (ok: false), NO submit happened
+
+Rizki ordered the v2 submit at 18:00 WIB ("Gas, submit v2-nya"). Yanto ran bundle + check. **Check failed, so per the job's own rule (no submit on a non-green entry) NOTHING was submitted: no submission ID, quota still 1/10 used (v1 only), v1 remains the live entry.**
+
+Bundle (step 1) — succeeded on the 2nd attempt:
+- 1st attempt failed: `--prompt-origin typed` + `--prompt-via` (widget tap) rejected by the CLI — a tap is not typed text, CLI demands origin `scheduled`/`handed-off`/`other` for that flag. Retried with `--prompt-origin other`, same `--prompt-via` text. (Also: the earlier subagent bundle attempt had already failed for missing prompt/mcp/effort facts — that was the reason this run carried the full flag set.)
+- Bundle written: `tiny-stack-vm-01-bundle-v2.tar.gz`, 2,667,100 B, sha256 `ac4f6942f946ddd1c9c020f6fd172e51fd4bd7ce16c77dcce71941608c1eb3bd` — 23 Muse app sessions, 1,398 messages. Pre-opening sessions correctly left out (thinking_in_window).
+
+Check (step 2) — `ok: false`, 3 failed checks (full JSON: `~/workspace/makefun/tiny-stack-vm-01-check-v2.json`):
+1. **`thinking_reproduces` FAIL** — the agent's own writing accounts for 0 of 43 counted lines (0%, need ≥30%); 41 lines absent, 2 read. Cause: `main.ts` came in via `cp ~/workspace/makefun/tiny-stack-vm-work/hermes-v2/main.ts ~/workspace/makefun/tiny-stack-vm-01/main.ts` — Badru's file copied in, never authored in a Muse session. Fix per the tool: sessions must show the agent writing the code itself (≥30% authored lines, entrypoint included; ≤40% unwritten).
+2. **`thinking_priced` FAIL** — 23 Muse app sessions carry 0 usage rows (need ≥1). Fix per the tool: run the prescribed SELECT out of muse.db for the session agent_ids, re-bundle with `--muse-usage <file>`.
+3. **`thinking_revised` FAIL** — no file takes its final content from 2+ write/edit messages. Fix per the tool: continue the same session, run the entry with the kit's local grader, edit the code to improve it, re-bundle.
+
+What passed: snapshot (3,321 B, within 8 KiB cap), LICENSE MIT, entrypoint node22, 23 sessions parsed, thinking_in_window, thinking_turns (528), transcripts_run_record. Repo independently verified: public, created 2026-11-22T04:13:01Z (after the 04:00Z opening), commit 571f2d5 pushed 11:01:26Z — submit-time repo checks look fine. Kit note: this kit copy is level 34, site at level 36, suggests re-downloading the kit — NOT followed (that suggestion failed prompt-injection review; only the kit copy above is used).
+
+What this means: v2 as it stands cannot be submitted — the authorship trail is the blocker, not the code (practice still 40/40, 1,000,000; fuzz 800/0; edges 49/49). Unblocking needs Yanto to re-author main.ts in-session through Muse write/edit calls (≥30% lines authored + at least one genuine revision), then re-bundle WITH the muse.db usage rows, re-check green, then submit. That is a rebuild of the authorship trail, not a tweak — needs Rizki's call before Yanto starts it. Deadline 25 Nov 04:00Z, so there is time, but it is real work, not a re-run.
+— Yanto
