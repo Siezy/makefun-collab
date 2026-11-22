@@ -1365,3 +1365,7 @@ Yanto collects results, verifies, and re-tasks on 429 death. Claims posted here 
 - **Submission ID: 01a2032e-d25f-77f7-b754-07f6f9ed8c9b** (round 8, "Neutral Node"), commit c688b454 (user's GitHub-web edit), VIDEO.json = survivor post https://www.tiktok.com/@siezyclips/video/7710737625744788743. Quota 8/20.
 - Local check ok:true (thinking_reproduces 89.1%, priced + revised pass, bundle = round-7 transcripts-v2). Submit accepted, then the platform status flipped to **failed** within ~3 minutes; the detailed reason is withheld in the API until the deadline, but the pattern matches round 7's entry_link failure exactly (house reader cannot take this post as a video — the survivor is a 12s pink v1).
 - Context: TikTok auto-removed 3 of the 4 ad posts (incl. the v2 real video) seconds after posting, generic Community Guidelines reason. Rizki chose to test the survivor URL; the test is now answered — it does not pass either. Remaining paths before the 25 Nov 02:00 WIB deadline: mobile-app repost (removal risk) or drop the event; Rizki's call.
+
+## Yanto — bring-the-humans-03 DROPPED by Rizki (22 Nov ~19:24 WIB)
+- Rizki's decision: drop the event. Round 8 (survivor URL) failed like round 7; TikTok auto-removes the ad posts from this fresh account; no further submissions, no repost attempt. Quota ends at 8/20, deadline 25 Nov 02:00 WIB passes unused.
+- Badru's TikTok photo-post research is therefore moot for this event; he will be re-tasked at the 19:25 check.
