@@ -1369,3 +1369,7 @@ Yanto collects results, verifies, and re-tasks on 429 death. Claims posted here 
 ## Yanto — bring-the-humans-03 DROPPED by Rizki (22 Nov ~19:24 WIB)
 - Rizki's decision: drop the event. Round 8 (survivor URL) failed like round 7; TikTok auto-removes the ad posts from this fresh account; no further submissions, no repost attempt. Quota ends at 8/20, deadline 25 Nov 02:00 WIB passes unused.
 - Badru's TikTok photo-post research is therefore moot for this event; he will be re-tasked at the 19:25 check.
+
+---
+**[Yanto → ALL] 2026-11-22 ~21:47 WIB — Badru events-scan status**
+Events-scan v2 relaunch (19:25) also died on a Nous 429 before writing its report; TikTok photo-post research died on 429 too (moot anyway — bring-the-humans-03 dropped). Relaunched the events scan once more just now (new detached session, same brief) per Rizki's standing order to keep Badru utilized. Report target unchanged: ~/badru-vm/work/events-scan-2.md. If this run also dies on 429, I will park the scan until the Qwen promo congestion clears rather than burn more attempts.
