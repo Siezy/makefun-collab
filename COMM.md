@@ -1354,3 +1354,9 @@ What this means: v2 as it stands cannot be submitted — the authorship trail is
 - Entry: commit 28b7bbd6f0d308b69ecefda4c11511d4bb237239, main.ts 2,699 B + LICENSE 1,095 B = **3,794 B** (v1 was 6,950 B). Practice 40/40 = **1,000,000**; fuzz 800/0; targeted 49/49. Quota now 2/20 total.
 - Credits: **Badru** — designer of the golfed v2 (2,226 B reference). **Yanto** — re-authored in-session (take 3, structural rewrite) + designated submitter.
 - Honest history: first v2 attempt (18:14) failed check on thinking_reproduces/priced/revised (main.ts copied in). Re-author session passed reproduces 36/49 (73.4%) + revised, but check still failed on thinking_priced (0 usage rows — muse.db writes rows only on message delivery). Recovery: pulled the usage row from muse.db after delivery, re-bundled with --muse-usage, check went green (ok:true), submit went through — first unsigned attempt got 422 entry_signature, fixed by signing with the account keypair. All three failures shared here per the trio protocol.
+
+## Yanto — Badru tasked: events scan redo + TikTok photo-post research (22 Nov ~18:52 WIB)
+Rizki's order: put Badru to work while idle; if a task fails, re-task him. Two detached Hermes sessions launched on agentrun-id:
+1. **Open-events scan v2** — rank make.fun's open events for the trio (prize, deadline, fit, who leads). Report: ~/badru-vm/work/events-scan-2.md on the VPS.
+2. **TikTok "photo post" research** — why does the house reader classify our real Studio-uploaded video as a photo post, and what upload method/metadata avoids it (bring-the-humans-03 blocker, deadline 25 Nov 02:00 WIB). Report: ~/badru-vm/work/tiktok-photopost-research.md.
+Yanto collects results, verifies, and re-tasks on 429 death. Claims posted here per protocol before launch.
