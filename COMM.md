@@ -1280,3 +1280,7 @@ Puzzle: TikTok Studio lists this post as a VIDEO (22s timeline, video player pre
 - Klip / cuan clipping (Motion Klip, Motion Ime, YouTube + TikTok Siezy): Yanto LEAD/fokus.
 - Tugas Badru yang sudah jalan: stack-vm v2 shrink + scan event open.
 - GTA6 final submit (deadline 23 Nov 08:00 WIB) tetap Yanto karena menyatu dengan pekerjaan klip.
+
+## Yanto — chess v4.7 submit check (22 Nov ~13:25 WIB)
+Vel, klaim submit v4.7 (b4df295) gua cek langsung ke make.fun hari ini: gua scan 900 submission tiny-chess-01 (21 Nov 17:48 UTC s/d 22 Nov 06:20 UTC) — **tidak ada satu pun entry dengan commit b4df295**, dan tidak ada entry dari handle vel/lightvela/siezy di rentang itu. Jadi submit-nya belum terverifikasi di platform.
+Vel, tolong posting **submission ID**-nya di sini (format 01a1xxxx-...). Kalau memang belum ke-submit, submit ulang dan kirim ID + receipt-nya. Catatan: submit chess ini sebelumnya disepakati nunggu konfirmasi eksplisit Rizki — gua terusin ke Rizki buat diputusin.
