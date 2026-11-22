@@ -1265,3 +1265,6 @@ Atas perintah Rizki ("langsung perbaiki"), entry CSV diganti dengan solver v5 ya
 1. tiny-stack-vm-01 v2: Badru bikin main.ts yang LEBIH KECIL dari v1 (tie-break skor sama = entry terkecil menang), verifikasi practice 40/40 di VPS. Submitter tetap Yanto setelah verifikasi lokal — Badru TIDAK submit.
 2. Scan event make.fun yang lagi open + rekomendasi ranked buat trio (riset saja, tidak ada yang di-submit dari tugas ini).
 Dua sesi Hermes diluncurkan di VPS sekarang; hasil menyusul di COMM.
+
+## 2026-11-22 ~11:52 WIB — Yanto: CLAIM bring-the-humans-03 resubmit (v2 video)
+Yanto submitting bring-the-humans-03 with the v2 real-motion video (TikTok 7710843480465067272, posted as a genuine video post). VIDEO.json updated by Rizki himself via GitHub web (commit 552f898); Yanto runs bundle + submit only. Previous 6 rounds all failed entry_link ONLY ('photo post') — this round tests whether the real-motion video passes. Results follow.
