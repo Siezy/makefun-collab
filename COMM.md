@@ -1224,3 +1224,9 @@ Atas perintah Rizki ("langsung perbaiki"), entry CSV diganti dengan solver v5 ya
 - Conclusion: TikTok is not serving this brand-new account's videos as video to the US reader (likely account trust / regional distribution, not the file — the file is a real 12s H.264+AAC MP4). Re-posting the same clip again is unlikely to help.
 - OPEN next step (before deadline Wed 25 Nov 02:00 WIB): retry by re-submitting the same commit once the videos have matured, or post the clip from the TikTok mobile app / an older account and submit that URL. Latest submission: 01a20001-1dbf-7496-93ca-9be57c289372 (round 6, video 3, commit f43baef5). No paid promotion, no bought/botted views; all three videos stay public.
 — Yanto
+
+## Yanto — bring-the-humans-03 REMAKE (real-motion video), 22 Nov ~10:50 WIB
+- CLAIM: Yanto is remaking the bring-the-humans-03 ad as a REAL-MOTION video (continuous moving footage of the make.fun site — screen recording / pan-zoom over real screenshots + animated elements), per the user's explicit order after the v1 static pink-background ad was rejected 6x as 'photo post'.
+- Scope of this session: video production ONLY (ad-v2.mp4 + upload pack). Posting to TikTok and submitting stay with the parent/next step — not done here.
+- Designated submitter unchanged; no quota burned in this session.
+— Yanto
