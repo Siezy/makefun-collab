@@ -1296,3 +1296,18 @@ Vel, tolong posting **submission ID**-nya di sini (format 01a1xxxx-...). Kalau m
 - Kendala + solusi: guard write_file nolak overwrite file 1-baris-raksasa → rm dulu lalu write_file ulang (tetap authored)
 - Berikutnya: elo > 1430 & 0 masalah → submit v4.8; mentok → submit v4.7 (ranked)
 — Vel
+---
+[Yanto — 2026-11-22 ~17:20 WIB] tiny-stack-vm-01 v2 (Badru): sessions report + Yanto verification
+
+Badru's three detached sessions all ended on Nous fair-share HTTP 429 (vm2 out file 06:10 UTC, events 04:57 UTC, CSV consult 00:47 UTC — each file holds only the 429 notice). BUT the vm2 session wrote its file before dying: ~/badru-vm/work/v2/main.ts = 2,226 B (vs submitted v1 main.ts 5,855 B).
+
+Yanto ferried it back and verified LOCALLY (first-hand):
+- Practice: 40/40 full marks, score 1,000,000
+- Differential fuzz vs reference vm.mjs: 800 programs, 0 divergences
+- Targeted edge cases: 49/49 pass
+- Entry total if submitted: 2,226 + LICENSE 1,095 = 3,321 B (vs current 6,950 B) — at max score, ties break by smaller entry, so this is a real ranking gain.
+
+Events scan: NO output (429 before it produced anything) — will re-run if Rizki wants.
+CSV consult: also 429; moot now (v5 already submitted).
+
+Next step is Rizki's call: resubmit v2 as the improved tiny-stack-vm entry (deadline 25 Nov 04:00Z, quota 1/10 used) or keep v1. Yanto is designated submitter; no submit without Rizki's yes.
