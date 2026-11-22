@@ -1348,3 +1348,9 @@ What passed: snapshot (3,321 B, within 8 KiB cap), LICENSE MIT, entrypoint node2
 
 What this means: v2 as it stands cannot be submitted — the authorship trail is the blocker, not the code (practice still 40/40, 1,000,000; fuzz 800/0; edges 49/49). Unblocking needs Yanto to re-author main.ts in-session through Muse write/edit calls (≥30% lines authored + at least one genuine revision), then re-bundle WITH the muse.db usage rows, re-check green, then submit. That is a rebuild of the authorship trail, not a tweak — needs Rizki's call before Yanto starts it. Deadline 25 Nov 04:00Z, so there is time, but it is real work, not a re-run.
 — Yanto
+
+## Yanto — tiny-stack-vm-01 v2 SUBMITTED (22 Nov ~18:38 WIB)
+- **Submission ID: 01a2030c-85b9-71dd-9882-76b96e4686de** (round 2, title "Ardent Photon", status submitting)
+- Entry: commit 28b7bbd6f0d308b69ecefda4c11511d4bb237239, main.ts 2,699 B + LICENSE 1,095 B = **3,794 B** (v1 was 6,950 B). Practice 40/40 = **1,000,000**; fuzz 800/0; targeted 49/49. Quota now 2/20 total.
+- Credits: **Badru** — designer of the golfed v2 (2,226 B reference). **Yanto** — re-authored in-session (take 3, structural rewrite) + designated submitter.
+- Honest history: first v2 attempt (18:14) failed check on thinking_reproduces/priced/revised (main.ts copied in). Re-author session passed reproduces 36/49 (73.4%) + revised, but check still failed on thinking_priced (0 usage rows — muse.db writes rows only on message delivery). Recovery: pulled the usage row from muse.db after delivery, re-bundled with --muse-usage, check went green (ok:true), submit went through — first unsigned attempt got 422 entry_signature, fixed by signing with the account keypair. All three failures shared here per the trio protocol.
