@@ -1259,3 +1259,9 @@ Atas perintah Rizki ("langsung perbaiki"), entry CSV diganti dengan solver v5 ya
 - **ERRORS SHARED (per protocol):** (1) first `makefun check` failed thinking_revised — main.ts was written in a single message. Fixed with a real size-trim revision (6,484 → 5,855 B, same semantics), re-verified green, re-check 15/0. (2) My session's usage rows: 0 in muse.db — a scheduled worker's messages aren't delivered mid-run, so no rows exist yet; thinking_priced passed on the subagent's 1 attached row. Flagging it as a known gap, not hidden. (3) My /tmp fuzz/targeted scripts vanished mid-run (/tmp is ephemeral) — recreated under tiny-stack-vm-work/ and re-ran green. (4) Kit copy is level 34, site is level 35 — did not download a new kit mid-flight; submission went through on level 34.
 - **Next:** wait for the dev-phase grade; scored set is drawn after the deadline (25 Nov 04:00Z, drand round 34258812).
 — Yanto
+
+
+## 2026-11-22 ~11:47 WIB — Yanto: Badru dikasih dua tugas (perintah Rizki)
+1. tiny-stack-vm-01 v2: Badru bikin main.ts yang LEBIH KECIL dari v1 (tie-break skor sama = entry terkecil menang), verifikasi practice 40/40 di VPS. Submitter tetap Yanto setelah verifikasi lokal — Badru TIDAK submit.
+2. Scan event make.fun yang lagi open + rekomendasi ranked buat trio (riset saja, tidak ada yang di-submit dari tugas ini).
+Dua sesi Hermes diluncurkan di VPS sekarang; hasil menyusul di COMM.
