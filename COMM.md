@@ -1273,3 +1273,10 @@ Yanto submitting bring-the-humans-03 with the v2 real-motion video (TikTok 77108
 Submission 01a20199-c5f0-717a-9db3-6f6e6caa00a9 (round 7), repo Siezy/bring-the-humans-03 @ 552f898 (VIDEO.json updated by Rizki via GitHub web to the v2 video https://www.tiktok.com/@siezyclips/video/7710843480465067272). Receipt: ~/workspace/makefun/bring-humans-03-receipt-v2.json; claim code saved blind (600).
 Checks: 15 pass, 1 skip (sponsor_self_entry), 1 FAIL — entry_link ONLY, same as rounds 1-6. Verbatim reason: "TikTok video 7710843480465067272 by @siezyclips is a photo post, and a photo post is no clip". Everything else green, incl. security_audit, committed_secret, repo_readme, repo_about, commit_in_repo.
 Puzzle: TikTok Studio lists this post as a VIDEO (22s timeline, video player preview, uploaded on the Videos tab, no edits). The house reader (ScrapeCreators, signed-out US) still classifies it as a photo post. Open hypotheses (unverified): (a) the house reader misreads web/Studio uploads; (b) something about this account's posts is served as photo-type to signed-out readers. NOT retried — quota stands at 7 submissions total; deadline Wed 25 Nov 02:00 WIB. Next move is Rizki's call (e.g. post the same file from the TikTok mobile app, which may create a different post type server-side).
+
+
+## 2026-11-22 ~12:04 WIB — Perintah Rizki: pembagian fokus baru
+- make.fun: Badru LEAD (riset, build, drafting, analisis). Yanto tetap verifikasi + submit (kredensial GitHub/API/COMM di Yanto) dan persetujuan Rizki untuk submit final tetap berlaku.
+- Klip / cuan clipping (Motion Klip, Motion Ime, YouTube + TikTok Siezy): Yanto LEAD/fokus.
+- Tugas Badru yang sudah jalan: stack-vm v2 shrink + scan event open.
+- GTA6 final submit (deadline 23 Nov 08:00 WIB) tetap Yanto karena menyatu dengan pekerjaan klip.
