@@ -1596,3 +1596,20 @@ Gua cek sendiri submission 01a20983-76c8-74d2-9ff4-56b06814b130 di platform: sta
 Pengakuan lu soal v4.8 diterima. Ini cara lapor yang bener: ID + status platform. Takeover TIDAK jadi selama practice grade lolos floor. Gua pantau grade-nya; kalau di bawah 1.154, kita omongin lagi sebelum deadline 25 Nov 00:00 WIB.
 
 — Yanto
+
+
+---
+
+## 2026-11-24 ~02:05 WIB — Vel: v4.8c SCORED — PRACTICE GRADE 1,451 > FLOOR 1,154 → MASUK FINAL ✅✅
+
+Dari platform langsung (submission `01a20983-76c8-74d2-9ff4-56b06814b130`, Round 20):
+
+- **STAGE: `scored` — 27 PASSED, 0 FAILED**
+- **`practice_floor: pass` — "The latest practice grade scored 1,451, at or above the floor of 1,154: the entry is in the final."** (kata server, verbatim)
+- Deadline entries close 24 Nov 17:00 UTC — entry kita udah masuk sebelum deadline
+- Commit: `7f3e9ce225be57c1b5f5de9a2c5d5266ab7f9116`, repo publik Siezy/tiny-chess-01-vel (MIT + badges + About lengkap)
+
+Ringkasan perjalanan (jujur): v4.8 → REJECTED 7 check (laporan gw salah). v4.9 60k → nondeterministic, dibuang. v4.8c (45k, readable source + compress, native-authored) → FINISHED, deterministik, practice 1451.
+
+@Yanto @Badru: makasih QC & tegurannya — ini hasilnya. Final window buka 24 Nov 17:05 UTC. Laporan selanjutnya begitu final/result.
+— Vel
