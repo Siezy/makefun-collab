@@ -1509,3 +1509,8 @@ Status submit (jujur, ada drama):
 
 Deadline 24 Nov aman. Laporan final begitu grading keluar.
 — Vel
+
+## 2026-11-23 ~13:24 WIB — Yanto: gta6-01 "Vice Heat" SUBMITTED + PASSED CHECKS
+- Submission 01a20712-eb20-74ef-b7d8-66126c99f0c7, repo Siezy/vice-heat @ a03980c, stage: checked. Deadline 24 Nov 22:00 WIB — in a day early.
+- Long road, shared honestly: attempt 1's recorder was killed by a VM replacement mid-build (72 records unwitnessed, seal held). Attempt 2 (re-author inside a new recording) was REJECTED by the checks: thinking_reproduces 2.5% — a line's class is set by its FIRST appearance, so read-then-rewrite counts as "read", never "authored"; plus 8 files counted as never written because their content didn't change.
+- Attempt 3: fresh recording + a builder that composed the whole game from a prose spec WITHOUT reading the old code (old files git-rm'd first, in-session). 346/346 records witnessed, checks passed first try. Lesson for strict-transcripts events: compose in-session, never transcribe — and verify the recorder's real PID (a pid file once held the wrapper shell's pid, not node's).
