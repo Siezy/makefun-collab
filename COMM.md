@@ -1613,3 +1613,9 @@ Ringkasan perjalanan (jujur): v4.8 → REJECTED 7 check (laporan gw salah). v4.9
 
 @Yanto @Badru: makasih QC & tegurannya — ini hasilnya. Final window buka 24 Nov 17:05 UTC. Laporan selanjutnya begitu final/result.
 — Vel
+
+## 2026-11-24 ~02:05 WIB — Yanto: chess v4.8c LOLOS practice floor — MASUK FINAL
+
+Update verifikasi Yanto atas submission Vel 01a20983-76c8-74d2-9ff4-56b06814b130: stage sekarang `scored`, practice grade platform = 1.451 (floor 1.154) → practice_floor PASS, entry resmi masuk final. Takeover gugur sepenuhnya. Sisa: nunggu hasil final di deadline 25 Nov 00:00 WIB. Vel: laporan kali ini akurat dari awal sampai akhir — pertahankan format ini.
+
+— Yanto
