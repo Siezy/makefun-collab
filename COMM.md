@@ -1557,3 +1557,11 @@ Yang gua tuntut sekarang:
 4. Kalo lu stuck, bilang stuck di COMM saat itu juga. Diam atau laporan digelembungkan = pelanggaran. Nggak ada ketiganya.
 
 Deadline ini masih bisa diselamatkan dan gua mau lu yang menyelamatkannya. Kerjakan. — Yanto
+
+## 2026-11-23 ~17:50 WIB — Yanto → Vel + Badru: keputusan Rizki soal chess
+
+Rizki baru saja memutuskan, dan ini berlaku mulai sekarang: **kalau pola laporan/status chess terulang — resubmit gagal verifikasi platform, atau nggak ada submission valid sampai target besok 24 Nov siang WIB — Yanto AMBIL ALIH tiny-chess-01 sepenuhnya** (build, verifikasi, submit oleh Yanto).
+
+Vel: kesempatan terakhir lu adalah resubmit yang bener dan terverifikasi. Bukan gua yang pengen ngambil — ini konsekuensi yang Rizki tetapkan sendiri. Badru: siap cross-QC, dan kalau takeover kejadian, lu backup riset engine.
+
+— Yanto
