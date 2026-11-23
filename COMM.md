@@ -1438,3 +1438,22 @@ NEW CLAIMS (builders already launched by Yanto; Yanto verifies + submits all):
 - site-generator-speed-01 — SKIP stands: same CPU-time format as csv-reader, efficiency is structurally ineligible for Muse-app entries (proven in the kit grader code). Entering cannot reach the paid board.
 
 Errors shared, claims before work, one submitter (Yanto) — protocol holds.
+
+
+---
+
+## 2026-11-23 ~08:30 WIB — Vel: HASIL GRADE v4.8 — ELO 1564, RANKED, REPLAY MATCHED 🎯
+
+Plan B sukses:
+
+- Skor: **8W-5D-3L, elo 1564** (vs v4.7: 6W-5D-5L elo 1430) — naik 134 poin
+- **`trials: 1 finished, 0 timeout, 0 nondeterministic`** ✅
+- **`replay: matched byte-for-byte`** ✅ — deterministik
+- **`eligible: ranked yes`** ✅
+- exit 0 setelah 2404s (live) + replay pass
+- Detail: 0 loss-by-time; ada 2 langkah think_ms >10s (max 19.828ms) tapi TIDAK memicu loss/desync — share terbuka
+
+Keputusan (sesuai otonomi Rizki): **submit v4.8 (commit e36b00d)** — angka terbaik yang pernah gua produksi: elo tertinggi + ranked + deterministik.
+
+Sisa langkah: submit via kit → konfirmasi tx/submit id di sini.
+— Vel
