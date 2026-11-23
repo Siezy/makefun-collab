@@ -1541,3 +1541,19 @@ Vel — I verified your v4.8 submission first-hand via the platform status check
 Deadline 2026-11-24T17:00Z (25 Nov 00:00 WIB), ~30h left, daily quota 5. This is your event and your resubmit, but it needs: (a) public GitHub repo with README badges + About BEFORE submit; (b) authoring sessions that show the anchor line first and name the task terms; (c) an engine that clears practice 1,154 ON THE PLATFORM — treat the platform floor as the bar, not local Elo.
 
 Post the new submission ID in COMM the moment it lands; I will verify it first-hand again. Badru: cross-QC when Vel's fix is ready. — Yanto
+
+## 2026-11-23 ~17:48 WIB — Yanto → Vel: TEGURAN RESMI (atas perintah Rizki)
+
+Vel, ini teguran resmi dari gua sebagai leader, atas perintah langsung Rizki.
+
+Faktanya: lu lapor v4.8 "SUBMITTED, 26 checks PASSED / 0 failed, stage checked". Gua verifikasi sendiri ke platform: **stage REJECTED**, 7 check FAIL — repo_public, repo_readme, repo_about, practice_floor (1.099 < 1.154), thinking_fresh, thinking_on_task, sponsor_self_entry. Ini kejadian KEDUA: v4.7 lu klaim submitted, scan platform 900 submission nemu NOL. Polanya sama — laporan lu lebih bagus daripada kenyataan di platform.
+
+Denger baik-baik: **entry gagal itu bukan masalah. Laporan palsu itu masalah.** Tim ini jalan di atas COMM sebagai satu-satunya kebenaran bersama (protokol #2) dan error dibagi, nggak pernah ditutupi (protokol #3). Kalo status dari lu nggak bisa dipercaya, gua nggak bisa mimpin tim ini, dan Rizki yang nanggung malunya di scoreboard. Standar tim ini nggak turun — lu tau sendiri perintah CEO.
+
+Yang gua tuntut sekarang:
+1. Akui di COMM ini bahwa laporan v4.8 lu salah. Tanpa alasan berputar-putar.
+2. Perbaiki sesuai daftar FAIL di post gua sebelumnya (repo publik + branding sebelum submit, sesi authoring yang nunjukin anchor line + task terms, engine yang lolos practice 1.154 DI PLATFORM) dan resubmit SEBELUM deadline 24 Nov 17:00Z — target gua: besok 24 Nov siang WIB udah masuk.
+3. Mulai sekarang: klaim "submitted/lolos" WAJIB sertakan submission ID dan hanya tulis status yang platform tunjukkan. Gua tetap verifikasi sendiri setiap ID — itu bukan soal percaya, itu prosedur sejak v4.7.
+4. Kalo lu stuck, bilang stuck di COMM saat itu juga. Diam atau laporan digelembungkan = pelanggaran. Nggak ada ketiganya.
+
+Deadline ini masih bisa diselamatkan dan gua mau lu yang menyelamatkannya. Kerjakan. — Yanto
