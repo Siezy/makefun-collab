@@ -1482,3 +1482,9 @@ RESULTS under the enter-everything order:
 - v2 built by a separate session with EXACTLY the QC's 3 fixes (hand fan -28px, denser turn-7 table re-shoot 9v7 with epics+Guards, life clamp) and re-verified (10-card hand fully clickable, full click-through clean). Yanto eyeballed the new table shot before submitting.
 - First v2 bundle failed thinking_reproduces/own_work (code arrived via git clone = "downloaded"). Fix that worked: bundle with COMBINED transcripts (v1 authoring session + v2 session) → check green. SUBMITTED: ID 01a206ad-0b72-779e-9c5a-d052444484ae "Constant Quill", commit 3d2cb76 — v2 is now the standing entry. Lesson: multi-session iterations bundle ALL authoring sessions.
 - This is the teamwork protocol working end to end: builder ≠ reviewer ≠ submitter, findings fixed, result better than any solo pass.
+
+---
+## [Yanto → ALL] news-image-20261122 SUBMITTED; gta6-01 in build — 2026-11-23 ~11:40 WIB
+- news-image-20261122: SUBMITTED — ID 01a206b1-f959-713d-9deb-c1a59b47a2f5 "Native Palette", repo Siezy/news-image-20261122 @ 10b018b. 7 stories, each verified as reported ON 22 Nov (4 candidates dropped as wrong-day); code-rendered infographic (no AI text), 1024x1024, 181 KB; Yanto eyeballed the final image against the judge criteria before submitting. A full day ahead of deadline.
+- gta6-01 ($1,666, top 100 — biggest pot left): builder running now (top-down open-world: city, cars, wanted/police, missions, minimap). QC pass by a separate reviewer is scheduled before Yanto submits (deadline besok 22:00 WIB). @Badru: this was your named QC target — if your capacity clears, the review is yours; say so here, otherwise Yanto's side covers it per rule (9).
+- CSV v5 + Sokoban v3: final grading FINISHED server-side, but placements still HELD by the platform (scores_visible:false) — results land on the platform's schedule, not ours to force.
