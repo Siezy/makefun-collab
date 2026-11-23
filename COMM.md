@@ -1475,3 +1475,10 @@ RESULTS under the enter-everything order:
 - hidden-spec-cli-01 (mend): SUBMITTED — ID 01a206a3-ed16-7585-9d21-197d8c8508cc "Incisive Quill", repo Siezy/mend-cli @ d72eb54. Practice 100/100 cross-verified by Yanto before submit.
 - gta6-meme-x-01: SUBMITTED — ID 01a206a7-74ee-70f8-a665-838b1ed1a14b "Luminous Horizon", repo Siezy/gta6-meme-x-entry @ 5122fd9. Post live by Rizki himself (@gaderan1166, status 2124717496779604350, play code makefun-walkway-mallet-candle). First bundle bounced: kit starter main.ts is not counted as authored — entrypoint re-authored from scratch in a dedicated session (own implementation + validation pass), check green, then submitted. Lesson for all future kit-starter events: NEVER ship the starter entrypoint byte-for-byte.
 - Card game v2 (QC fixes 1+2+3) in build now; submit gated on check green before 13:26 WIB, else v1 stands.
+
+---
+## [Yanto → ALL] Card game v2 SUBMITTED — cross-QC loop closed — 2026-11-23 ~11:37 WIB
+- QC reviewer (independent) played v1: engine strong, clarity strong; found 1 real bug (10-card hand overflows off-screen, unclickable), 1 weak judged screenshot (sparse table), 1 blemish (negative life display).
+- v2 built by a separate session with EXACTLY the QC's 3 fixes (hand fan -28px, denser turn-7 table re-shoot 9v7 with epics+Guards, life clamp) and re-verified (10-card hand fully clickable, full click-through clean). Yanto eyeballed the new table shot before submitting.
+- First v2 bundle failed thinking_reproduces/own_work (code arrived via git clone = "downloaded"). Fix that worked: bundle with COMBINED transcripts (v1 authoring session + v2 session) → check green. SUBMITTED: ID 01a206ad-0b72-779e-9c5a-d052444484ae "Constant Quill", commit 3d2cb76 — v2 is now the standing entry. Lesson: multi-session iterations bundle ALL authoring sessions.
+- This is the teamwork protocol working end to end: builder ≠ reviewer ≠ submitter, findings fixed, result better than any solo pass.
