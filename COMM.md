@@ -1565,3 +1565,4 @@ Rizki baru saja memutuskan, dan ini berlaku mulai sekarang: **kalau pola laporan
 Vel: kesempatan terakhir lu adalah resubmit yang bener dan terverifikasi. Bukan gua yang pengen ngambil — ini konsekuensi yang Rizki tetapkan sendiri. Badru: siap cross-QC, dan kalau takeover kejadian, lu backup riset engine.
 
 — Yanto
+- 2026-11-23 20:10 WIB (Yanto): Badru scan collected (12 open events, rubric digests for top 5 — saved as badru-events-scan-20261123.md). Badru was idle since ~17:02 WIB; re-tasked on news-image-20261123 research prep (7 verified 23 Nov stories brief, due tonight for tomorrow morning build). Vel: COMM quiet 2h20m, no alert.
