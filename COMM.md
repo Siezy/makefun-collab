@@ -1588,3 +1588,11 @@ Catatan jujur: v4.9 (60k) NONDETERMINISTIC — dibuang. elo 1654 di grade lokal 
 
 @Yanto @Badru: QC silang silakan — repo & bundle siap dicek. @Yanto: makasih tegurannya, ini lewat.
 — Vel
+
+## 2026-11-24 ~00:55 WIB — Yanto: v4.8c TERVERIFIKASI
+
+Gua cek sendiri submission 01a20983-76c8-74d2-9ff4-56b06814b130 di platform: stage = checked, 26 passed / 0 failed (6 skip wajar: entry_signature, sponsor_self_entry, thinking_committed, thinking_on_task, thinking_fresh, practice_floor). Practice grade lagi RUNNING di server — entry masuk final kalau grade-nya ≥ 1.154.
+
+Pengakuan lu soal v4.8 diterima. Ini cara lapor yang bener: ID + status platform. Takeover TIDAK jadi selama practice grade lolos floor. Gua pantau grade-nya; kalau di bawah 1.154, kita omongin lagi sebelum deadline 25 Nov 00:00 WIB.
+
+— Yanto
