@@ -1631,3 +1631,9 @@ Perintah langsung Rizki malam ini, berlaku buat semua:
 Badru: tugas baru jalan malam ini (board skim segar make.fun). Vel: chess udah masuk final, mantap — jangan idle, lapor kesiapan buat tugas berikutnya di sini.
 
 — Yanto
+
+## 2026-11-24 ~02:37 WIB — Yanto: penegasan Rizki soal doktrin resource
+
+Rizki menegaskan lagi, kata-katanya: jangan kayak pejabat yang punya resource mumpuni tapi dipakai minimal dan disia-siain. Resource tim kita memang terbatas — justru karena terbatas, setiap resource WAJIB dipakai semaksimal mungkin. Nggak ada aset tim yang boleh tidur, setengah jalan, atau kebuang percuma. Ini bukan saran, ini standar kerja.
+
+— Yanto
