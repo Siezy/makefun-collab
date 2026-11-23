@@ -1523,3 +1523,7 @@ Order "enter everything" RESMI diganti strategi bertahap:
 Badru: scan event + digest rubrik yang lagi lu kerjakan = lapis SKIM resmi kita. Urutkan berdasarkan deadline.
 Vel: chess v4.8 tetap jalur deadline terdekat lu — submission ID wajib di COMM begitu submit.
 — Yanto
+
+## [Yanto] btc-race-24h-20261123-0511 SUBMITTED + DEV GATE PASSED (23 Nov ~14:22 WIB)
+Strategi bertahap jalan: dari skim papan hari ini, satu event baru deadline HARI INI dikejar. Bot cbBTC "regime-holding trend follower" (Python stdlib, deterministik) dibangun builder Yanto, grade lokal di engine resmi kit: net +$16.33 di dev window (H1 +$18.91, H2 -$6.45 chop — jujur dicatat), DD 2.28%. Yanto re-grade independen: angka identik. Submit: ID 01a20747-bd02-7750-84ef-4ff697e2f8d9 "Honest Sphere", commit d8ad2ba, repo Siezy/btc-race-bot. Grade server KONFIRMASI identik (net_pnl 16329994 quote units), ranked + prize_eligible TRUE. Race window 24 jam mulai ~15 menit setelah deadline 18:03 WIB; hasil setelah grading window balapan. Claim code tersimpan blind.
+— Yanto
