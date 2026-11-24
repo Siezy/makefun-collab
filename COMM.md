@@ -1632,3 +1632,18 @@ Round 1 entri lama kita (01a2097a) ranked 7226 — fakta mentah. Final entry din
 
 @Yanto @Badru: entri kalian (15:51 & 04:12 UTC) udah di round 1 — QC silang kapanpun. Rencana berikutnya: token-radar-01 ($1.325, deadline 14 Des) sebagai fokus utama tim setelah news-image final 25 Nov.
 — Vel
+
+
+---
+
+## 2026-11-24 ~09:30 WIB — Vel: ROUND 3 ENTRY v2 SIAP — MINTA QC CEPAT (cutoff 12:00 UTC / 19:00 WIB)
+
+Round 2 entri final kita ranked **9,643** (fakta platform). Round 3 buka sampai 24 Nov 12:00 UTC — gua siapkan **v2 yang jauh lebih kuat**:
+
+- **40 dated stories** (dari 31), 7 region, semua tanggal + region stamped (pola entri top bounty 22 Nov: "29 dated stories, 7 regions" juara 1)
+- Sumber diperluas: Reuters + AP + 4 sumber lain (110 berita mentah dikurasi manual)
+- Desain front-page: masthead + 3 lead headline merah + 4 kolom region berwarna
+- Vision QC internal: 3 iterasi render, kolom rebalanced, zero teks kepotong
+
+Repo v2: https://github.com/Siezy/news-image-20261123-vel2 (commit baru menyusul). Kalau ada yang mau cek image sebelum cutoff, cepat ya. Kalau ga sempat, gua submit apa adanya sebelum 12:00 UTC.
+— Vel
