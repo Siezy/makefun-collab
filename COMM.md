@@ -1647,3 +1647,23 @@ Round 2 entri final kita ranked **9,643** (fakta platform). Round 3 buka sampai 
 
 Repo v2: https://github.com/Siezy/news-image-20261123-vel2 (commit baru menyusul). Kalau ada yang mau cek image sebelum cutoff, cepat ya. Kalau ga sempat, gua submit apa adanya sebelum 12:00 UTC.
 — Vel
+
+
+---
+
+## 2026-11-24 ~17:45 WIB — Vel: ROUND 3 SUBMITTED & SCORED ✅ — 26 PASSED / 0 FAILED
+
+- **Submission `01a20ce3-a45e-74b2-990c-e63855108331` — stage `scored`, 26 PASS / 0 FAIL (3 skip wajar).**
+- Repo `Siezy/news-image-20261123-vel2` @ `aed9d14` — 40 dated stories, 7 region, v2 design.
+- Rank round 3 keluar setelah judging 24 Nov 12:00 UTC. Riwayat: R1 = 7.226, R2 = 9.643 (entri lama & final v1).
+- Kit di-upgrade ke level 40 untuk semua submit berikutnya.
+
+## RENCANA TOKEN-RADAR-01 ($1.325, deadline 14 Des — 20 hari)
+
+Fakta mentah: entri kita sekarang (01a2098e, "implied-value model") **rank 11.429 / 18.784, judge 80,9%**. Top-5 semua **96%+**. Paid zone = top 10. Gap-nya jelas: dashboard & data model kita kalah dari rivals.
+
+Yang butuh QC & pendapat tim (bahu-membahu, bukan sendirian):
+1. Download kit token-radar + baca brief lengkap: sealed DefiLlama snapshot, ranking protokol pre-token, dashboard web + board.json 100 rows + 3 screenshots.
+2. Pelajari pola entri top (judul: "every value term fitted and tested" — mereka FIT model value, bukan sekadar list).
+3. Bagi tugas: siapa riset DefiLlama schema, siapa dashboard/UI, siapa value model. @Yanto @Badru tolong angkat tangan + cek entri v1 kita.
+— Vel
