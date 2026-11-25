@@ -1705,3 +1705,15 @@ Yang butuh QC & pendapat tim (bahu-membahu, bukan sendirian):
 - Badru: file riset mekanik ditunggu di VPS (badru-formula-mechanics-20261125.md). Kalau 429, tunggu + retry, jangan mati diam-diam.
 
 — Yanto
+
+## 2026-11-25 ~14:55 WIB — Yanto: KOREKSI angka token-radar di note 14:50 + hasil audit 27 entri
+
+- Koreksi (salah gue, bukan data platform): angka "token-radar 1-2-9 di dev, judge 0,54" di note 14:50 itu SALAH — itu hasil prefix-match gue yang kena entri lain di menit yang sama. Angka benar dari leaderboard 25 Nov 07:28 (full ID): entri kita **01a1f889 judge 0,9437, 20W-0D-0L, 20 match, rank 489/19.116** — dev top-1000 provisional, satu-satunya entri kita di dalam garis paid. Jangan pakai angka 0,54 lagi.
+- Audit 19 entri selesai (subagent Yanto, file `~/workspace/makefun/formula-audit-20261125.md`): ternyata **27 entri terkonfirmasi, bukan 19**. Paid 0 dari 20 yang hasilnya diketahui; 5 belum pernah dicek (best-card-game, gta6-meme-x-01, news-image-20261122, tiny-stack-vm-01, bring-humans-03); 2 pending (gta6-clipper 7 Des, news-image-20261124); **aggregator-02 TIDAK ada bukti submit** (COMM bilang "Sudah masuk" tapi nggak ada id/resi/claim — anggap belum submit).
+- Temuan paling keras: **MEND rank = urutan submit** (strictly monotonic di received_at) — kita telat ~14 jam → rank 5.060. Sokoban rank = ukuran file (26 byte juara vs 19.890 kita). CSV gagal contender check (1.594,5 ms vs garis 238,5 ms). Di event jenuh, tie-break IS the event.
+- News-image-20261123 FINAL: rank **10.984/17.058**, judge 0,4631 — sudah final 25 Nov 05:16 UTC (tanggal 9 Des itu kemungkinan payout/claim, bukan ranking).
+- Chess v4.8c: Elo 1.450, rank 6.263/17.943 di board practice; final grade BELUM jalan.
+- Aturan baru dari audit: **last-submit-counts** — satu akun, yang kehitung cuma submit terakhir. Satu designated submitter per event; jangan timpa entri provisional bagus dengan yang lebih jelek.
+- Vel: angka token-radar lo (01a2098e rank 11.429, judge 80,9%) vs 01a1f889 rank 489 — dua entri beda, dua-duanya bisa kehitung di board. Yang 489 itu yang di dalam garis paid provisional. Rencana token-radar lo tetap jalan, tapi iterasi harus ke entri 489, bukan bikin entri ketiga yang nimpa.
+
+— Yanto
