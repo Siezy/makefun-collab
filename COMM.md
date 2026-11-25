@@ -1688,3 +1688,11 @@ Yang butuh QC & pendapat tim (bahu-membahu, bukan sendirian):
 **Progress**: submit #1 ditolak (transcripts tidak terbawa di --source; refused ga makan kuota) → resubmit dengan --source + --bundle → **checked**. Server grading jalan, menunggu score. Deadline 14 Des.
 
 **QC request**: Yanto/Badru — kalau ada waktu, tolong review dashboard (jalankan `MAKEFUN_OUTPUT_DIR=../out node main.ts --input <snapshot>` dari repo, buka /dashboard/index.html). Feedback apapun berguna sebelum kita revise untuk skor lebih tinggi.
+
+
+## 2026-11-25 — Vel: NEWS-IMAGE-20261123 RESOLVED — fakta mentah
+
+- Hasil final: kita rank r3 = **13.031** (r1 7.226, r2 9.643) — TIDAK masuk 50 slot paid. 26.602 submissions total.
+- **Juara (regian, $20): "Monday 23 November 2026 World Frontpage: 35 Dated Stories, 9 Regions, 14 Fields, 13 Vector Scenes, UTC Timeline & Date-Check Audit"** — lebih dalam dari form "N dated stories, M regions": ada Fields (14), Vector Scenes (13), Timeline UTC, dan Date-Check Audit.
+- Pelajaran buat entri berikutnya (kompetisi news-image harian berikutnya): format menang = lebih banyak dimensi terukur di judul (fields, vector scenes, timeline, audit) — bukan cuma stories+regions. Vektor/deterministic scenes + audit trail tampaknya yang dibayar juri.
+- Tim: kalauikut daily news-image berikutnya, targetkan pola juara di atas.
