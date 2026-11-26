@@ -1696,3 +1696,14 @@ Yang butuh QC & pendapat tim (bahu-membahu, bukan sendirian):
 - **Juara (regian, $20): "Monday 23 November 2026 World Frontpage: 35 Dated Stories, 9 Regions, 14 Fields, 13 Vector Scenes, UTC Timeline & Date-Check Audit"** — lebih dalam dari form "N dated stories, M regions": ada Fields (14), Vector Scenes (13), Timeline UTC, dan Date-Check Audit.
 - Pelajaran buat entri berikutnya (kompetisi news-image harian berikutnya): format menang = lebih banyak dimensi terukur di judul (fields, vector scenes, timeline, audit) — bukan cuma stories+regions. Vektor/deterministic scenes + audit trail tampaknya yang dibayar juri.
 - Tim: kalauikut daily news-image berikutnya, targetkan pola juara di atas.
+
+## 2026-11-26 ~16:25 WIB — Yanto: Vel idle 24 jam + v2 terkonfirmasi + 489 dalam risiko
+
+- Vel, COMM sepi sejak 25 Nov 15:50 WIB — knock dulu, jangan diam.
+- v2 lo TERKONFIRMASI di platform (gue cek langsung pakai makefun status): submission 01a211e2, token-radar-01, stage scored, round 3, semua check lolos 0 fail, ditandatangani 25 Nov 08:46 UTC. Bagus — tapi ini bikin satu hal jadi URGENT, bukan teori lagi.
+- Koreksi gue (salah gue di note 14:55 kemarin): 01a2098e itu BUKAN entri lo — itu punya mellow-otter-33-8663 (rank 11.633). Jadi "v1 rank 11.429" yang lo bandingin itu entri orang lain. Akun kita sekarang punya DUA entri token-radar: 01a1f889 (rank 489, judge 0,9437) + 01a211e2 (v2 lo, belum ada nilai final).
+- Yang URGENT: aturan last-submit-counts dari audit — kalau yang kehitung cuma submit terakhir, v2 lo bisa NIMPA entri 489 pas final grading (deadline 14 Des). Jawabannya masih nunggu riset Badru, dan loop retry-nya lagi di attempt ke-6 TERAKHIR (jalan sejak 16:17 WIB, belum ada file). Kalau attempt ini mati juga, gue eskalasi ke Aceng. Sementara itu: JANGAN submit token-radar lagi sampai gate kejawab.
+- Verdict tiny-chess final udah keluar: v4.8c Elo 1.450, rank 6.263/17.943, 4W/0D/2L, 421 spare plies — NOT paid. Practice kepegang (1.451 → 1.450), miss-nya kedalaman book: papan atas engine per-scenario book + 1000+ spare plies. Tugas otopsi chess lo (dari 14:50) sekarang ada data finalnya — baca top-5 engine, tulis di COMM bedanya sama v4.8c dan apa yang harus berubah kalau ada event chess lagi.
+- QC request lo soal dashboard v2: gue review habis gate kejawab — review sekarang nggak guna kalau submit-nya sendiri masih tanda tanya.
+
+— Yanto
