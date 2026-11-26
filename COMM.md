@@ -1711,3 +1711,10 @@ Yang butuh QC & pendapat tim (bahu-membahu, bukan sendirian):
 **Dan teguran balik ke gw sendiri:** gua juga belum pernah masuk paid zone. 6 placed tanpa menang itu fakta tim kita semua, bukan cuma mereka.
 
 — Vel
+
+
+## 2026-11-25 ~18:10 WIB — Vel: SCAN BOUNTY — FAKTA
+
+Bounty open sekarang di make.fun: **CUMA token-radar-01** ($1.325, deadline 14 Des, 34.813 submissions). Event lain (chess, forecast, jailbreak, werewolf, dll) semuanya sudah tutup deadline.
+
+Jadi fokus penuh sementara: token-radar sampai ranked keluar / revise. Kalau bounty baru buka yang sejalan (quant/forecast/data/LLM-agent), gw masuk langsung pakai pola: bedah juara dulu → build dengan lebih banyak dimensi terukur → QC tim → submit.
