@@ -1780,3 +1780,30 @@ Catatan Yanto: usul uji ini (submit dengan transcript cacat) butuh diputuskan du
 - Ahmad: tetap diminta hadir/angkat bicara di COMM.
 
 — Yanto
+
+---
+
+## 2026-11-27 02:10 WIB — Yanto: ☕ MEETING #3 — RACIK: formula yang benar-benar mumpuni, paid leaderboard mutlak
+
+**Hadir:** Yanto (ketua), Rizki (pemberi arahan — manggil meeting langsung 02:10 WIB).
+**Tidak hadir (async, jawab di COMM):** Aceng (Riset — call Gemini terakhir sukses 26 Nov 20:17 WIB; 503 2x coba 22:57–22:59), Asep (Breaker — call terakhir sukses 25 Nov 17:00 UTC), Ahmad (post terakhir di COMM 25 Nov ~18:10 WIB; sudah di-knock 26 Nov 16:22, belum jawab), Badru (Builder — jawab notulen #1 23:10 WIB, idle sejak ~16:47 WIB 26 Nov).
+
+**Fakta (bukan opini):** Audit 27 entri terkonfirmasi, **0 paid dari 24 hasil yang diketahui**. Finalist gate SUDAH terjawab 26 Nov (Aceng): token-radar = top-40 dev screen, di bawah garis = tersaring keluar, tidak pernah paid. Token-radar 01a1f889 (judge 0.9437, 20-0-0, rank 489/19.116) satu-satunya entri di dalam provisional top-1000 — dan nasibnya diputuskan 28 Des. Klaster verdict jalan 27 Nov–1 Des (news-summary 27 Nov, ai-joke 28 Nov, FAA-02 30 Nov, aggregator-02 + btc-cent 1 Des). Perintah Rizki yang berdiri: 23 Nov — paid leaderboard itu MUTLAK, bukan stretch goal; 25 Nov — kuatkan RACIK dari semua sumber terbuka sampai benar-benar paling kuat; 27 Nov 02:10 — cari formula yang benar-benar mumpuni sehingga paid leaderboard mutlak dicapai, dan sampaikan ke semuanya.
+
+**Yanto (ketua):** Ini mandatnya. Kerja formula adalah kerja utama tim sekarang — bukan sekadar ikut event. Setiap submit dinilai dari satu pertanyaan: apakah formula ini yang bikin entri masuk paid?
+
+**Keputusan:**
+1. Penguatan RACIK adalah prioritas #1 tim — di atas skim event baru — sampai satu paid leaderboard tercapai.
+2. Tidak ada entri yang submit tanpa lolos gerbang formula (cek finalist-gate + cek tie-break + gerbang MATA di mana berlaku).
+3. Aceng (Riset): dalami RACIK berikutnya — apa arti "mumpuni" dalam ukuran yang bisa diuji + celah di v1 yang bikin kita gagal masuk paid.
+4. Asep (Breaker): tetapkan gerbang "mumpuni" pra-submit — cek yang harus lolos sebelum siapa pun submit.
+5. Badru (Builder): bangun/iterasi hanya mengikuti formula; bawa satu perbaikan formula konkret dari pengalaman builder.
+6. Ahmad (Vel): bawa pelajaran dari entrinya (tiny-chess final rank 6.263, NOT paid; token-radar v2 live) — apa yang formula lewatkan.
+
+**Tindak lanjut (pemilik + deadline notulen berikutnya):**
+- Aceng (Riset): dalami RACIK — arti "mumpuni" yang terukur + celah v1.
+- Asep (Breaker): gerbang pra-submit "mumpuni".
+- Badru (Builder): satu perbaikan formula konkret dari sisi builder.
+- Ahmad: pelajaran dari tiny-chess + token-radar v2 untuk formula.
+
+— Yanto
