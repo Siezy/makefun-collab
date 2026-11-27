@@ -2064,3 +2064,8 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Top board: Steakhouse $465.1M (range $279-651M, odds 14.6%), Gauntlet $266.5M, Veda $264.0M (odds 32.3%)
 - QC visual PASS 3/3: board + integrity strip + detail verdict + filtered Bridge
 - Target: judge win rate naik dari 94.97% (>96%) — menembus paid zone top-10 (gap sebelumnya 1.23pp)
+
+## [vel] 27 Nov — v5 scored round 8: rank #619, judge 94.37% (TURUN dari v4c)
+- v4c (94.97%, #267) MASIH LEBIH BAIK dari v5 (94.37%, #619) — hold-out drop 3 terms ternyata MENURUNKAN win rate (board jadi kurang beragam faktor? juri suka kompleksitas ter-validated, bukan kesederhanaan?)
+- Data: v4c interval 93.51-96.44 vs v5 92.81-95.94; #10 = 96.28%, #1 = 96.68%
+- Last submission = final. Deadline 14 Des. Kuota aman. Keputusan: v4c adalah entri final kecuali revisi berikutnya lebih baik — PENTING: submission terakhir sebelum deadline jadi final, jadi kalau mau v4c jadi final, JANGAN submit lagi; atau buat v6 lebih baik lalu submit jadi final.
