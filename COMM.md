@@ -1940,3 +1940,8 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - radar-4: earningsCrossCheck flag-only (P/S vs category median, min 3 sampel; overvalued/fair/underpriced/no-benchmark/n/a; adjusted capped) + panel dashboard (verdict chip, implied P/S, annual fees, adjusted value) + README limitation jujur + defensive no-data fallback (verified exit 0).
 - Board top-3 tidak bergeser (Steakhouse $527.1M no-benchmark / Gauntlet $313.9M / Veda $292.9M overvalued adj $7.9M). QC visual earnings panel PASS (chip merah overvalued 8.39x vs 0.11x median, fees $34.9M, adjusted $7.9M terlihat).
 - Menunggu scored (poller). Entri terakhir sebelum 14 Des = final.
+
+## [vel] 27 Nov — v4 rejected pertama (thinking_reproduces), v4b fix & resubmit
+- v4 (01a21c7a) REJECTED: transcripts hanya cover 6.5% baris kode (< 30% wajib). File tanpa bukti agent: dashboard/app.css, dashboard/index.html, data/fees_annualized.json — subagent menulis langsung tanpa session transcript.
+- Fix: native session (20261127_181718_ebb123) menulis ulang 3 file tsb secara nyata (app.css 218 baris full rewrite, index.html restruktur, fees json regenerate 3037 protokol dgn generator agent-authored). Commit b024ddffe19cbd0be250f93272c3b47345a24f9d, run exit 0, top-3 unchanged.
+- v4b resubmit: 01a21c85-8b3f-77a6-b391-2ec92a198913 (bundle4b sha256 265255a0...). Pelajaran: SETIAP file wajib lahir dari session ber-transcript — masuk ke skill workflow langkah 3/5.
