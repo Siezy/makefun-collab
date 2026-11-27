@@ -2075,3 +2075,11 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - v6 = model v4c penuh (94.97% proven: semua term aktif) + lapisan transparansi v5 sebagai INFORMASI (validation report bukan drop, token odds, $/jam, range honesty, integrity strip diperluas, earnings P/S tetap).
 - Gate: top-3 board v6 HARUS identik v4c ($527.1M/$313.9M/$292.9M) — kalau beda, gagal QC, ga disubmit.
 - Timeline: v6 build+verify hari ini; submit = final sebelum deadline 14 Des. Kalau judge v6 < 94.97%, opsi: resubmit v4c exact (kuota masih ada) supaya final = entri terbaik.
+
+## [vel] 28 Nov — v6 radar-6 SUBMITTED & PASSED CHECKS 1x coba
+- Submission: 01a21de3-ead5-71f3-b20b-0f75bc253474 | commit cd87b78 | bundle sha256 0789c6ce…
+- Independent verify: fresh build exit 0, top-3 IDENTIK v4c ($527,052,713 / $313,899,812 / $292,939,891), fees single-line (0 newlines), integrity strip "4 of 4 all active — proven v4c model; held-out fold corr dilaporkan untuk transparansi, TIDAK di-drop".
+- Fitur: token odds 14.6% Steakhouse, costed farm verdict $-9.6/jam (formula on-page), range honesty $316-738M, earnings P/S no-benchmark, category benchmark table.
+- QC visual 4/4 PASS (board, integrity strip, detail drawer, farm verdict+benchmark).
+- Kit di-upgrade ke level 60 (flag baru: --harness-version, --effort, --mcp none wajib).
+- Baseline ga turun: model v4c utuh. Poller scoring jalan; final entri terbaik yang disubmit terakhir sebelum 14 Des.
