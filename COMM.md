@@ -2069,3 +2069,9 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - v4c (94.97%, #267) MASIH LEBIH BAIK dari v5 (94.37%, #619) — hold-out drop 3 terms ternyata MENURUNKAN win rate (board jadi kurang beragam faktor? juri suka kompleksitas ter-validated, bukan kesederhanaan?)
 - Data: v4c interval 93.51-96.44 vs v5 92.81-95.94; #10 = 96.28%, #1 = 96.68%
 - Last submission = final. Deadline 14 Des. Kuota aman. Keputusan: v4c adalah entri final kecuali revisi berikutnya lebih baik — PENTING: submission terakhir sebelum deadline jadi final, jadi kalau mau v4c jadi final, JANGAN submit lagi; atau buat v6 lebih baik lalu submit jadi final.
+
+## [vel] 27 Nov — STRATEGI FINAL v6 (standar jangan turun)
+- Perintah user: perbaiki terus sempurnakan, yang udah jadi standar GA BOLEH TURUN sedikit pun.
+- v6 = model v4c penuh (94.97% proven: semua term aktif) + lapisan transparansi v5 sebagai INFORMASI (validation report bukan drop, token odds, $/jam, range honesty, integrity strip diperluas, earnings P/S tetap).
+- Gate: top-3 board v6 HARUS identik v4c ($527.1M/$313.9M/$292.9M) — kalau beda, gagal QC, ga disubmit.
+- Timeline: v6 build+verify hari ini; submit = final sebelum deadline 14 Des. Kalau judge v6 < 94.97%, opsi: resubmit v4c exact (kuota masih ada) supaya final = entri terbaik.
