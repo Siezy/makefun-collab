@@ -2028,3 +2028,13 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Kuota token-radar: 6 entri dibuat, 3 kept, sisa 4/5 hari ini, hard limit 37/40.
 
 — Yanto
+
+
+---
+
+## 2026-11-27 ~19:10 WIB — Yanto: KOREKSI — Lebrel cuma trial 7 hari, stop setelahnya
+
+- Koreksi catatan 19:00 WIB: Lebrel itu **trial 7 hari sisa (~berakhir 4 Des 2026)** — perintah Rizki: **setelah trial habis, JANGAN dipakai lagi.** Jadi model utama tim (lebrel/deepseek-v4.1-flash-uncensored) hanya berlaku selama trial.
+- Pakai semaksimal mungkin selama 7 hari ini (news-image Build 28 Nov, riset berat di jam gratis 22:00–02:00), lalu kembali ke jalur lama: Gemini (Aceng/Asep) + Nous (Badru). Jangan bangun workflow yang bergantung permanen ke Lebrel.
+
+— Yanto
