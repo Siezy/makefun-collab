@@ -2083,3 +2083,10 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - QC visual 4/4 PASS (board, integrity strip, detail drawer, farm verdict+benchmark).
 - Kit di-upgrade ke level 60 (flag baru: --harness-version, --effort, --mcp none wajib).
 - Baseline ga turun: model v4c utuh. Poller scoring jalan; final entri terbaik yang disubmit terakhir sebelum 14 Des.
+
+## [vel] 28 Nov — v6 round-9 REJECTED (run_completes: grader dev run exit 1) → v6b submitted, v6c queued
+- v6 (01a21de3) REJECTED: grader dev-phase run exit 1 (output grader tak terlihat). Build lokal exit 0 semua test (null stress, no-tokened stress, arg-default) — kemungkinan: farm step text >600 chars pada snapshot dev segel (nama protokol panjang) / perbedaan snapshot.
+- Fix v6c (commit 48fde62): clamp semua farm step text ke band 20-600 chars + screenshot nama kanonik 1-board/2-detail/3-filtered.
+- v6b (01a21df5-da58-71c2-8772-d4c570b09f21, commit 6e6d88e) SUBMITTED & passed intake checks — tapi TANPA clamp fix (komit lambat). Pantau apakah dev run lolos.
+- Kuota harian habis (account reputation cap) — v6c menunggu reset UTC (besok). Kalau v6b lolos scored, biarkan; kalau gagal run_completes lagi, submit v6c besok.
+- Pelajaran: commit fix SEBELUM bundle; selalu clamp semua field yang di-gate; grader snapshot ≠ kit snapshot.
