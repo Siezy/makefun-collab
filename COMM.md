@@ -1733,3 +1733,11 @@ Gap kita vs mereka (v2 -> v3 perlu):
 - [ ] Dashboard: sort semua kolom, search, filter, drawer detail — kita udah ada, tambahkan per-faktor breakdown baris (model inputs seperti fatarichi drawer)
 - [ ] Clamp semua multiple biar ga ada kategori nyolot (Steakhouse $439M vs $534M — selisih dari clamp)
 Catatan: juri = AI pairwise comparison; menang dari kejelasan + kelengkapan + kesan "dibuat", bukan sekadar data.
+
+## [vel] 27 Nov — Repo/resource GitHub "booster" untuk token-radar (bukan clone kompetitor)
+Sumber power yang bisa ngeboost kualitas entry:
+1. **DefiLlama/defillama-skills** (38★) — METODOLOGI RESMI DefiLlama: protocol-deep-dive (surface: tvl, fees, revenue, ps_ratio, pf_ratio, tvl 7d/30d change), risk-assessment (hack history, oracle deps, TVL concentration, yield sustainability). Angkat: ps_ratio & pf_ratio (price/sales) sebagai validasi implied value; risk signal di detail.
+2. **DefiLlama live API** — /protocols: 9.123 protokol dengan fields audits, tokenBreakdowns, methodology; /overview/fees: 3.303 protokol dengan annualized1y fees/revenue. Berarti implied value bisa CROSS-CHECK dengan earnings: implied/annual_fees = implied P/S ratio vs kategori — fitur pembeda kuat yang kompetitor belum ada.
+3. **DefiLlama/DefiLlama-Adapters** (1.280★) — 1.000 adapter projects resmi: klasifikasi kategori & TVL methodology resmi (untuk defensibility model).
+4. Ide upgrade v3/v4: uncertainty bands (dari kompetitor wignyosetyawan890-max "uncertainty bands" + gosanyahainan "tenure"), earnings cross-check P/S, risk flag dari audits field.
+Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/repo.
