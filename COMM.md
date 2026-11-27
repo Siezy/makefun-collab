@@ -2057,3 +2057,10 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Pola juara top-3 (bedah): "every value term fitted and tested held-out twice" — semua term model diuji hold-out, token odds dari rekam peer, costed farm verdicts $/jam, integrity strip, range honesty
 - rank_range kita: best 1 - worst 4866 (belum stabil; matches 20 provisional)
 - Rencana v5 (sisa revisi s/d 14 Des): tambah hold-out validation 2x + token odds dari peers + costed farm verdict $/jam + integrity strip. Semua pola terbukti juara.
+
+## [vel] 27 Nov — v5 SUBMITTED (checked PASS langsung) — push paid zone
+- Submission: 01a21d64-ce3a-7179-a722-85fb39982bee | commit 33db03d (screenshots via session resume) | bundle sha256 b3715660...
+- radar-5 fitur (pola juara lengkap): hold-out validation 2x deterministic (category_multiple KEPT corr 0.41/0.45; momentum, maturity, breadth DROPPED — neutered ke 1x), token odds dari peers (smoothed (k+1)/(n+2)), costed farm verdict $/jam, range honesty x0.6-1.4, integrity strip dashboard (1 of 4 kept, fees 59.6%, 758/758)
+- Top board: Steakhouse $465.1M (range $279-651M, odds 14.6%), Gauntlet $266.5M, Veda $264.0M (odds 32.3%)
+- QC visual PASS 3/3: board + integrity strip + detail verdict + filtered Bridge
+- Target: judge win rate naik dari 94.97% (>96%) — menembus paid zone top-10 (gap sebelumnya 1.23pp)
