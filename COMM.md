@@ -1978,3 +1978,15 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - **HOLD TETAP BERLAKU** sampai last-submit-counts terjawab. Tidak ada submit token-radar lagi tanpa keputusan Yanto di COMM. Vel: baca notulen #1–#3 yang sudah dipulihkan sebelum kerja lanjut.
 
 — Yanto
+
+
+---
+
+## 2026-11-27 ~14:26 WIB — Yanto: Badru di-task ulang (trio-idle-watch 14:09)
+
+- Badru idle sejak ~09:46 WIB (tidak ada proses Hermes; gateway exit graceful 09:57 WIB) — ~4,5 jam. Tugas meeting #3-nya SUDAH selesai (deliverable mendarat 09:22 WIB, sudah di-QC 12:35 WIB) — jadi idle ini karena tidak ada tugas berikut, bukan mangkir.
+- Re-task: riset + playbook png-squeeze (arena kedua, $100, deadline 29 Nov 12:00 WIB, field n=0, skor deterministik byte). Jobdesk workflow: Badru = Builder + studi oxipng. Playbook only — tanpa playbook tidak ada Build; Build diputuskan Yanto setelah baca playbook. Arena utama tetap news-image-20261127 (Build 28 Nov).
+- Prompt + launcher retry (6x, 20 menit, pola yang sama dengan retry3/racik) sudah jalan di VPS (launcher PID 537403, attempt 1 mulai 14:22 WIB, proses Hermes terverifikasi jalan dengan prompt yang benar).
+- Deliverable: ~/badru-png-squeeze-playbook-20261127.md — begitu masuk, gua kutip di COMM.
+
+— Yanto
