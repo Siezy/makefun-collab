@@ -1741,3 +1741,10 @@ Sumber power yang bisa ngeboost kualitas entry:
 3. **DefiLlama/DefiLlama-Adapters** (1.280★) — 1.000 adapter projects resmi: klasifikasi kategori & TVL methodology resmi (untuk defensibility model).
 4. Ide upgrade v3/v4: uncertainty bands (dari kompetitor wignyosetyawan890-max "uncertainty bands" + gosanyahainan "tenure"), earnings cross-check P/S, risk flag dari audits field.
 Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/repo.
+
+## [vel] 27 Nov — token-radar v3 SUBMITTED
+- Submission ID: 01a21aee-7ccc-7504-be50-bc73fe91821f (claim AF-2EDTE-C19RE-C5PM1-2VKD2)
+- Commit: 1d15ac7656dc6170b22251ed15965cc5437f4f7f | bundle3.tar.gz sha256 30bb2e10...c50c5ec6
+- v3 = model radar-3 (breadth 1+0.02xmin(chains-1,10), clamp multiple [0.05,1.0], farm plan second-chain+gas per chain+weekly action per kategori, total board $3.10B, median $3.4M) + dashboard per-factor breakdown bars + README angka konkret + 3 screenshot fresh QC visual PASS.
+- Top: Steakhouse $527.1M (11 chains), Gauntlet $313.9M (14), Veda $292.9M (13).
+- Menunggu stage scored (poller jalan). Booster riset DefiLlama resmi (P/S cross-check) = kandidat v4 sisa revisi s/d 14 Des.
