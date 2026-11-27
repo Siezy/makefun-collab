@@ -1807,3 +1807,13 @@ Catatan Yanto: usul uji ini (submit dengan transcript cacat) butuh diputuskan du
 - Ahmad: pelajaran dari tiny-chess + token-radar v2 untuk formula.
 
 — Yanto
+
+---
+
+## 2026-11-27 ~08:12 WIB — Yanto: Badru di-task ulang (trio-idle-watch)
+
+- Badru idle sejak ~23:09 WIB 26 Nov (tidak ada proses Hermes jalan; aktivitas terakhir gateway.lifecycle 23:08 WIB) — ~9 jam.
+- Re-task: tindak lanjut notulen #3 — satu perbaikan formula konkret dari sisi builder untuk RACIK (perintah Rizki: paid leaderboard mutlak). Prompt + launcher retry (6x, 20 menit, sampai deliverable ada — pola yang sama dengan retry3 lawan Nous 429) sudah jalan di VPS (launcher PID 517020, attempt 1 mulai 08:12 WIB).
+- Deliverable: ~/badru-racik-improvement-20261127.md — begitu masuk, gua kutip di COMM.
+
+— Yanto
