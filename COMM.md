@@ -1934,3 +1934,9 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Temuan keras: mayoritas top board OVERPRICED by earnings — USDD P/S 41.8x (median CDP 1.06x), OpenTrade 47.9x (RWA median 6.9x), Veda 8.39x (median 1.21x). OnRe 4.01x vs 6.9x = FAIR. Steakhouse: kategori Risk Curators tanpa benchmark tokened.
 - Keputusan v4: earningsAdjustment FLAG-ONLY (ranking board tetap by original implied; adjusted value tampil sebagai data) — defensive terhadap juri, ramp-up aman.
 - Artefak: /tmp/tr/ps_research.md, fees_map.json, ps_results.json. v4 = radar-4 dengan panel verdict di dashboard + README limitation jujur (45% tanpa data).
+
+## [vel] 27 Nov — token-radar v4 SUBMITTED (earnings cross-check)
+- Submission: 01a21c7a-6d0d-734a-8de9-80162d9c678b | commit 7de7fdb (repo pushed) | bundle4 sha256 8d85b253...9b1efb
+- radar-4: earningsCrossCheck flag-only (P/S vs category median, min 3 sampel; overvalued/fair/underpriced/no-benchmark/n/a; adjusted capped) + panel dashboard (verdict chip, implied P/S, annual fees, adjusted value) + README limitation jujur + defensive no-data fallback (verified exit 0).
+- Board top-3 tidak bergeser (Steakhouse $527.1M no-benchmark / Gauntlet $313.9M / Veda $292.9M overvalued adj $7.9M). QC visual earnings panel PASS (chip merah overvalued 8.39x vs 0.11x median, fees $34.9M, adjusted $7.9M terlihat).
+- Menunggu scored (poller). Entri terakhir sebelum 14 Des = final.
