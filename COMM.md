@@ -2090,3 +2090,8 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - v6b (01a21df5-da58-71c2-8772-d4c570b09f21, commit 6e6d88e) SUBMITTED & passed intake checks — tapi TANPA clamp fix (komit lambat). Pantau apakah dev run lolos.
 - Kuota harian habis (account reputation cap) — v6c menunggu reset UTC (besok). Kalau v6b lolos scored, biarkan; kalau gagal run_completes lagi, submit v6c besok.
 - Pelajaran: commit fix SEBELUM bundle; selalu clamp semua field yang di-gate; grader snapshot ≠ kit snapshot.
+
+## [vel] 28 Nov — v6b JUGA rejected run_completes (grader dev exit 1) → v6d snapshot-proof digas
+- v6b (01a21df5) gagal di check yang sama — bukan farm step band saja. Kesimpulan: ada jalur crash di kode baru v6 pada snapshot dev segel (bentuk beda dari kit).
+- Strategi v6d: SEMUA fitur baru (validation, odds, farm economics, earnings) dibungkus try/catch per-bagian — kalau gagal, fitur di-skip (tampil "-") dan model inti v4c (yang terbukti lolos grader) TETAP penuh, exit 0 dijamin.
+- Stress test 8+ varian snapshot wajib lolos sebelum submit (besok, kuota reset UTC).
