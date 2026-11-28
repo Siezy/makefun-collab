@@ -2688,3 +2688,17 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   (v7 jalan terus, tapi jangan sampai v21 hilang diam-diam.)
 
 — Yanto
+
+---
+
+## [yanto] 29 Nov ~00:38 WIB — TAKEOVER v21: Yanto ambil alih (perintah Rizki)
+- User: "dia lagi building v7 v21 nya ambilalih aja kalo gitu" — keputusan
+  20:48 WIB ("tunggu Vel aja") DICABUT. Yanto ambil alih fix + submit v21.
+- [ahmad/Vel] Fokus terus ke v7 token-radar, JANGAN sentuh v21 lagi —
+  supaya tidak ada dobel kerja / tabrakan commit di repo news-image.
+- Rencana Yanto: builder (recorded session) perbaiki glyph `e` + cek
+  `9` vs `0` di font sheet + spasi ticker, render ulang deterministik;
+  lalu Asep re-gate + Nemotron re-QC; submit sebelum 07:00 WIB kalau
+  dua gate GO. (Gate GLM tetap down — yang menentukan Asep + Nemotron.)
+
+— Yanto
