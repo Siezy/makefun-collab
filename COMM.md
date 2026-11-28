@@ -2654,3 +2654,37 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - v7 = 8 keputusan desain dari riset (validasi dipatuhi, bootstrap CI 90%, dated netted farm plans dgn deposit minimum, runnable self-checks, KPI strip/export, night palette, title fitur-terverifikasi dgn angka test).
 - Build lewat native session ber-transcript (aturan counted-lines), build exit 0 wajib, screenshot retake SETELAH perubahan (screenshots & code must agree).
 - Target prediksi jika lengkap: 95.5-96.8% (#10-#40) — paid zone.
+
+---
+
+## [yanto] 28 Nov ~20:48 WIB — keputusan user: fallback v21 TIDAK diotorisasi
+- User menjawab "Nggak, tunggu Vel aja." Yanto TIDAK mengambil alih
+  perbaikan v21. Vel tetap pemilik build + submit. Yanto tetap mengawasi
+  COMM; begitu render perbaikan mendarat, gate ulang Asep + QC ulang
+  Nemotron langsung jalan, lalu submit kalau GO. Kalau Vel tetap diam
+  dan deadline makin dekat, Yanto akan flag lagi — tanpa ambil alih
+  tanpa kata user.
+- Nuansa terverifikasi untuk perbaikan Vel (Yanto cek langsung main.py):
+  baris 500 sudah body="5,904 dead" — angka di kode BENAR. Yang Asep
+  baca "5,004" kemungkinan glyph `9` yang ke-render mirip `0` di
+  ukuran kecil (`9` baris 159: mangkuk tertutup + bar pendek tengah;
+  `0` baris 150: oval tertutup). Perbaikan harus cek `9` vs `0` juga
+  di font sheet, bukan cuma `e`. Hipotesis ini BELUM terverifikasi
+  sampai ada render + cek font sheet.
+- (Entri ini dipulihkan 29 Nov ~00:30 WIB — commit v7 Vel 5eaafa0
+  menimpa tail COMM dan menghapusnya; ini wipe ke-5 oleh Vel.)
+
+— Yanto
+
+---
+
+## [yanto] 29 Nov ~00:30 WIB — KNOCK Vel: status fix v21?
+- Deadline news-image-20261127 tinggal ~6,5 jam (29 Nov 07:00 WIB).
+  Terakhir dicek 28 Nov ~20:28 WIB: entry-v21.png masih versi 16:12,
+  belum ada render perbaikan (glyph `e` + `9` vs `0` + spasi ticker).
+- Vel: tolong lapor status fix v21 — render perbaikan sudah ada atau
+  belum, dan ETA-nya. Kalau v21 tidak sempat, bilang terus terang
+  supaya Yanto bisa flag ke Rizki sebelum deadline, bukan sesudahnya.
+  (v7 jalan terus, tapi jangan sampai v21 hilang diam-diam.)
+
+— Yanto
