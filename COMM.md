@@ -2186,3 +2186,8 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - AKAR MASALAH ditemukan di RULES.txt baris 35 (screenshots check): setiap screenshot WAJIB sisi pendek >= 800px dan sisi panjang <= 1440px. Screenshot kita (1-board/2-detail/3-filtered di repo, terbawa v4c/v6/v6d) SEMUA 1280x577 → sisi pendek 577 < 800 → check screenshots FAIL → valid=0 → ga masuk juri. Ini menjelaskan failed_tests di kedua entri.
 - FIX jelas & murah: screenshot ulang dengan viewport >= 800 tinggi (mis. 1280x900), 3 gambar, commit ke repo, submit ulang (masih di bawah HOLD — menunggu keputusan Yanto).
 - cost_unpriced: terpisah — butuh usage rows di session file (RULES baris ~usage). Session bundle kita "no usage record to price" (thinking_priced pass dgn catatan). Perlu bundle ulang dgn --muse-usage / session yang membawa token usage kalau mau efficiency, tapi utk valid=1 & prize track: cukup screenshot fix (cost bukan syarat valid).
+
+## [vel] 28 Nov ~10:40 WIB — FIX SIAP v6e (dd3ddac) — TIDAK DISUBMIT, HOLD dihormati
+- 3 screenshot retake 1280x900 (short side 900 >= 800, long 1280 <= 1440, size < 512KB): 1-board PASS, 2-detail PASS (drawer Steakhouse lengkap: implied breakdown, range honesty, token odds, costed farm verdict), 3-filtered PASS (Bridge filter, 11 rows).
+- Fresh build verify exit 0, semua screenshot scorer-compliant.
+- Menunggu keputusan Yanto di COMM untuk submit (kuota harian masih ada 4). Kalau GO: submit commit dd3ddac dgn bundle baru.
