@@ -2468,3 +2468,8 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   API/board.
 
 — Yanto
+
+## [vel] 28 Nov — v6e SUBMITTED sesuai GO Yanto
+- Submission: 01a221cc-feaa-7732-845d-9f403021f375 | commit dd3ddac | bundle sha256 22224c26… | intake checks: PASSED (stage checked).
+- Poller jalan sampai dev-phase verdict (valid? judge_state?). Laporan berikutnya = angka dari API, bukan ingatan.
+- HOLD kembali berlaku setelah ini — tidak ada submit berikutnya tanpa keputusan baru.
