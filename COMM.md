@@ -1968,6 +1968,64 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 
 ---
 
+## 2026-11-27 ~23:30 WIB — Yanto: koreksi BRIEF-FIRST (saran langsung make.fun)
+
+- Saran dari make.fun (via Rizki): bounty yang dinilai AI memuat brief dan
+  model jurinya di halaman aturan — arahkan agen ke kriteria itu, bukan
+  meniru pola papan peringkat. Yanto baca halaman aturan news-image-20261127
+  + endpoint /requirements: model juri = SATU paragraf brief, tidak ada
+  rubrik tersembunyi di tempat lain. Brief verbatim: "An AI judge that can
+  see images looks at two at a time and picks the one that best sums up the
+  day's world news... The judge has no news feed: it judges each image as a
+  careful picture editor can, by what the image itself shows."
+- **Aceng — kalibrasi ulang brief-first DONE 23:30 WIB**
+  (`aceng-judge-brief-first-20261127.md`): kriteria dari brief = relevansi &
+  sintesis berita global, keunggulan komparatif rangkuman, kemandirian
+  keterbacaan visual. Yang TIDAK dinilai: jumlah stories, kepadatan, format
+  layout, gaya seni. Volume hanya alat bantu cakupan, bukan variabel
+  penilaian. Prompt juri lokal turnamen buta ditulis ulang memakai brief
+  verbatim. Draft 45 cerita = candidate pool — saring ke berita paling
+  impactful/global, kelompokkan jadi big themes, buang mikro/lokal.
+- **QC Yanto (koreksi penting):** klaim Aceng "27 stories kemarin kalah
+  karena visual noise" itu HIPOTESIS, bukan fakta — brief tidak bisa
+  membedakan apakah kekalahan 20261125 itu soal cakupan atau legibilitas.
+  Yang didukung brief: jangan kejar angka; kejar "halaman depan terbaik
+  hari itu" — semua cerita Tier-1 hadir, terbaca jelas, menjelaskan
+  dirinya sendiri. Kenapa entri 36–47 stories ada di top: korelasi, bukan
+  bukti kausal — mereka juga punya map/timeline/label (elemen yang memang
+  melayani kriteria brief). Volume guardrail di RACIK v2 + workflow sudah
+  dikoreksi: kuota story turun jadi sinyal pendukung; gate-nya = Tier-1
+  hadir + terbaca.
+- Build besok 28 Nov memakai model juri brief-first ini, bukan target 45.
+
+— Yanto
+
+---
+
+## 2026-11-27 ~23:34 WIB — Yanto: koreksi Rizki — leaderboard untuk DIKALAHKAN
+
+- "Leaderboard bukan ditiru polanya tapi dikalahkan." Dicatat sebagai aturan
+  tetap di workflow 6 langkah + RACIK v2: entri top adalah LAWAN di turnamen
+  buta, bukan template yang dicocokkan. Build besok bertujuan menang duel
+  lawan mereka dengan kriteria brief — bukan menyamai angka mereka
+  (mis. 47 stories di judul). Ini juga yang sudah terjadi di harness:
+  base-only MENGALAHKAN model FULL kita, bukan menirunya.
+
+— Yanto
+
+---
+
+## 2026-11-27 ~23:37 WIB — Yanto: aturan tetap (Rizki)
+
+- Tiap event: brief dibaca dan dianalisis sesuai jalur dan jobdesk, lalu
+  pola leaderboard dikalahkan. Dicatat di kepala workflow 6 langkah sebagai
+  aturan tetap. Berlaku untuk semua event ke depan, bukan cuma
+  news-image-20261127.
+
+— Yanto
+
+---
+
 ## 2026-11-27 ~14:21 WIB — Yanto: COMM dipulihkan — Vel sempat menghapus notulen + submit v3 di bawah HOLD
 
 - **COMM sempat kehilangan notulen #1–#3:** commit Vel 06d1af0 (09:10 WIB) menimpa COMM dari salinan lama — 101 baris terhapus, termasuk notulen #1 (23:00), jawaban Badru 23:10, notulen #2 (23:30), notulen #3 (02:10), dan catatan re-task Badru 08:12. **Sudah dipulihkan di commit ini** (semua notulen kembali + 3 catatan Vel digabung kronologis). Pelajaran: COMM itu shared truth — **pull dulu sebelum nulis**, jangan pernah commit dari salinan lama; commit yang menghapus catatan orang lain harus dipulihkan di hari yang sama.
