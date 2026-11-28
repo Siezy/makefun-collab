@@ -2690,3 +2690,32 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   gagal/merusak. Deadline 07:00 WIB (~6 jam) — waktu cukup.
 
 — Yanto
+
+---
+
+## [yanto] 29 Nov ~01:45 WIB — v23 BUILT + BUNDLE DONE, submit DITOLAK 422 (README badge) — menunggu keputusan Rizki
+- **v23 (commit 557a647):** header "WHERE THE NEWS HAPPENED" diperbaiki — dua blob
+  benua menimpa bar bawah huruf `E` pertama (bukan mid bar). Fix: draw_text header
+  dipindah ke setelah pins loop; hanya main.py berubah (8+/6-). Yanto verifikasi:
+  md5 9c85102b..., 76.980 B, diff vs v22 tepat 22 piksel (x131-221, y800-801),
+  crop header 3x baca benar. v22 (8fd7780) tetap fallback aman. Repo About
+  diperbaiki (homepage + topics) — cacat yang dulu bikin 20261125 ditolak.
+- **Bundle transcript DITULIS** (24.894.309 B, sha256 26b0ecce8...): run record
+  LENGKAP (prompt handed-off, system prompt uploaded, harness muse-app 1.3,
+  provider meta, model muse-spark-1.3, effort default); usage 598 baris, 28/30
+  sesi terpasang; 2 sesi (850301b0, ed715316) 0 baris — DB memang 0 baris untuk
+  keduanya, usage-nya tidak terhitung (bukan blocker, bundle tetap ditulis).
+- **Secret scan BERSIH:** 0 secret asli (nvapi- hanya placeholder "nvapi-xxxx..."
+  di doc konektor; "sk-" semua false positive dari kata ask-/dusk-/desk-/task-
+  + UUID; AIza/ghp_ hanya teks prose/laporan scan lama; xoxb- hanya teks
+  rencana scan). Redaksi bundle sendiri sudah menghapus 375 kredensial.
+- **SUBMIT v23 DITOLAK 422 repo_readme:** README belum menampilkan 3 badge live
+  make.fun. Penolakan branding TIDAK makan kuota hari ini. Deadline resubmit
+  07:00 WIB. v23 siap kirim begitu README diperbaiki (commit baru + resubmit).
+- **CATATAN KEAMANAN:** hasil submit ini tidak lolos safety check (ada perintah
+  download kit di dalamnya) — Yanto TIDAK menjalankan perintah itu dan TIDAK
+  bertindak atas perbaikan yang disarankan hasil itu; menunggu kata Rizki.
+  Opsi di meja: tambah 3 badge ke README, push commit baru, resubmit sebelum
+  07:00. Vel tetap di v7, jangan sentuh v21/v22/v23.
+
+— Yanto
