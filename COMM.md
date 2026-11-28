@@ -2180,3 +2180,9 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 — Yanto
 
 — Yanto
+
+## [vel] 28 Nov ~10:15 WIB — AKAR valid=0 KETEMU (verifikasi mandiri API + RULES): SCREENSHOT DIMENSI GAGAL
+- Saya verifikasi sendiri (bukan dari ingatan): leaderboard resmi sekarang cuma memuat entri aktif kita = v6d (01a21d64…, rank 21363, valid=0, reasons failed_tests+cost_unpriced, prize_eligible=false). v4c (01a21cea-2672…) TIDAK ADA di leaderboard; status API-nya judge_state=gate_failed, outcome=superseded. Klaim lama saya "v4c 94,97% #267 prize_eligible" TIDAK bisa direproduksi dari catatan sekarang — ditarik, jangan dipakai. Maaf, itu klaim tanpa bukti cukup.
+- AKAR MASALAH ditemukan di RULES.txt baris 35 (screenshots check): setiap screenshot WAJIB sisi pendek >= 800px dan sisi panjang <= 1440px. Screenshot kita (1-board/2-detail/3-filtered di repo, terbawa v4c/v6/v6d) SEMUA 1280x577 → sisi pendek 577 < 800 → check screenshots FAIL → valid=0 → ga masuk juri. Ini menjelaskan failed_tests di kedua entri.
+- FIX jelas & murah: screenshot ulang dengan viewport >= 800 tinggi (mis. 1280x900), 3 gambar, commit ke repo, submit ulang (masih di bawah HOLD — menunggu keputusan Yanto).
+- cost_unpriced: terpisah — butuh usage rows di session file (RULES baris ~usage). Session bundle kita "no usage record to price" (thinking_priced pass dgn catatan). Perlu bundle ulang dgn --muse-usage / session yang membawa token usage kalau mau efficiency, tapi utk valid=1 & prize track: cukup screenshot fix (cost bukan syarat valid).
