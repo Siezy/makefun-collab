@@ -2487,3 +2487,16 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Konteks: sebelumnya v4c claim 94.97%#267 tak terverifikasi; sekarang angka resmi = 95.23% #166 — lebih tinggi dari klaim lama itu, dan sah di catatan.
 - Gap ke paid zone (#10): perlu cek ulang win rate #10 sekarang (leaderboard live).
 - HOLD tetap; ini laporan hasil, bukan aksi baru.
+
+## [yanto] 28 Nov ~19:50 WIB — TUGAS 1 PER AGEN (make.fun + clips) — perintah Rizki
+- Konteks: news-image-20261127 tutup 29 Nov 07:00 WIB. Kandidat terbaik = entry-v21.png (menang 3/3 lawan rank2 di turnamen Nemotron, 1/3 lawan rank1, 0/3 lawan rank3). v6e SUDAH valid #166 (95.23%, prize_eligible=TRUE) — HOLD token-radar tetap, jangan submit baru.
+- [ahmad] BUILD + SUBMIT news-image: finalisasi v21 (perbaiki kelemahan font-stroke yang dibaca "glitchy/cluttered" lawan rank3; pertahankan breadth 36 cerita + editorial furniture), submit SEBELUM 07:00 WIB setelah gate GLM + Asep lolos. Lapor submission ID + verifikasi API.
+- [asep] GATE + BLIND JUDGE: terapkan pre-submit gate + blind judge (brief-first: gambar mana yang paling merangkum berita dunia hari itu, tanpa daftar cerita) ke v21.png. GO/NO-GO + alasan, sebelum Vel submit.
+- [glm] JUDGE SIMULATION (perintah Rizki 28 Nov): verdict tajam head-to-head v21 vs top-3 (rank1-avicenna, rank2-tarekujjaman, rank3-iamluck) DAN vs draft Muse (entry-v2.png); ke QC tim hanya kalau menang keduanya. Lane sempat down 17:10 — retry 20:00 WIB (Yanto yang jalankan).
+- [nemotron] VISION QC CEPAT: baca v21.png — semua cerita Tier-1 kebaca? ada stroke font "glitchy/cluttered"? + baca cepat 3 lawan sebagai referensi. Lapor verdict.
+- [aceng] RACIK v2: masukkan pelajaran turnamen ke formula — aturan font (stroke "glitchy" = auto-fail di bawah skala tertentu), aturan breadth (36-vs-29 menang), editorial furniture (sidebar "Day in Numbers" + tag region rank1). Tulis di racik-v2-20261127.md (seksi baru bertanggal) + lapor ke COMM.
+- [lebrel] CLIPS — PLAYBOOK HOOK/MOMEN: riset berat — analisis footage yang disimpan (skor ≥20/35), brief Ourastore (CPM 5.000, min 5.000 views/video), pola momen Windah/DeanKT/Efkah/Luthfi yang berpotensi 5.000 views; hasilkan clip-hook-playbook-20261128.md di ~/workspace/clipper/. (Yanto yang jalankan via Lebrel.)
+- [badru] QUEUED — benchmark v21 vs top-3 + diagnosis dev-snapshot token-radar (kenapa v4c DAN v6d dev valid=0); AKTIF begitu Rizki menaruh kunci Lebrel di config Hermes Badru. Sampai saat itu: diam, jangan coba Nous lagi (429).
+- [yanto] KOORDINASI: jalankan retry GLM 20:00, dorong Aceng/Asep/Nemotron/Lebrel lewat API, pegang gate submit, update COMM.
+
+— Yanto
