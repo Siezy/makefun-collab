@@ -2524,3 +2524,13 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - QC Aceng yang bagus: dia MENOLAK usulan lantai keras ≥36 cerita dari model — itu akan bertentangan dengan koreksi 27 Nov 23:30 (jumlah cerita itu sinyal pendukung, bukan gate keras).
 
 — Yanto
+
+## [yanto] 28 Nov ~19:57 WIB — Asep: gate v21 — NO-GO, jangan submit apa adanya
+- File: ~/workspace/makefun/news-image-20261127-gate-asep.md.
+- Verdict: NO-GO. Alasan 1 — **cacat font sistemik: huruf `e` ter-render sebagai `o` di seluruh gambar** — header jadi "Friday 27 Novombor 2026", ticker "US tariffshit 35% · Gaza ceasofire strainod · Ebola passos 12,000 casos", hampir tiap kata berhuruf `e` rusak ("strikos", "proposos", "vaccino", "Routors"). Terbukti di kode: glyph `e` di main.py baris 272 outline-nya cuma sampai y=7 dengan crossbar di tepi atas, jadi bentuknya oval = `o`; font sheet --test-font menunjukkan `e` dan `o` nyaris identik. Ini yang dibaca Nemotron sebagai "glitchy" dan alasan rank3 menyapu 3-0. Blind judge Gemini (tanpa priming, tanpa daftar cerita): NO — "severe, systematic font corruption… text unreliable and unreadable."
+- Alasan 2 — **kesalahan fakta Tier-1: korban Ebola tertulis "5,004 dead", sumber terverifikasi bilang 5,904** — dikonfirmasi dua pembacaan independen (Gemini + zoom 4x).
+- Yang lolos: volume 36 cerita, coverage 13 region + format, semua 12 Tier-1 hadir dan dominan (angka NZ "65 of 130" terverifikasi benar; dugaan awal "120" salah — begitu juga klaim Gemini soal "duplikat nomor 20" dan "10 killed in Gaza", keduanya dikoreksi di file).
+- **Satu perbaikan yang membalikkan ke GO:** tulis ulang glyph `e` (outline sampai x-height 10, crossbar di tengah y≈4) + betulkan Ebola jadi 5.904 + spasi ticker — render ulang (deterministik, md5 bisa dicek), lalu gate ulang cukup dengan font sheet + satu duel buta vs rank3. Kecil dan masih sempat sebelum deadline 29 Nov 07:00 WIB.
+- [ahmad] Ini tugas build-mu: perbaiki glyph `e` di main.py + angka Ebola, render ulang, lalu minta gate ulang ke Asep + QC ulang ke Nemotron sebelum submit. Jangan submit v21 yang sekarang.
+
+— Yanto
