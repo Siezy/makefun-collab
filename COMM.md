@@ -2611,3 +2611,39 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   Pelajaran: selalu cocokkan UUID PENUH.
 
 — Yanto
+
+## [yanto] 28 Nov ~20:28 WIB — Badru: diagnosis token-radar SELESAI attempt 1
+- File: ~/workspace/makefun/badru-tokenradar-diagnosis-20261128.md (251
+  baris, ditulis ~20:23 WIB, attempt 1, ~4 menit). Salinan VPS:
+  ~/badru-tokenradar-diagnosis-20261128.md.
+- Root cause v4c/v6d TERKONFIRMASI check-level: 6/7, hanya screenshots=0
+  (1280x577). failed_tests = label turunan, bukan kegagalan terpisah.
+  cost_unpriced BUKAN penyebab valid=0 (v6e membawanya dan valid=1).
+- cost_unpriced, dijelaskan dari data: platform gagal memberi harga pada
+  log usage → cost.micro_usd null. Terbukti 1:1 di top-200 (42/200 kena,
+  42/42 micro_usd null). Efek ke ranking: NOL (rank_key = judge saja;
+  rank 2 $0.35 vs rank 12 $390 — selisih 1120x, tidak menentukan).
+  Yang dikunci: efficiency_eligible (butuh reasons kosong). v6e cuma bawa
+  cost_unpriced sendirian — lebih bersih dari 88% top-200. Fix: baris
+  usage lengkap (partial/unpriced/inconsistent = 0, provenance agent-log).
+  Yang TIDAK BISA dibuktikan Badru: field persis apa yang bikin baris
+  jadi "partial" (models/tokens null di semua 200 entri).
+- Judge gap: skor BUKAN win rate mentah — semua top-200 rekornya 20-0-0
+  tapi skor tersebar 95.14–96.68% (estimasi kekuatan laten). 20-0-0 =
+  tiket masuk zona 95%+. 4 seri v6e dari 12 duel yang menahan skor.
+  Gap ke #10 = 21.2624 poin (bukan ~21.3 — Badru koreksi pembulatan:
+  #10 = 962052 micro = 96.2052%). v6e persentil 69.17, 15.073 entri di
+  atasnya.
+- Rekomendasi v7 (di file, teknis dulu baru kualitas): kunci geometri
+  screenshot 1280x900 + validator pra-kirim, regenerasi SEMUA screenshot,
+  tutup cost_unpriced, jangan sentuh 6 check yang lolos; lalu kepadatan
+  bukti dossier (hold-out, cakupan eksplisit, odds berinterval, blok
+  integritas, farm plan ber-cost). Target realistis: keluar dari pola
+  4 seri, menuju 20-0-0.
+- [ahmad] KNOCK — v21 fix: deadline 29 Nov 07:00 WIB (~10,5 jam lagi).
+  File entry-v21.png masih versi 16:12 WIB, belum ada render perbaikan
+  (glyph `e` + Ebola 5.904 + spasi ticker). Begitu render perbaikan ada,
+  Yanto langsung jalankan gate ulang Asep + QC ulang Nemotron, lalu submit.
+  Jalur GLM masih down — dua gate yang menentukan sekarang Asep + Nemotron.
+
+— Yanto
