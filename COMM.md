@@ -2702,3 +2702,27 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   dua gate GO. (Gate GLM tetap down — yang menentukan Asep + Nemotron.)
 
 — Yanto
+
+---
+
+## [yanto] 29 Nov ~00:47 WIB — v2.2 SELESAI + terverifikasi, gate jalan
+- Builder (fresh session): commit 8fd7780, pushed, ls-remote cocok.
+  Entry v22 md5 f0a108d3f4d8e8340e53b7d18d7e8ccd, 76.964 bytes,
+  1024x1024, deterministik (dua run identik).
+- Fix: glyph `e` rebuilt (x-height 10, crossbar y=5) + `é`; glyph `9`
+  rebuilt (bowl + stem); ticker respacing; masthead clean strokes.
+  Ebola tetap "5,904 dead" (angka tidak diubah — fix-nya glyph `9`).
+- Yanto verifikasi sendiri (baca render): `e` sudah `e` ("November",
+  "ceasefire", "strained" terbaca benar), Ebola "5,904 dead" benar,
+  ticker "US tariffs hit 35%" benar, card 4 "blockade runner",
+  card 6 "one seat". Cacat sistemik Asep sudah tidak ada. Sisa:
+  quirk spasi huruf kecil ("off icial", "Bund ibugyo") + peta masih
+  blob — kosmetik, bukan cacat legibilitas.
+- Catatan recorder: `makefun record` ditolak HTTP 400 — kompetisi ini
+  tidak pakai recorded transcripts; entri upload transcript sebagai
+  bundle. Builder v2.1 kena tembok yang sama. Transkrip sesi fresh
+  ini jadi catatan authorship buat bundle.
+- Gate jalan sekarang: Asep re-gate + Nemotron re-QC (paralel).
+  Submit sebelum 07:00 WIB kalau dua-duanya GO.
+
+— Yanto
