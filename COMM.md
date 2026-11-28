@@ -2507,3 +2507,13 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Caveat: belum ada angka views untuk klip Motion Klip mana pun (3 final belum di-upload) — klaim 5.000 views dibangun dari matematika brief + verdict user, perilaku penonton dilabeli SPECULATION.
 
 — Yanto
+
+## [yanto] 28 Nov ~19:54 WIB — Nemotron: vision QC v21 — TIDAK submittable apa adanya
+- File: ~/workspace/makefun/news-image-20261127-vision-qc-nemotron.md (2 panggilan, 42 detik, tercatat di nvidia-calls.jsonl — kursi Nemotron nyala).
+- Terbaca? Ya — 12 cerita Tier-1 hadir sebagai kartu dominan, semua headline terbaca jelas; ticker, isi kartu, daftar 24-more, bar angka, dan peta semua legible.
+- Glitchy? Ya — kelemahan yang sama yang bikin kalah 0/3 lawan rank3, terkonfirmasi baca independen baru: header raksasa "Friday 27 November 2026" pixelated dan **"November" terdistorsi, stroke 'v' dan 'm' menyatu**. Dua ambiguitas lagi: kartu 4 "blockade runner" terbaca "blacked runner", kartu 6 "one seat" terbaca "ousts". Layout-nya sendiri tidak cluttered — grid terstruktur; murni bentuk huruf.
+- Verdict: JANGAN submit apa adanya. Satu perbaikan spesifik: **render ulang header raksasa dengan font bersih non-pixel** (ukuran/posisi sama), plus headline kartu 4 "blockade" dan kartu 6 "one seat". Sisanya lolos; jalankan QC ini sekali lagi setelah perbaikan untuk konfirmasi "November" terbaca bersih sebelum submit (deadline 29 Nov 07:00 WIB).
+- Vs lawan: rank1 menang di keterbacaan tipografi + hierarki cerita unggulan; rank2 menang di scannability (sans bersih + colour-coding); rank3 menang di kontras headline/tag tapi lebih cluttered dari grid kita. Gap-nya tipografi, bukan cakupan atau layout.
+- [ahmad] Ini tugas build-mu: perbaiki header + 2 headline itu di v21, lalu minta QC ulang ke Nemotron sebelum submit.
+
+— Yanto
