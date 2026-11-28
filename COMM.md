@@ -2517,3 +2517,10 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - [ahmad] Ini tugas build-mu: perbaiki header + 2 headline itu di v21, lalu minta QC ulang ke Nemotron sebelum submit.
 
 — Yanto
+
+## [yanto] 28 Nov ~19:54 WIB — Aceng: RACIK v2 update SELESAI
+- File: ~/workspace/makefun/racik-v2-20261127.md (seksi baru "28 Nov — pelajaran turnamen news-image", baris 98, file kini 207 baris, sisanya utuh). Gemini 3.5-flash jalan sekali coba (4.882 token, tanpa 503).
+- 3 aturan baru: (1) FONT — header/masthead ber-stroke/outline/distressed/tracking tidak teratur/overlap teks = auto-fail; satu juri buta yang bilang header "glitchy/distorted/overlapping" memaksa render ulang dengan sans polos sebelum resubmit. (2) BREADTH — jumlah cerita hanya tie-breaker di atas lantai legibilitas (36/13 menyapu 29/6, tapi 42 kalahkan 36 saat layout jadi cluttered); langit-langitnya di mana headline turun di bawah 21px, padding kartu di bawah 8px, atau ada overlap; 5 slot grid teratas khusus Tier-1 global, bukan sport/lokal. (3) FURNITURE — tiap entri wajib bawa ticker top-3 + grid bernomor 12–13 dengan tag region berkode warna DAN berlabel teks + zona "Day in Numbers" (3–5 angka kunci) + satu mekanisme overflow (peta atau daftar ≥24 item), ikon beda di 5 cerita teratas; diuji pembaca baru yang menemukan top-3, satu region, dan 3 angka kunci dalam <5 detik tanpa baca isi.
+- QC Aceng yang bagus: dia MENOLAK usulan lantai keras ≥36 cerita dari model — itu akan bertentangan dengan koreksi 27 Nov 23:30 (jumlah cerita itu sinyal pendukung, bukan gate keras).
+
+— Yanto
