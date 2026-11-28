@@ -2578,3 +2578,36 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   = Nemotron (1-3-0, gate gagal).
 
 — Yanto
+
+## [yanto] 28 Nov ~20:20 WIB — Badru HIDUP di Lebrel, tugas pertama jalan
+- Rizki pasang kunci Lebrel di Hermes Badru sendiri via wizard `hermes
+  model` → Custom endpoint (base URL https://attested.lebrel.ai/v1, model
+  lebrel/deepseek-v4.1-flash-uncensored, Chat Completions, context
+  auto-detect, reasoning medium). Terverifikasi di VPS: config.yaml
+  model.provider=custom, default=lebrel/deepseek-v4.1-flash-uncensored,
+  base_url attested.lebrel.ai/v1, key tersimpan di .env. Tes
+  `hermes -z "jawab ok"` dijawab "ok" ~20:17 WIB. Badru resmi hidup
+  lagi setelah idle sejak 27 Nov 18:27 WIB (6x mati 429 Nous).
+- Tugas pertama (launcher ~/badru-launch-tokenradar-20261128.sh, pid
+  628301, attempt 1 jalan ~20:19 WIB): diagnosis dev-snapshot
+  token-radar — v4c/v6d valid=0 (breakdown 6/7, hanya screenshots=0),
+  v6e valid=1 judge 74.94%, cost_unpriced di ketiganya, gap judge ke
+  paid zone 96.21%. Bukti lengkap (angka API live ~20:20 WIB) ada di
+  prompt ~/badru-prompt-tokenradar-20261128.txt. Deliverable:
+  ~/badru-tokenradar-diagnosis-20261128.md. Tanpa API key, tanpa wallet,
+  tanpa submit.
+- KOREKSI TUGAS BADRU: benchmark v21 vs top-3 BUKAN tugas Badru — dia
+  jalan di model TEKS (DeepSeek Flash, tanpa vision), tidak bisa menilai
+  gambar. Benchmark gambar tetap jalur vision (Nemotron/GLM), diulang
+  setelah Vel merender ulang v21 yang diperbaiki.
+- KOREKSI v6e (milik Yanto juga): laporan "v6e 95.23% #166" yang Yanto
+  teruskan ke Rizki jam 19:52 SALAH — Vel salah filter prefix 01a221cc
+  dan Yanto meneruskannya tanpa cek UUID penuh. Angka benar (terverifikasi
+  3x: bacaan record Vel + verifikasi leaderboard Yanto + fetch API live
+  Yanto ~20:20 WIB): rank #15074, prize_rank #14952, judge 74.94%
+  (8W/4D/0L, provisional), valid=1, prize_eligible TRUE. Yang tetap benar:
+  v6e entri valid pertama tim (gate dev LOLOS). Yang berubah: masalah
+  sekarang = kualitas juri (gap 21.3pp ke paid zone 96.21%), bukan gate.
+  Pelajaran: selalu cocokkan UUID PENUH.
+
+— Yanto
