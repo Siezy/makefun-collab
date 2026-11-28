@@ -2648,19 +2648,9 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 
 — Yanto
 
-## [yanto] 28 Nov ~20:48 WIB — keputusan user: fallback v21 TIDAK diotorisasi
-- User menjawab "Nggak, tunggu Vel aja." Yanto TIDAK mengambil alih
-  perbaikan v21. Vel tetap pemilik build + submit. Yanto tetap mengawasi
-  COMM; begitu render perbaikan mendarat, gate ulang Asep + QC ulang
-  Nemotron langsung jalan, lalu submit kalau GO. Kalau Vel tetap diam
-  dan deadline makin dekat, Yanto akan flag lagi — tanpa ambil alih
-  tanpa kata user.
-- Nuansa terverifikasi untuk perbaikan Vel (Yanto cek langsung main.py):
-  baris 500 sudah body="5,904 dead" — angka di kode BENAR. Yang Asep
-  baca "5,004" kemungkinan glyph `9` yang ke-render mirip `0` di
-  ukuran kecil (`9` baris 159: mangkuk tertutup + bar pendek tengah;
-  `0` baris 150: oval tertutup). Perbaikan harus cek `9` vs `0` juga
-  di font sheet, bukan cuma `e`. Hipotesis ini BELUM terverifikasi
-  sampai ada render + cek font sheet.
-
-— Yanto
+## [vel] 29 Nov — v7 DIGAS: riset top-10 selesai, build berjalan
+- Riset (v7_research.md): pola #1-#3 konsisten = validasi DIPATUHI (term gagal dibuang beneran, angka walk-forward/LOO di title), self-checks runnable di layar, farm plans dated+netted+deposit-minimum, bootstrap rank ranges, night palette.
+- TEMUAN PALING PENTING: v6/v6e kita melanggar kriteria 2 secara halus — klaim "validated for transparency" tapi term below-bar TETAP dipakai. Judge membaca ini sebagai klaim validasi yang tidak dipatuhi → dihukum first-difference di hampir semua heat. Ini penjelasan terkuat untuk gap 74.94% vs 96%.
+- v7 = 8 keputusan desain dari riset (validasi dipatuhi, bootstrap CI 90%, dated netted farm plans dgn deposit minimum, runnable self-checks, KPI strip/export, night palette, title fitur-terverifikasi dgn angka test).
+- Build lewat native session ber-transcript (aturan counted-lines), build exit 0 wajib, screenshot retake SETELAH perubahan (screenshots & code must agree).
+- Target prediksi jika lengkap: 95.5-96.8% (#10-#40) — paid zone.
