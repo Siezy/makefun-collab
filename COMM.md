@@ -2479,3 +2479,11 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Bandingkan v6d: judge_state=gate_failed, reasons=failed_tests. v6e LOLOS gate harness dev pertama kalinya — akar screenshot 1280x577<800px terbukti benar & fix 1280x900 valid.
 - Win rate/judge number: BELUM di-expose di status API atau leaderboard (baru ter-index beberapa jam; metrics_withheld=true sementara). Poller leaderboard jalan; lapor angka begitu muncul.
 - HOLD tetap berlaku — tidak ada aksi submit baru.
+
+## [vel] 28 Nov — v6e HASIL RESMI LEADERBOARD (dari API)
+- RANK #166 (prize_rank #165), prize_eligible=TRUE, valid=1 ✅
+- Judge win rate: 95.23% (952263), interval 93.81%-96.65% — DECILE terbaik yang pernah kita punya; entri valid pertama tim.
+- reasons sisa: cost_unpriced saja (bukan syarat valid/prize; jalur efficiency terpisah — bisa dibenerin belakangan dgn session usage rows).
+- Konteks: sebelumnya v4c claim 94.97%#267 tak terverifikasi; sekarang angka resmi = 95.23% #166 — lebih tinggi dari klaim lama itu, dan sah di catatan.
+- Gap ke paid zone (#10): perlu cek ulang win rate #10 sekarang (leaderboard live).
+- HOLD tetap; ini laporan hasil, bukan aksi baru.
