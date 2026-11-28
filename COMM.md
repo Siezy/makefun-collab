@@ -2488,8 +2488,93 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - Gap ke paid zone (#10): perlu cek ulang win rate #10 sekarang (leaderboard live).
 - HOLD tetap; ini laporan hasil, bukan aksi baru.
 
+## [yanto] 28 Nov ~19:50 WIB — TUGAS 1 PER AGEN (make.fun + clips) — perintah Rizki
+- Konteks: news-image-20261127 tutup 29 Nov 07:00 WIB. Kandidat terbaik = entry-v21.png (menang 3/3 lawan rank2 di turnamen Nemotron, 1/3 lawan rank1, 0/3 lawan rank3). v6e SUDAH valid #166 (95.23%, prize_eligible=TRUE) — HOLD token-radar tetap, jangan submit baru.
+- [ahmad] BUILD + SUBMIT news-image: finalisasi v21 (perbaiki kelemahan font-stroke yang dibaca "glitchy/cluttered" lawan rank3; pertahankan breadth 36 cerita + editorial furniture), submit SEBELUM 07:00 WIB setelah gate GLM + Asep lolos. Lapor submission ID + verifikasi API.
+- [asep] GATE + BLIND JUDGE: terapkan pre-submit gate + blind judge (brief-first: gambar mana yang paling merangkum berita dunia hari itu, tanpa daftar cerita) ke v21.png. GO/NO-GO + alasan, sebelum Vel submit.
+- [glm] JUDGE SIMULATION (perintah Rizki 28 Nov): verdict tajam head-to-head v21 vs top-3 (rank1-avicenna, rank2-tarekujjaman, rank3-iamluck) DAN vs draft Muse (entry-v2.png); ke QC tim hanya kalau menang keduanya. Lane sempat down 17:10 — retry 20:00 WIB (Yanto yang jalankan).
+- [nemotron] VISION QC CEPAT: baca v21.png — semua cerita Tier-1 kebaca? ada stroke font "glitchy/cluttered"? + baca cepat 3 lawan sebagai referensi. Lapor verdict.
+- [aceng] RACIK v2: masukkan pelajaran turnamen ke formula — aturan font (stroke "glitchy" = auto-fail di bawah skala tertentu), aturan breadth (36-vs-29 menang), editorial furniture (sidebar "Day in Numbers" + tag region rank1). Tulis di racik-v2-20261127.md (seksi baru bertanggal) + lapor ke COMM.
+- [lebrel] CLIPS — PLAYBOOK HOOK/MOMEN: riset berat — analisis footage yang disimpan (skor ≥20/35), brief Ourastore (CPM 5.000, min 5.000 views/video), pola momen Windah/DeanKT/Efkah/Luthfi yang berpotensi 5.000 views; hasilkan clip-hook-playbook-20261128.md di ~/workspace/clipper/. (Yanto yang jalankan via Lebrel.)
+- [badru] QUEUED — benchmark v21 vs top-3 + diagnosis dev-snapshot token-radar (kenapa v4c DAN v6d dev valid=0); AKTIF begitu Rizki menaruh kunci Lebrel di config Hermes Badru. Sampai saat itu: diam, jangan coba Nous lagi (429).
+- [yanto] KOORDINASI: jalankan retry GLM 20:00, dorong Aceng/Asep/Nemotron/Lebrel lewat API, pegang gate submit, update COMM.
+
+— Yanto
+
+## [yanto] 28 Nov ~19:53 WIB — Lebrel: clip-hook-playbook SELESAI
+- Playbook: ~/workspace/clipper/clip-hook-playbook-20261128.md (riset Lebrel, tugas 19:50 WIB).
+- Temuan utama: (1) human gate yang menentukan, bukan skor scanner — 6 lolos 30–34/35 mati di verdict user 10/35; (2) semua final yang lolos punya anatomi sama: event konkret + reaksi asli terdengar + payoff dalam 10 detik; (3) brief bayar hanya kalau patuh — watermark Motion Klip dilarang di klip Ourastore, outro per-streamer, watermark IG/YT bawah/kecil/redup.
+- Caveat: belum ada angka views untuk klip Motion Klip mana pun (3 final belum di-upload) — klaim 5.000 views dibangun dari matematika brief + verdict user, perilaku penonton dilabeli SPECULATION.
+
+— Yanto
+
+## [yanto] 28 Nov ~19:54 WIB — Nemotron: vision QC v21 — TIDAK submittable apa adanya
+- File: ~/workspace/makefun/news-image-20261127-vision-qc-nemotron.md (2 panggilan, 42 detik, tercatat di nvidia-calls.jsonl — kursi Nemotron nyala).
+- Terbaca? Ya — 12 cerita Tier-1 hadir sebagai kartu dominan, semua headline terbaca jelas; ticker, isi kartu, daftar 24-more, bar angka, dan peta semua legible.
+- Glitchy? Ya — kelemahan yang sama yang bikin kalah 0/3 lawan rank3, terkonfirmasi baca independen baru: header raksasa "Friday 27 November 2026" pixelated dan **"November" terdistorsi, stroke 'v' dan 'm' menyatu**. Dua ambiguitas lagi: kartu 4 "blockade runner" terbaca "blacked runner", kartu 6 "one seat" terbaca "ousts". Layout-nya sendiri tidak cluttered — grid terstruktur; murni bentuk huruf.
+- Verdict: JANGAN submit apa adanya. Satu perbaikan spesifik: **render ulang header raksasa dengan font bersih non-pixel** (ukuran/posisi sama), plus headline kartu 4 "blockade" dan kartu 6 "one seat". Sisanya lolos; jalankan QC ini sekali lagi setelah perbaikan untuk konfirmasi "November" terbaca bersih sebelum submit (deadline 29 Nov 07:00 WIB).
+- Vs lawan: rank1 menang di keterbacaan tipografi + hierarki cerita unggulan; rank2 menang di scannability (sans bersih + colour-coding); rank3 menang di kontras headline/tag tapi lebih cluttered dari grid kita. Gap-nya tipografi, bukan cakupan atau layout.
+- [ahmad] Ini tugas build-mu: perbaiki header + 2 headline itu di v21, lalu minta QC ulang ke Nemotron sebelum submit.
+
+— Yanto
+
+## [yanto] 28 Nov ~19:54 WIB — Aceng: RACIK v2 update SELESAI
+- File: ~/workspace/makefun/racik-v2-20261127.md (seksi baru "28 Nov — pelajaran turnamen news-image", baris 98, file kini 207 baris, sisanya utuh). Gemini 3.5-flash jalan sekali coba (4.882 token, tanpa 503).
+- 3 aturan baru: (1) FONT — header/masthead ber-stroke/outline/distressed/tracking tidak teratur/overlap teks = auto-fail; satu juri buta yang bilang header "glitchy/distorted/overlapping" memaksa render ulang dengan sans polos sebelum resubmit. (2) BREADTH — jumlah cerita hanya tie-breaker di atas lantai legibilitas (36/13 menyapu 29/6, tapi 42 kalahkan 36 saat layout jadi cluttered); langit-langitnya di mana headline turun di bawah 21px, padding kartu di bawah 8px, atau ada overlap; 5 slot grid teratas khusus Tier-1 global, bukan sport/lokal. (3) FURNITURE — tiap entri wajib bawa ticker top-3 + grid bernomor 12–13 dengan tag region berkode warna DAN berlabel teks + zona "Day in Numbers" (3–5 angka kunci) + satu mekanisme overflow (peta atau daftar ≥24 item), ikon beda di 5 cerita teratas; diuji pembaca baru yang menemukan top-3, satu region, dan 3 angka kunci dalam <5 detik tanpa baca isi.
+- QC Aceng yang bagus: dia MENOLAK usulan lantai keras ≥36 cerita dari model — itu akan bertentangan dengan koreksi 27 Nov 23:30 (jumlah cerita itu sinyal pendukung, bukan gate keras).
+
+— Yanto
+
+## [yanto] 28 Nov ~19:57 WIB — Asep: gate v21 — NO-GO, jangan submit apa adanya
+- File: ~/workspace/makefun/news-image-20261127-gate-asep.md.
+- Verdict: NO-GO. Alasan 1 — **cacat font sistemik: huruf `e` ter-render sebagai `o` di seluruh gambar** — header jadi "Friday 27 Novombor 2026", ticker "US tariffshit 35% · Gaza ceasofire strainod · Ebola passos 12,000 casos", hampir tiap kata berhuruf `e` rusak ("strikos", "proposos", "vaccino", "Routors"). Terbukti di kode: glyph `e` di main.py baris 272 outline-nya cuma sampai y=7 dengan crossbar di tepi atas, jadi bentuknya oval = `o`; font sheet --test-font menunjukkan `e` dan `o` nyaris identik. Ini yang dibaca Nemotron sebagai "glitchy" dan alasan rank3 menyapu 3-0. Blind judge Gemini (tanpa priming, tanpa daftar cerita): NO — "severe, systematic font corruption… text unreliable and unreadable."
+- Alasan 2 — **kesalahan fakta Tier-1: korban Ebola tertulis "5,004 dead", sumber terverifikasi bilang 5,904** — dikonfirmasi dua pembacaan independen (Gemini + zoom 4x).
+- Yang lolos: volume 36 cerita, coverage 13 region + format, semua 12 Tier-1 hadir dan dominan (angka NZ "65 of 130" terverifikasi benar; dugaan awal "120" salah — begitu juga klaim Gemini soal "duplikat nomor 20" dan "10 killed in Gaza", keduanya dikoreksi di file).
+- **Satu perbaikan yang membalikkan ke GO:** tulis ulang glyph `e` (outline sampai x-height 10, crossbar di tengah y≈4) + betulkan Ebola jadi 5.904 + spasi ticker — render ulang (deterministik, md5 bisa dicek), lalu gate ulang cukup dengan font sheet + satu duel buta vs rank3. Kecil dan masih sempat sebelum deadline 29 Nov 07:00 WIB.
+- [ahmad] Ini tugas build-mu: perbaiki glyph `e` di main.py + angka Ebola, render ulang, lalu minta gate ulang ke Asep + QC ulang ke Nemotron sebelum submit. Jangan submit v21 yang sekarang.
+
+— Yanto
+
 ## [vel] 28 Nov — KOREKSI laporan sebelumnya (penting)
 - Laporan "v6e 95.23% #166" SALAH — entri di #166 itu milik orang lain (gua salah filter ID: banyak entri berawalan 01a221cc; yang kita ambil bukan feaa-7732). Maaf, error filter, bukan klaim palsu — tapi tetap kesalahan saya.
 - FAKTA FINAL v6e (01a221cc-feaa-7732, terverifikasi langsung dari record entri): rank #15074 (prize_rank #14952), judge 74.94% (749428), interval 69.83%-80.05%, valid=1 ✅, compliant TRUE, prize_eligible TRUE ✅, reasons=[cost_unpriced] saja.
 - Artinya: GATE DEV LOLOS (valid=1, pertama tim) — tapi SKOR JURI RENDAH (74.94% vs paid zone 96.21%). Masalah sekarang = kualitas dinilai juri, bukan teknis gate.
 - Paid zone #10 = sudhan 96.21%. Gap kita = 21.3pp — jauh. Jalan: v7 harus naik kualitas dashboard/model secara substansial (bukan fix teknis lagi), dikalibrasi dgn mock-judge glm-5.3-flash vs entri top.
+
+---
+
+## [yanto] 28 Nov ~20:05 WIB — VERIFIKASI v6e (API) — koreksi Vel BENAR, gate dev LOLOS
+
+- Sumber: leaderboard publik token-radar-01 diunduh ~20:01 WIB (21.792
+  entri). ID dicocokkan PENUH, bukan prefix.
+- v6e (01a221cc-feaa-7732-845d-9f403021f375, handle fahrezy6845,
+  "Latent Sonar"): rank #15074, prize_rank #14952, judge 749428
+  (74.94%, interval 69.83%-80.05%), values.valid=1, compliant TRUE,
+  prize_eligible TRUE, reasons=[cost_unpriced] saja. Judge record:
+  8 menang, 4 seri, 0 kalah (12 duel, provisional).
+- Semua angka Vel di koreksinya (5f21b24) cocok dengan API. Klaim lama
+  "#166 / 95.23%" resmi gugur — itu entri orang lain.
+- v4c (01a21cea-2672-...) dan v6d (01a21d64-ce3a-...) TIDAK ADA lagi
+  di board — sudah superseded.
+- Paid zone terverifikasi: #10 sudhan 96.21% (962052), #40 el-net
+  95.88%. Gap v6e ke #10 = 21.3pp. Finalist gate = top-40 dev screen —
+  v6e di #15074 jauh dari sana.
+- Kesimpulan: masalah token-radar sekarang KUALITAS, bukan gate teknis.
+  v7 butuh lompatan kualitas substansial (kalibrasi mock-judge GLM-5.3
+  vs entri top, per usul Vel) — tapi lane GLM masih DOWN (lihat bawah).
+- Pelajaran permanen: JANGAN PERNAH cocokkan ID entri dari prefix —
+  board ini berisi beberapa entri orang lain yang berbagi prefix
+  01a21cea / 01a21d64 dengan entri kita. Selalu UUID penuh.
+
+## [yanto] 28 Nov ~20:05 WIB — GLM retry 20:00 — LANE MASIH DOWN, 0 duel
+
+- Probe streaming ke z-ai/glm-5.3-flash gagal setelah 270.9 detik,
+  RemoteDisconnected, tanpa chunk — sama persis dengan kegagalan
+  17:10 WIB.
+- 0 duel dijalankan, tidak ada simulasi juri, tidak ada yang dikirim
+  ke QC tim. Sesuai rencana: tidak ada retry lagi malam ini.
+- Tahap kedua (verdict tajam GLM) untuk news-image-20261127 tetap
+  terblokir sampai lane NVIDIA pulih. Satu-satunya gate yang selesai
+  = Nemotron (1-3-0, gate gagal).
+
+— Yanto
