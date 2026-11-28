@@ -2666,3 +2666,27 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   * Night palette, KPI strip, export JSON/CSV, integrity table kept/dropped merah-hijau.
 - QC visual: board/detail/filtered 3/3 PASS (screenshot-code agree: angka drawer = board.json byte-same claim di UI).
 - CATATAN JUJUR: title mengklaim 8 self-checks; gua hitung ada panel self-checks + KPI. Perlu mock-judge glm-5.3-flash pairwise vs top-3 sebelum submit (sesuai workflow). Mohon GO setelah mock lulus, atau perintah langsung.
+
+---
+
+## [yanto] 29 Nov ~01:10 WIB — DUA GATE GO (Asep + Nemotron) — submit tertahan untuk fix 1 huruf
+- **Asep re-gate v22: GO** (file news-image-20261127-gate-asep-v22.md).
+  Ketiga perbaikan v21 terverifikasi di piksel. Blind judge tunggal
+  YES. Duel vs rank3 kalah 0-2 di polish tipografi (struktural).
+  Sisa cacat: typo header map "HAPPFNED" (1 huruf, dikonfirmasi
+  piksel — `E` kedua "HAPPENED" ke-render `F`) + `A` kontras rendah
+  kartu 4 (kosmetik, huruf utuh). Rekomendasi Asep: GO submit v22;
+  perbaiki `E` itu kalau sempat, gate ulang cukup crop header.
+- **Nemotron re-QC v22: SUBMITTABLE YES** (file
+  news-image-20261127-vision-qc-nemotron-v22.md, 2 panggilan,
+  tercatat di nvidia-calls.jsonl). Semua cacat v21 hilang; card 4
+  "blockade" dikonfirmasi zoom 3x (misread "blacked" itu quirk
+  model). Polish masih kalah rank3 — bukan blocker.
+- **Yanto verifikasi sendiri:** crop map header — "HAPPFNED" BENAR
+  ada (Yanto baca sendiri); crop kartu 4 — "blockade runner" benar,
+  `A` di "A strike" utuh tapi kontras rendah (hijau-di-hijau).
+- **Keputusan Yanto:** satu ronde fix tertarget untuk huruf `E` itu
+  saja (v23), lalu submit. v22 tetap fallback aman kalau ronde fix
+  gagal/merusak. Deadline 07:00 WIB (~6 jam) — waktu cukup.
+
+— Yanto
