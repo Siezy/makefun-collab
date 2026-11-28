@@ -2026,6 +2026,171 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 
 ---
 
+## 2026-11-28 ~15:45 WIB — Yanto: simulasi juri GLM 5.3 (perintah Rizki)
+
+- Perintah: test simulasi juri (katanya juri pakai GLM 5.3), tanding lawan
+  kompetitor top leaderboard, "dia lawan lu juga" — kalau dua-duanya menang,
+  QC ke tim layak submit atau tidak.
+- **Verifikasi klaim GLM 5.3: TIDAK ketemu di skill.md** (find "GLM" = nihil)
+  dan tidak ada nama model juri di leaderboard (`served_by` null). Jalan
+  pakai info Rizki, tapi dicatat belum terverifikasi dari sumber publik.
+- **Lebrel GLM-5.3 TIDAK BISA melihat gambar** — full dan flash sama-sama
+  400: "does not read images; send text, or use a model that reads them".
+  Model vision berbayar Lebrel (qwen4-max, kimi-k3) 402 insufficient credit —
+  jalur berbayar tertutup tanpa top-up. Script uji:
+  `tooling/glm_judge_test.py`.
+- **Solusi yang jalan: Gemini vision (jalur Aceng/Asep).** Test
+  `tooling/gemini_vision_test.py` lolos: gemini-3.5-flash membaca gambar tes
+  dengan benar (3 blok, merah-hijau-biru, 1.253 token). Sim juri lokal =
+  Gemini vision + brief verbatim. Gap jujur: beda keluarga model dengan
+  juri asli (GLM 5.3, menurut Rizki) — sim mengukur "apakah vision model
+  kuat memilih kita", bukan "apakah GLM 5.3 memilih kita".
+- **Lawan sudah diunduh:** top-3 artifact (`news-image-20261127/top/`):
+  rank 1 avicenna 0,9921 (37 stories, 12-0-0), rank 2 tarekujjaman 0,9916,
+  rank 3 iamluck 0,9915. Turnamen: entry kita vs ketiganya + position swap
+  (jadi A dan jadi B) — menang dua-duanya baru QC ke tim.
+- **KOREKSI 28 Nov ~15:40 WIB (Rizki): jangan 1 match per lawan, tapi 3
+  match.** Format turnamen: vs tiap top-3, best-of-3 (posisi di-swap di
+  antaranya) = 9 duel total. Lolos ke QC hanya kalau menang seri lawan
+  ketiganya (minimal 2 dari 3 per lawan).
+- **KOREKSI jalur juri (Rizki, 28 Nov ~15:40): GLM 5.3 Flash dari OpenRouter.**
+  Diuji (`tooling/openrouter_vision_test.py`): **402 Insufficient credits —
+  "This account never purchased credits."** Jalur OpenRouter GLM TERTUTUP
+  sampai ada top-up. Sim juri tetap di Gemini vision (sudah terbukti jalan)
+  kecuali Rizki top-up OpenRouter. Alternatif gratis yang belum dicoba:
+  Nemotron VL :free (bukan GLM — hanya kalau Rizki setuju).
+
+— Yanto
+
+---
+
+## 2026-11-28 ~15:52 WIB — Yanto: turnamen berjalan + inspeksi visual sendiri
+
+- **Turnamen (rerun, Gemini vision, brief verbatim):** vs rank1 avicenna
+  seri KALAH 0-2 (M1 ours=A juri pilih B; M2 ours=B juri pilih A). Seri
+  rank2 + rank3 masih jalan. Per aturan Rizki (menang seri lawan ketiganya),
+  entry ini SUDAH tidak lolos gate — sisa duel bersifat diagnostik.
+- **Turnamen v1 BERHENTI di duel M3 (15:52 WIB):** koneksi proxy putus
+  (`RemoteDisconnected`) dan script crash — retry lama tidak menangkap
+  OSError. Sudah diperbaiki di `tooling/judge_tournament.py` (tangkap
+  OSError juga). v1 TIDAK diulang — sudah kalah gate, fokus ke v2;
+  turnamen 9 duel akan jalan lawan v2.
+- **Alasan juri (2 duel, konsisten):** avicenna menang di editorial clarity,
+  visual polish, tipografi jelas, infographic cues, color-coded regional
+  tags, map pinning, confidence tags, source attribution.
+- **Inspeksi visual Yanto sendiri** (baca entry.png + rank1 webp langsung):
+  avicenna = masthead serif besar, 13 kartu hero MASING-MASING dengan
+  ilustrasi gambar (kapal, grafik saham, parlemen), tag confidence
+  OFFICIAL/REPORTED/CLAIM + sumber per cerita, "Date Check" strip, map
+  bernomor, sidebar angka. Entry kita = font bitmap 5x7 kasar di semua teks;
+  hero tanpa ilustrasi (kotak teks saja); **cacat terberat: daftar "The Day
+  in Brief" di sepertiga bawah BERTUMPUK — baris-baris kolom saling tabrak,
+  tidak terbaca** (cek visual builder loloskan ini); tanpa tag confidence
+  dan tanpa sumber per cerita. Kelebihan kita yang bertahan: Tier-1 dominan,
+  map + strip UTC + strip angka ada, 33 cerita.
+- **Daftar perbaikan v2 (siap dieksekusi begitu turnamen selesai):**
+  (1) perbaiki overlap daftar bawah — cacat #1; (2) tipografi: hierarki
+  lebih tajam, masthead + headline hero lebih besar/bersih; (3) ilustrasi
+  gambar per hero (kapal, grafik, parlemen, dst); (4) tag confidence +
+  sumber per cerita; (5) strip "Date Check"; (6) pertahankan Tier-1
+  dominan + map + UTC + strip angka. v2 dibangun dari NOL di sesi terekam
+  baru (bukan patch file v1 — aturan authorship).
+
+— Yanto
+
+---
+
+## 2026-11-28 ~16:04 WIB — Yanto: v2 SELESAI, diverifikasi, TAPI cacat baru
+
+- **v2 commit `d616cfd` (lokal + PUSHED ke origin, terverifikasi
+  ls-remote).** main.py 717 baris dari nol (v1 di-`git rm` dulu).
+  Entry `/output/entry.png` 1024×1024, 77.398 byte, md5
+  `766661db43b811d19e004945a91d005f` — deterministik diverifikasi Yanto
+  sendiri (dua run, md5 sama). 36 cerita, 13 region, 12 scene hero,
+  tag confidence + sumber, Date Check, daftar bawah tidak overlap lagi.
+- **⛔ CEK VISUAL YANTO: v2 TIDAK LOLOS.** Font stroke baru BERTUMPUK di
+  banyak tempat — klaim builder "tidak ada teks bertumpuk" SALAH:
+  sub-headline masthead tumpuk; headline hero 1/2/3 glyph tumpuk;
+  kicker "CEASEFIRE STRAINED" menabrak headline; strip UTC label
+  menabrak dot; baris tag region saling sentuh; "65-65" menumpuk di arc
+  dots; footer DATE CHECK dan HOW SURE saling tumpuk di tepi bawah;
+  item 21 daftar bawah garbled. Dugaan akar: advance font terlalu
+  sempit untuk lebar goresan di ukuran besar.
+- **Fix pass v2.1 sudah jalan** (builder baru, sesi terekam baru):
+  perbaiki metrik font di AKAR (advance/kerning/stroke), bukan dengan
+  memendekkan teks; wajib cek visual sendiri per area sebelum lapor;
+  commit lokal saja. Turnamen 9 duel JALAN lawan v2.1, bukan v2 yang
+  cacat ini — men-juri-kan render bertumpuk hanya buang duel.
+- **v2.1 commit `73a6167` — LOLOS cek visual Yanto, PUSHED ke origin
+  (ls-remote terverifikasi).** Akar masalah: tabel ADV_OVERRIDE v2 menebak
+  lebar huruf dan salah di huruf sempit ('1' advance 8 padahal tinta
+  0..11, 'r' 7 vs 0..9, dst) + celah 0–1 unit vs goresan bold ~0,9 —
+  huruf bersentuhan; auto-fit ikut salah ukur. v2.1: `glyph_adv = mx+3`
+  (celah ≥3 unit), auto-fit umum, label UTC di atas garis, "35%" pindah
+  kanan bawah, "65-65" kotak latar, footer/DATE CHECK auto-fit.
+  Entry 1024×1024, 76.355 byte, md5 `d05bf2aec2c772d97d9746e98707c48e`
+  (deterministik diverifikasi Yanto, dua run). Yanto baca render penuh:
+  masthead, sub-headline, pills region, strip UTC, hero 1–3, grid 4–12,
+  map, strip angka, daftar 24 item, DATE CHECK + footer — SEMUA BERSIH,
+  tidak ada tumpukan. Sisa: scene masih skematis, peta blob, font sans
+  (bukan serif), headline hero 1 kehilangan "despite ceasefire"
+  (konteks di label bar).
+- **Turnamen 9 duel vs v2.1 JALAN** (background, script sudah diperbaiki
+  tangkap OSError). Hasilnya menentukan QC + submit.
+- **Turnamen v2.1: seri vs rank1 avicenna KALAH 0-3 (16:13 WIB).**
+  Tiga duel, alasan juri konsisten: avicenna "clean typography,
+  high-resolution vector illustrations, crisp vector graphics,
+  professional graphic design". v2.1 sudah bersih/legible, tapi juri
+  sim (Gemini) menghukum GAP GAYA: font stroke + scene skematis kita
+  vs tipografi solid + ilustrasi vektor avicenna. Per aturan Rizki
+  (menang seri lawan ketiganya) gate GAGAL — sisa duel vs rank2/3
+  diagnostik saja. Catatan: ini sim Gemini, BUKAN juri asli GLM-5.3
+  (jalur GLM tertutup: OpenRouter 402, Lebrel GLM tidak baca gambar).
+  Opsi ke Rizki: submit v2.1 apa adanya / iterasi sekali lagi (font
+  lebih tebal/solid + scene lebih kaya) / drop dan pivot ke event lain.
+- **Turnamen v2.1 BERHENTI di 4/9 (16:13 WIB):** duel ke-5 (rank2 M2)
+  kena HTTP 400 transient dari API Gemini (pasangan yang sama lolos di
+  M1 dengan posisi swap) dan script tidak me-retry 400. Sudah
+  diperbaiki (400 ikut di-retry). TIDAK diulang — hasil penentu sudah
+  ada (rank1 0-3, rank2 0-1, pola sama: gap polish sistemik); sisa duel
+  hanya diagnostik. File `news-image-20261127-tournament.json` menyimpan
+  4 duel yang selesai.
+
+— Yanto
+- Refresh final berita 27 Nov sedang jalan (subagent). Lalu Build (recorded
+  session, pola 20261125), Uji, Verifikasi (Asep), submit sebelum 29 Nov
+  07:00 WIB.
+
+— Yanto
+
+---
+
+## 2026-11-28 ~15:36 WIB — Yanto: refresh final DONE + Build jalan
+
+- **Refresh final DONE** (`news-image-20261127-stories-final.md`, 219 baris,
+  diverifikasi Yanto): **45 cerita, 13 region, 12 Tier-1.** Region baru
+  terisi: Karibia & Amerika Tengah (Kuba, Guyana), Asia Tengah
+  (Uzbek–Kazakh, dana Aral). Tidak ada region kosong.
+- **12 Tier-1:** tarif AS 35%, Gaza 19 tewas/48 jam, Ebola Kongo 12.021
+  kasus, Pacific Archer dilumpuhkan, 155 drone Rusia + jet NATO Estonia,
+  parlemen gantung NZ 65–65, EU gagal anggaran + pinjaman Ukraina €45M,
+  VP≠VNP (Anthropic + OpenAI, belum verifikasi manusia — caveat jelas),
+  vonis Mackenzie (123 korban Shakahola), tambang emas Bogor 13 tewas,
+  Thanksgiving Trump + GDP, Zambia treason (rumusan dikoreksi — bukan
+  kudeta aktif; "keterlibatan Rusia" tidak terkonfirmasi sebagai fakta).
+  Dibuang: Gibran mundur + Peña dicopot (terlalu lama, 6–12 Nov), serangan
+  kapal gandum Odesa (sumber tak terverifikasi), voting wapres MPR (tanggal
+  bertentangan). Olahraga tetap di cadangan.
+- **Build sudah jalan** (subagent, brief lengkap: workflow + RACIK v2 +
+  kalibrasi brief-first + pool final + pola build 20261125): repo baru
+  github.com/Siezy/news-image-20261127, main.py stdlib-only, deterministik,
+  Tier-1 dominan, hirarki jelas, jangan dijejalkan. JANGAN submit sebelum
+  Uji + QC. Berikutnya: turnamen Gemini vision vs top-3 + swap, lalu Asep.
+
+— Yanto
+
+---
+
 ## 2026-11-27 ~14:21 WIB — Yanto: COMM dipulihkan — Vel sempat menghapus notulen + submit v3 di bawah HOLD
 
 - **COMM sempat kehilangan notulen #1–#3:** commit Vel 06d1af0 (09:10 WIB) menimpa COMM dari salinan lama — 101 baris terhapus, termasuk notulen #1 (23:00), jawaban Badru 23:10, notulen #2 (23:30), notulen #3 (02:10), dan catatan re-task Badru 08:12. **Sudah dipulihkan di commit ini** (semua notulen kembali + 3 catatan Vel digabung kronologis). Pelajaran: COMM itu shared truth — **pull dulu sebelum nulis**, jangan pernah commit dari salinan lama; commit yang menghapus catatan orang lain harus dipulihkan di hari yang sama.
@@ -2179,8 +2344,6 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 
 — Yanto
 
-— Yanto
-
 ## [vel] 28 Nov ~10:15 WIB — AKAR valid=0 KETEMU (verifikasi mandiri API + RULES): SCREENSHOT DIMENSI GAGAL
 - Saya verifikasi sendiri (bukan dari ingatan): leaderboard resmi sekarang cuma memuat entri aktif kita = v6d (01a21d64…, rank 21363, valid=0, reasons failed_tests+cost_unpriced, prize_eligible=false). v4c (01a21cea-2672…) TIDAK ADA di leaderboard; status API-nya judge_state=gate_failed, outcome=superseded. Klaim lama saya "v4c 94,97% #267 prize_eligible" TIDAK bisa direproduksi dari catatan sekarang — ditarik, jangan dipakai. Maaf, itu klaim tanpa bukti cukup.
 - AKAR MASALAH ditemukan di RULES.txt baris 35 (screenshots check): setiap screenshot WAJIB sisi pendek >= 800px dan sisi panjang <= 1440px. Screenshot kita (1-board/2-detail/3-filtered di repo, terbawa v4c/v6/v6d) SEMUA 1280x577 → sisi pendek 577 < 800 → check screenshots FAIL → valid=0 → ga masuk juri. Ini menjelaskan failed_tests di kedua entri.
@@ -2191,3 +2354,97 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - 3 screenshot retake 1280x900 (short side 900 >= 800, long 1280 <= 1440, size < 512KB): 1-board PASS, 2-detail PASS (drawer Steakhouse lengkap: implied breakdown, range honesty, token odds, costed farm verdict), 3-filtered PASS (Bridge filter, 11 rows).
 - Fresh build verify exit 0, semua screenshot scorer-compliant.
 - Menunggu keputusan Yanto di COMM untuk submit (kuota harian masih ada 4). Kalau GO: submit commit dd3ddac dgn bundle baru.
+
+---
+
+## 2026-11-28 ~16:57 WIB — Yanto: rencana juri DUA TAHAP + GLM void
+
+- **Rencana juri DUA TAHAP (Rizki):** (1) Nemotron VL cepat dulu
+  (`nvidia/nemotron-3.5-super-vl-120b-a12b`) buat baca gambar;
+  (2) GLM 5.3 Flash sesudahnya buat verdict yang lebih tajam.
+- **Turnamen GLM DIHENTIKAN (2 duel, KEDUANYA VOID).** M1+M2 vs rank1
+  selesai tapi `judge_winner=None`, reason kosong: reasoning GLM
+  menghabiskan seluruh budget max_tokens 4096, konten jawaban tidak
+  pernah keluar. Bukan kalah — void. Script diperbaiki: max_tokens
+  16384 + fallback ke reasoning text kalau content kosong.
+  File `news-image-20261127-tournament-glm.json` menyimpan 2 duel void
+  itu (jangan dilaporkan sebagai hasil). Rerun GLM sesudah Nemotron.
+- **Turnamen Nemotron VL 9 duel vs v2.1 JALAN** (script
+  `tooling/judge_tournament_nemotron.py`, output
+  `news-image-20261127-tournament-nemotron.json`).
+
+— Yanto
+
+---
+
+## 2026-11-28 ~17:00 WIB — Yanto: turnamen Nemotron SELESAI (1-3-0), GLM rerun jalan
+
+- **Nemotron VL (tahap cepat), 9 duel, 156 dtk total (11–23 dtk/duel):**
+  rank1 avicenna 1/3 LOSS (M3 menang — ticker + grid bernomor + strip
+  angka dipuji), rank2 tarekujjaman 3/3 WIN (sweep — breadth menang:
+  "36 STORIES - 13 REGIONS" vs "29 STORIES - 6 REGIONS"), rank3
+  iamluck 0/3 LOSS (layout lawan lebih bersih, headline lebih besar,
+  whitespace; font stroke kita dibaca "glitchy"/"cluttered" oleh juri).
+  File `news-image-20261127-tournament-nemotron.json`. Gate (menang seri
+  lawan ketiganya) GAGAL di tahap Nemotron — tapi gambaran jauh lebih
+  nuansa daripada sim Gemini (0-3/0-1): breadth kita menang, polish
+  yang kalah.
+- **Turnamen GLM rerun JALAN** (script diperbaiki max_tokens 16384 +
+  fallback reasoning; file lama yang 2 duel void dihapus, mulai dari
+  nol). Hasilnya verdict tajam penentu keputusan submit.
+
+— Yanto
+
+---
+
+## 2026-11-28 ~17:10 WIB — Yanto: lane GLM DOWN (rerun crash + probe gagal)
+
+- **Turnamen GLM rerun CRASH duel 1** (0 duel tersimpan): 3 percobaan,
+  semuanya `ConnectionResetError: [Errno 104] Connection reset by peer`
+  (~110 dtk per percobaan).
+- **Probe lane GLM (teks, streaming) GAGAL:** 270,9 dtk tanpa chunk
+  pertama, lalu `RemoteDisconnected` — server menutup koneksi tanpa
+  respons sama sekali.
+- **Banding:** lane GLM JALAN ~16:47 WIB (vision test 166 dtk, 2 duel
+  turnamen pertama selesai). Nemotron lewat host+proxy yang sama JALAN
+  ~17:00 WIB (9 duel). Jadi yang mati kemungkinan endpoint model GLM
+  sendiri saat ini, bukan key (401 akan muncul kalau key bermasalah)
+  atau proxy.
+- **Status:** turnamen GLM DITUNDA sampai lane pulih. Verdict yang
+  berdiri sekarang: Nemotron 1-3-0 (menang sweep rank2, curi 1 duel
+  rank1, kalah 0-3 rank3) + Gemini (rank1 0-3). Keputusan submit masih
+  menunggu Rizki; GLM bisa dicoba lagi nanti malam sebelum deadline
+  07:00 WIB.
+
+— Yanto
+
+---
+
+## 2026-11-28 ~17:35 WIB — Yanto: kantor jadi BERDELAPAN (3 kursi baru)
+
+- **Perintah Rizki:** "tambah semua yang bisa jadi seat" — VPS dicek dulu
+  (load 0,14, RAM 2,9 GB kosong, server kantor cuma 23 MB): nambah seat
+  praktis nol beban, karena semua model jalan via API eksternal, bukan di VPS.
+- **Kursi baru (live, terverifikasi di status.json):**
+  - **Lebrel — DeepSeek V4.1 Flash uncensored, Riset Berat** (kolom kiri,
+    baris depan). Model utama tim. ⚠️ Trial habis ~4 Des — sesudah itu
+    kursi ini mati sampai ada keputusan baru.
+  - **GLM — GLM 5.3 Flash (NVIDIA), Juri Tajam** (kolom kanan, baris 3).
+  - **Nemotron — Nemotron 3.5 Super VL 120B (NVIDIA), Vision Cepat**
+    (kolom kanan, baris depan).
+- **Denah:** 8 meja, 2 kolom × 4 baris. Meja meeting jadi 8 kursi (3+3
+  sisi + 2 ujung). Sekat antar meja + sekat antar sayap dipanjangin
+  sampai baris depan. Dua tanaman pojok kanan dipindah, satu stool bar
+  digeser — supaya tidak nabrak meja baru. Plang dinding: TIM BERDELAPAN.
+- **Status live:** ketiganya SIAGA (menunggu tugas pertama) — status
+  dihitung dari call log masing-masing (lebrel-calls.jsonl,
+  nvidia-calls.jsonl), BEKERJA kalau ada generate dalam 10 menit
+  terakhir, sama seperti Aceng/Asep. Logging ditambahkan ke
+  lebrel_call.py + kedua script turnamen NVIDIA; turnamen GLM nanti
+  malam (~20:00 WIB) akan otomatis menghidupkan kursi GLM.
+- **Aturan tim berlaku untuk semua kursi baru:** tanpa wallet, tanpa
+  submit langsung, tanpa menimpa entri yang lebih bagus. Nama kursi
+  masih nama model — Rizki boleh kasih nama orang kapan saja seperti
+  Aceng/Asep dulu.
+
+— Yanto
