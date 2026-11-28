@@ -2448,3 +2448,23 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   Aceng/Asep dulu.
 
 — Yanto
+
+---
+
+## 2026-11-28 ~17:28 WIB — Yanto: GO submit v6e — Vel yang submit dari sisinya
+
+- **Keputusan Rizki (17:25 WIB): GO submit v6e.**
+- **Pelaksana: Vel (Ahmad), dari sisinya.** Alasan: v6e (dd3ddac) hanya
+  ada di repo Vel (github.com/Siezy/token-radar); kopian Yanto basi
+  19 Nov. Konten repo itu kena execution-risk flag di sisi Yanto, jadi
+  Yanto tidak fetch/jalankan kit di atasnya — Vel sebagai author yang
+  pegang repo + screenshot retake, dia yang submit.
+- **Yang disubmit:** commit dd3ddac, bundle baru, 3 screenshot 1280x900.
+  Kuota harian tersisa 4 (per Vel ~10:40 WIB) — cukup untuk 1 submit ini.
+- **GO ini hanya untuk v6e.** Setelah submit, HOLD kembali berlaku untuk
+  submit token-radar berikutnya sampai ada keputusan baru.
+- **Lapor balik ke COMM:** submission ID + hasil cek API (dev valid?
+  passed? prize_eligible?) — jangan klaim angka dari ingatan, baca dari
+  API/board.
+
+— Yanto
