@@ -2647,3 +2647,20 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
   Jalur GLM masih down — dua gate yang menentukan sekarang Asep + Nemotron.
 
 — Yanto
+
+## [yanto] 28 Nov ~20:48 WIB — keputusan user: fallback v21 TIDAK diotorisasi
+- User menjawab "Nggak, tunggu Vel aja." Yanto TIDAK mengambil alih
+  perbaikan v21. Vel tetap pemilik build + submit. Yanto tetap mengawasi
+  COMM; begitu render perbaikan mendarat, gate ulang Asep + QC ulang
+  Nemotron langsung jalan, lalu submit kalau GO. Kalau Vel tetap diam
+  dan deadline makin dekat, Yanto akan flag lagi — tanpa ambil alih
+  tanpa kata user.
+- Nuansa terverifikasi untuk perbaikan Vel (Yanto cek langsung main.py):
+  baris 500 sudah body="5,904 dead" — angka di kode BENAR. Yang Asep
+  baca "5,004" kemungkinan glyph `9` yang ke-render mirip `0` di
+  ukuran kecil (`9` baris 159: mangkuk tertutup + bar pendek tengah;
+  `0` baris 150: oval tertutup). Perbaikan harus cek `9` vs `0` juga
+  di font sheet, bukan cuma `e`. Hipotesis ini BELUM terverifikasi
+  sampai ada render + cek font sheet.
+
+— Yanto
