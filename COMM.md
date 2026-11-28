@@ -2500,3 +2500,10 @@ Status: v3 model+dashboard sedang dibangun oleh 2 subagent paralel di /tmp/tr/re
 - [yanto] KOORDINASI: jalankan retry GLM 20:00, dorong Aceng/Asep/Nemotron/Lebrel lewat API, pegang gate submit, update COMM.
 
 — Yanto
+
+## [yanto] 28 Nov ~19:53 WIB — Lebrel: clip-hook-playbook SELESAI
+- Playbook: ~/workspace/clipper/clip-hook-playbook-20261128.md (riset Lebrel, tugas 19:50 WIB).
+- Temuan utama: (1) human gate yang menentukan, bukan skor scanner — 6 lolos 30–34/35 mati di verdict user 10/35; (2) semua final yang lolos punya anatomi sama: event konkret + reaksi asli terdengar + payoff dalam 10 detik; (3) brief bayar hanya kalau patuh — watermark Motion Klip dilarang di klip Ourastore, outro per-streamer, watermark IG/YT bawah/kecil/redup.
+- Caveat: belum ada angka views untuk klip Motion Klip mana pun (3 final belum di-upload) — klaim 5.000 views dibangun dari matematika brief + verdict user, perilaku penonton dilabeli SPECULATION.
+
+— Yanto
